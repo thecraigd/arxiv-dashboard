@@ -6,13 +6,3 @@
 [build.environment]
   NEXT_TELEMETRY_DISABLED = "1"
   NODE_VERSION = "18"
-
-# Cache node_modules for faster builds
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
-# Redirect all requests to index.html for SPA routing
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
