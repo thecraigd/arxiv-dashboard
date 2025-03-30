@@ -1,6 +1,6 @@
 'use client';
 
-import { Metadata } from '../lib/types';
+import { Metadata } from './types';
 
 interface DashboardMetricsProps {
   metadata: Metadata;

@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Paper } from '../lib/types';
-import { getArxivUrl, getArxivPdfUrl } from '../lib/data';
+import { Paper } from './types';
+import { getArxivUrl, getArxivPdfUrl } from './data';
 
 interface PaperListProps {
   papers: Paper[];

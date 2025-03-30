@@ -5,8 +5,8 @@ import DashboardMetrics from '../components/DashboardMetrics';
 import CategoryChart from '../components/CategoryChart';
 import KeywordCloud from '../components/KeywordCloud';
 import PaperList from '../components/PaperList';
-import { loadData } from '../lib/data';
-import { Paper, CountsData, KeywordData, Metadata } from '../lib/types';
+import { loadData } from './data';
+import { Paper, CountsData, KeywordData, Metadata } from './types';
 
 export default function Home() {
   const [papers, setPapers] = useState<Paper[]>([]);

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { KeywordData } from '../lib/types';
+import { KeywordData } from './types';
 
 interface KeywordCloudProps {
   keywords: KeywordData[];

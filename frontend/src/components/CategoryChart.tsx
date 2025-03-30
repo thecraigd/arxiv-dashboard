@@ -12,8 +12,8 @@ import {
   Legend,
   ChartOptions
 } from 'chart.js';
-import { CountsData } from '../lib/types';
-import { getRecentDays, getCategories } from '../lib/data';
+import { CountsData } from './types';
+import { getRecentDays, getCategories } from './data';
 
 // Register the required Chart.js components
 ChartJS.register(
