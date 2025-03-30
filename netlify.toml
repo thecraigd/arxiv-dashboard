@@ -1,7 +1,7 @@
 [build]
-  base    = "frontend"
-  publish = "out"
-  command = "bash netlify-build.sh"
+  base    = ""
+  publish = "frontend/out"
+  command = "cd frontend && bash netlify-build.sh && cd .. && bash netlify-postbuild.sh"
 
 [build.environment]
   NEXT_TELEMETRY_DISABLED = "1"
@@ -12,3 +12,6 @@
   from = "/*"
   to = "/index.html"
   status = 200
+  
+[build.processing]
+  skip_processing = false
