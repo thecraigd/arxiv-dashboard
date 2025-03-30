@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Paper } from '@/lib/types';
-import { getArxivUrl, getArxivPdfUrl } from '@/lib/data';
+import { Paper } from '../lib/types';
+import { getArxivUrl, getArxivPdfUrl } from '../lib/data';
 
 interface PaperListProps {
   papers: Paper[];
@@ -27,13 +27,16 @@ export default function PaperList({
       const searchMatch = search === '' || 
         paper.title.toLowerCase().includes(search.toLowerCase()) ||
         paper.authors.some(author => author.toLowerCase().includes(search.toLowerCase())) ||
-        (paper.abstract_snippet && paper.abstract_snippet.toLowerCase().includes(search.toLowerCase()));
+        ((paper.abstract_snippet || paper.abstract) && 
+         ((paper.abstract_snippet && paper.abstract_snippet.toLowerCase().includes(search.toLowerCase())) ||
+          (paper.abstract && paper.abstract.toLowerCase().includes(search.toLowerCase()))));
       
       const categoryMatch = !selectedCategory || paper.categories.includes(selectedCategory);
       
       const keywordMatch = !selectedKeyword || 
         paper.title.toLowerCase().includes(selectedKeyword.toLowerCase()) ||
-        (paper.abstract_snippet && paper.abstract_snippet.toLowerCase().includes(selectedKeyword.toLowerCase()));
+        ((paper.abstract_snippet && paper.abstract_snippet.toLowerCase().includes(selectedKeyword.toLowerCase())) ||
+         (paper.abstract && paper.abstract.toLowerCase().includes(selectedKeyword.toLowerCase())));
       
       return searchMatch && categoryMatch && keywordMatch;
     });
@@ -121,7 +124,11 @@ export default function PaperList({
                 )}
                 
                 <p className="text-gray-700 mt-2">
-                  {paper.abstract_snippet}
+                  {paper.abstract_snippet || 
+                   (paper.abstract ? (paper.abstract.length > 200 ? 
+                                      paper.abstract.substring(0, 200) + '...' : 
+                                      paper.abstract) : 
+                    'No abstract available')}
                 </p>
                 
                 <div className="mt-3 flex gap-3">
