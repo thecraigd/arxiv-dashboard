@@ -1,7 +1,7 @@
 [build]
   base    = "frontend"
   publish = "out"
-  command = "npm run build"
+  command = "bash netlify-build.sh"
 
 [build.environment]
   NEXT_TELEMETRY_DISABLED = "1"

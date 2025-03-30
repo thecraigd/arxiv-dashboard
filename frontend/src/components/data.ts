@@ -3,9 +3,6 @@ import { Paper, CountsData, KeywordData, Metadata } from './types';
 // Helper function to load data from the JSON files
 export async function loadData() {
   try {
-    // In a production environment with Next.js, you would fetch these from 
-    // your data directory during the build process or via API routes
-    
     // Use direct path for more reliable imports
     const papers: Paper[] = await fetch('/data/papers.json').then(res => res.json());
     const counts: CountsData = await fetch('/data/counts.json').then(res => res.json());

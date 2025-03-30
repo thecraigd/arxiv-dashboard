@@ -3,8 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 
-// First run the normal prepare-build script
-require('./prepare-build');
+// Don't reference prepare-build script directly
+// Instead, implement the necessary functionality here
 
 // Now create a static HTML file that will load the data locally
 const htmlTemplate = `<!DOCTYPE html>
@@ -777,15 +777,45 @@ const htmlTemplate = `<!DOCTYPE html>
 </body>
 </html>`;
 
+// Ensure the output directory exists
+const outDir = path.join(__dirname, '..', 'out');
+if (!fs.existsSync(outDir)) {
+  fs.mkdirSync(outDir, { recursive: true });
+  console.log('Created output directory');
+}
+
 // Write the template to the output directory
-fs.writeFileSync(path.join(__dirname, '..', 'out', 'index.html'), htmlTemplate);
+fs.writeFileSync(path.join(outDir, 'index.html'), htmlTemplate);
 console.log('Created standalone index.html file');
 
-// Also copy the _redirects file to ensure it's properly included
-fs.copyFileSync(
-  path.join(__dirname, '..', 'public', '_redirects'),
-  path.join(__dirname, '..', 'out', '_redirects')
-);
-console.log('Copied _redirects file to output directory');
+// Create a _redirects file in the output directory
+const redirectsContent = '/*    /index.html   200';
+fs.writeFileSync(path.join(outDir, '_redirects'), redirectsContent);
+console.log('Created _redirects file in output directory');
+
+// Ensure data directory exists in output
+const outDataDir = path.join(outDir, 'data');
+if (!fs.existsSync(outDataDir)) {
+  fs.mkdirSync(outDataDir, { recursive: true });
+  console.log('Created data directory in output');
+}
+
+// Create sample data files if they don't exist
+// This is a fallback in case the real data files couldn't be copied
+const sampleDataFiles = {
+  'papers.json': '[]',
+  'counts.json': '{"daily":{},"weekly":{}}',
+  'keywords.json': '[]',
+  'safety_papers.json': '[]',
+  'metadata.json': '{"last_updated":"N/A","total_papers":0,"safety_papers_count":0,"categories":[],"safety_terms":[]}'
+};
+
+Object.entries(sampleDataFiles).forEach(([filename, content]) => {
+  const filePath = path.join(outDataDir, filename);
+  if (!fs.existsSync(filePath)) {
+    fs.writeFileSync(filePath, content);
+    console.log(`Created sample ${filename} in output/data`);
+  }
+});
 
 console.log('Static site creation completed');
