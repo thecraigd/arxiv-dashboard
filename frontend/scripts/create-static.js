@@ -34,6 +34,18 @@ const htmlTemplate = `<!DOCTYPE html>
       border-radius: 0.25rem;
       cursor: pointer;
     }
+    .animate-gradient-x {
+      background-size: 200% 200%;
+      animation: gradient-x 15s ease infinite;
+    }
+    @keyframes gradient-x {
+      0%, 100% {
+        background-position: left center;
+      }
+      50% {
+        background-position: right center;
+      }
+    }
   </style>
 </head>
 <body class="bg-gray-100 min-h-screen">
@@ -71,8 +83,40 @@ const htmlTemplate = `<!DOCTYPE html>
         const safetyPapers = await fetch('./data/safety_papers.json').then(res => res.json());
         const metadata = await fetch('./data/metadata.json').then(res => res.json());
         
+        // Load historical data
+        let monthlyKeywords = {};
+        let safetyTrends = { monthly_counts: {} };
+        let historicalPapers = [];
+        
+        try {
+          monthlyKeywords = await fetch('./data/monthly_keywords.json').then(res => res.json());
+        } catch (e) {
+          console.warn('Monthly keywords data not available');
+        }
+        
+        try {
+          safetyTrends = await fetch('./data/safety_trends.json').then(res => res.json());
+        } catch (e) {
+          console.warn('Safety trends data not available');
+        }
+        
+        try {
+          historicalPapers = await fetch('./data/historical_papers.json').then(res => res.json());
+        } catch (e) {
+          console.warn('Historical papers data not available');
+        }
+        
         // Initialize the dashboard
-        renderDashboard({papers, counts, keywords, safetyPapers, metadata});
+        renderDashboard({
+          papers, 
+          counts, 
+          keywords, 
+          safetyPapers, 
+          metadata,
+          monthlyKeywords,
+          safetyTrends,
+          historicalPapers
+        });
       } catch (error) {
         console.error('Error loading data:', error);
         document.getElementById('app').innerHTML = \`
@@ -118,10 +162,13 @@ const htmlTemplate = `<!DOCTYPE html>
 
     // Main rendering function
     function renderDashboard(data) {
-      const { papers, counts, keywords, safetyPapers, metadata } = data;
+      const { papers, counts, keywords, safetyPapers, metadata, monthlyKeywords, safetyTrends, historicalPapers } = data;
       
       // Start with metrics
       const metricsHtml = renderMetrics(metadata);
+      
+      // Historical Trends section
+      const historicalSectionHtml = renderHistoricalSection(counts, monthlyKeywords, safetyTrends, metadata);
       
       // Prepare chart for categories
       const chartHtml = renderCategoryChart(counts);
@@ -135,6 +182,7 @@ const htmlTemplate = `<!DOCTYPE html>
       // Combine all sections
       document.getElementById('app').innerHTML = \`
         \${metricsHtml}
+        \${historicalSectionHtml}
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           \${chartHtml}
           \${wordCloudHtml}
@@ -142,8 +190,21 @@ const htmlTemplate = `<!DOCTYPE html>
         \${tabsAndPapersHtml}
       \`;
       
-      // Initialize chart after DOM is ready
+      // Initialize charts after DOM is ready
       initializeChart(counts);
+      
+      // Initialize historical trends charts if data is available
+      if (counts.monthly && Object.keys(counts.monthly).length > 0) {
+        initializeTrendChart(counts, safetyTrends);
+      }
+      
+      if (monthlyKeywords && Object.keys(monthlyKeywords).length > 0) {
+        initializeKeywordTrendsChart(monthlyKeywords);
+      }
+      
+      if (metadata.safety_terms && monthlyKeywords && Object.keys(monthlyKeywords).length > 0) {
+        initializeSafetyKeywordTrendsChart(monthlyKeywords, metadata.safety_terms);
+      }
       
       // Setup event listeners
       setupEventListeners();
@@ -180,6 +241,98 @@ const htmlTemplate = `<!DOCTYPE html>
             <p class="text-sm text-purple-600 mt-1">Automatic daily updates</p>
           </div>
         </div>
+      \`;
+    }
+    
+    function renderHistoricalSection(counts, monthlyKeywords, safetyTrends, metadata) {
+      // Only show historical section if we have monthly data
+      if (!counts.monthly || Object.keys(counts.monthly).length === 0) {
+        return '';
+      }
+      
+      return \`
+        <section class="bg-gradient-to-r from-blue-100 to-indigo-100 p-6 rounded-xl shadow mb-10 border border-blue-200 animate-gradient-x">
+          <div class="flex items-center mb-6">
+            <div class="w-1 h-8 bg-blue-600 mr-3 rounded"></div>
+            <h2 class="text-2xl font-bold text-gray-800">AI Research Historical Trends (6 Months)</h2>
+          </div>
+          
+          <p class="text-gray-600 mb-8">
+            Analyze AI research trends from arXiv over the past 6 months. Explore publication patterns, 
+            track AI safety topics, and identify emerging research themes.
+          </p>
+          
+          <div class="space-y-10">
+            <!-- Publication volume trends -->
+            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
+              <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-semibold">Publication Volume by Category</h2>
+                <div class="flex space-x-2">
+                  <button
+                    id="trend-categories-btn"
+                    class="px-3 py-1 rounded text-sm bg-blue-600 text-white"
+                  >
+                    By Category
+                  </button>
+                  <button
+                    id="trend-safety-btn"
+                    class="px-3 py-1 rounded text-sm bg-gray-200 text-gray-800"
+                  >
+                    Safety Trends
+                  </button>
+                </div>
+              </div>
+              <div class="h-80">
+                <canvas id="trend-chart"></canvas>
+              </div>
+              <p class="mt-4 text-sm text-gray-600">
+                Monthly publication trends across different categories
+              </p>
+            </div>
+            
+            <!-- Safety keyword trends -->
+            \${metadata.safety_terms && metadata.safety_terms.length > 0 && monthlyKeywords && Object.keys(monthlyKeywords).length > 0 ? \`
+            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
+              <h2 class="text-xl font-semibold mb-4">AI Safety Related Keywords</h2>
+              <div class="h-80">
+                <canvas id="safety-keyword-chart"></canvas>
+              </div>
+              <div class="mt-6">
+                <h3 class="text-sm font-medium text-gray-700 mb-2" id="safety-keywords-title">Select keywords to display:</h3>
+                <div class="flex flex-wrap gap-2" id="safety-keyword-buttons">
+                  <!-- Safety keyword buttons will be added here -->
+                  <div class="animate-pulse flex space-x-4">
+                    <div class="bg-gray-200 h-8 w-20 rounded"></div>
+                    <div class="bg-gray-200 h-8 w-24 rounded"></div>
+                    <div class="bg-gray-200 h-8 w-16 rounded"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            \` : ''}
+            
+            <!-- General keyword trends -->
+            \${monthlyKeywords && Object.keys(monthlyKeywords).length > 0 ? \`
+            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
+              <h2 class="text-xl font-semibold mb-4">Popular Research Topics Over Time</h2>
+              <div class="h-80">
+                <canvas id="keyword-trends-chart"></canvas>
+              </div>
+              <div class="mt-6">
+                <h3 class="text-sm font-medium text-gray-700 mb-2" id="keyword-trends-title">Select keywords to display:</h3>
+                <div class="flex flex-wrap gap-2" id="keyword-trends-buttons">
+                  <!-- Keyword buttons will be added here -->
+                  <div class="animate-pulse flex space-x-4">
+                    <div class="bg-gray-200 h-8 w-20 rounded"></div>
+                    <div class="bg-gray-200 h-8 w-24 rounded"></div>
+                    <div class="bg-gray-200 h-8 w-16 rounded"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            \` : ''}
+          </div>
+        </section>
       \`;
     }
 
@@ -333,7 +486,7 @@ const htmlTemplate = `<!DOCTYPE html>
       \`;
     }
 
-    // Initialize the chart
+    // Initialize the category chart
     function initializeChart(countsData) {
       if (!countsData) return;
       
@@ -358,7 +511,7 @@ const htmlTemplate = `<!DOCTYPE html>
       });
       
       // Create chart
-      window.chart = new Chart(ctx, {
+      window.categoryChart = new Chart(ctx, {
         type: 'bar',
         data: {
           labels: days.map(day => new Date(day).toLocaleDateString()),
@@ -368,6 +521,7 @@ const htmlTemplate = `<!DOCTYPE html>
           plugins: {
             legend: {
               position: 'bottom',
+              display: false
             },
             title: {
               display: true,
@@ -414,6 +568,665 @@ const htmlTemplate = `<!DOCTYPE html>
       document.getElementById('weekly-btn').addEventListener('click', () => {
         setChartViewMode('weekly');
       });
+    }
+    
+    // Initialize the trend chart for historical data
+    function initializeTrendChart(countsData, safetyCountsData) {
+      if (!countsData.monthly || Object.keys(countsData.monthly).length === 0) return;
+      
+      const ctx = document.getElementById('trend-chart').getContext('2d');
+      
+      // Get months sorted chronologically
+      const months = Object.keys(countsData.monthly).sort();
+      
+      // Get all unique categories
+      const categories = new Set();
+      Object.values(countsData.monthly).forEach(monthData => {
+        Object.keys(monthData).forEach(category => {
+          categories.add(category);
+        });
+      });
+      
+      // Take top 8 categories by volume
+      const topCategories = Array.from(categories)
+        .map(category => {
+          const total = months.reduce((sum, month) => 
+            sum + (countsData.monthly[month]?.[category] || 0), 0);
+          return { category, total };
+        })
+        .sort((a, b) => b.total - a.total)
+        .slice(0, 8)
+        .map(item => item.category);
+      
+      // Prepare datasets for each category
+      const categoryDatasets = topCategories.map((category, index) => {
+        // Generate a predictable color based on the category name
+        const hue = (index * 137) % 360; // Use golden angle to space colors
+        
+        return {
+          label: category,
+          data: months.map(month => countsData.monthly[month]?.[category] || 0),
+          borderColor: \`hsla(\${hue}, 70%, 50%, 1)\`,
+          backgroundColor: \`hsla(\${hue}, 70%, 60%, 0.2)\`,
+          tension: 0.4,
+          borderWidth: 2,
+          hidden: index >= 5  // Only show top 5 categories by default
+        };
+      });
+      
+      // Prepare safety datasets
+      const totalByMonth = months.map(month => {
+        return Object.values(countsData.monthly?.[month] || {}).reduce(
+          (sum, count) => sum + count, 0
+        );
+      });
+      
+      // Calculate safety percentage
+      const safetyPercentage = months.map((month, index) => {
+        const safetyCount = safetyCountsData?.monthly_counts?.[month] || 0;
+        const total = totalByMonth[index];
+        return total > 0 ? (safetyCount / total) * 100 : 0;
+      });
+      
+      const safetyDatasets = [
+        {
+          label: 'Total Papers',
+          data: totalByMonth,
+          borderColor: 'hsla(210, 70%, 50%, 1)',
+          backgroundColor: 'hsla(210, 70%, 60%, 0.2)',
+          tension: 0.4,
+          borderWidth: 2,
+          yAxisID: 'y',
+        },
+        {
+          label: 'Safety Papers',
+          data: months.map(month => safetyCountsData?.monthly_counts?.[month] || 0),
+          borderColor: 'hsla(120, 70%, 40%, 1)',
+          backgroundColor: 'hsla(120, 70%, 50%, 0.2)',
+          tension: 0.4,
+          borderWidth: 2,
+          yAxisID: 'y',
+        },
+        {
+          label: 'Safety %',
+          data: safetyPercentage,
+          borderColor: 'hsla(30, 90%, 50%, 1)',
+          backgroundColor: 'hsla(30, 90%, 60%, 0.2)',
+          tension: 0.4,
+          borderWidth: 2,
+          yAxisID: 'y1',
+        }
+      ];
+      
+      // Format month labels
+      const monthLabels = months.map(monthKey => {
+        const [year, monthNum] = monthKey.split('-');
+        const date = new Date(parseInt(year), parseInt(monthNum) - 1, 1);
+        return date.toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
+      });
+      
+      // Create chart with category datasets by default
+      window.trendChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: monthLabels,
+          datasets: categoryDatasets,
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                usePointStyle: true,
+                boxWidth: 10,
+                padding: 20
+              }
+            },
+            title: {
+              display: true,
+              text: 'Category Publication Trends',
+              font: {
+                size: 16
+              }
+            },
+            tooltip: {
+              mode: 'index',
+              intersect: false
+            }
+          },
+          scales: {
+            x: {
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              title: {
+                display: true,
+                text: 'Number of Papers',
+                font: {
+                  size: 12
+                }
+              },
+              ticks: {
+                precision: 0
+              },
+              grid: {
+                color: 'rgba(0, 0, 0, 0.05)'
+              }
+            }
+          },
+          interaction: {
+            mode: 'nearest',
+            axis: 'x',
+            intersect: false
+          },
+          elements: {
+            point: {
+              radius: 3,
+              hitRadius: 10,
+              hoverRadius: 5
+            }
+          }
+        }
+      });
+      
+      // Setup toggle buttons for trend view
+      document.getElementById('trend-categories-btn').addEventListener('click', () => {
+        setTrendViewMode('categories');
+      });
+      
+      document.getElementById('trend-safety-btn').addEventListener('click', () => {
+        setTrendViewMode('safety');
+      });
+      
+      // Function to toggle between view modes
+      function setTrendViewMode(mode) {
+        if (mode === 'categories') {
+          // Update button styles
+          document.getElementById('trend-categories-btn').className = 'px-3 py-1 rounded text-sm bg-blue-600 text-white';
+          document.getElementById('trend-safety-btn').className = 'px-3 py-1 rounded text-sm bg-gray-200 text-gray-800';
+          
+          // Update chart data and options
+          window.trendChart.data.datasets = categoryDatasets;
+          window.trendChart.options.scales = {
+            x: {
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              title: {
+                display: true,
+                text: 'Number of Papers',
+                font: {
+                  size: 12
+                }
+              },
+              ticks: {
+                precision: 0
+              },
+              grid: {
+                color: 'rgba(0, 0, 0, 0.05)'
+              }
+            }
+          };
+          window.trendChart.options.plugins.title.text = 'Category Publication Trends';
+          
+        } else if (mode === 'safety') {
+          // Update button styles
+          document.getElementById('trend-categories-btn').className = 'px-3 py-1 rounded text-sm bg-gray-200 text-gray-800';
+          document.getElementById('trend-safety-btn').className = 'px-3 py-1 rounded text-sm bg-blue-600 text-white';
+          
+          // Update chart data and options
+          window.trendChart.data.datasets = safetyDatasets;
+          window.trendChart.options.scales = {
+            x: {
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              type: 'linear',
+              display: true,
+              position: 'left',
+              title: {
+                display: true,
+                text: 'Number of Papers',
+                font: {
+                  size: 12
+                }
+              },
+              ticks: {
+                precision: 0
+              },
+              grid: {
+                color: 'rgba(0, 0, 0, 0.05)'
+              }
+            },
+            y1: {
+              type: 'linear',
+              display: true,
+              position: 'right',
+              grid: {
+                drawOnChartArea: false
+              },
+              title: {
+                display: true,
+                text: 'Safety %',
+                font: {
+                  size: 12
+                }
+              },
+              min: 0,
+              max: Math.max(20, Math.ceil(Math.max(...safetyPercentage) * 1.1)),
+              ticks: {
+                callback: (value) => \`\${value}%\`
+              }
+            }
+          };
+          window.trendChart.options.plugins.title.text = 'AI Safety Paper Trends';
+        }
+        
+        window.trendChart.update();
+      }
+    }
+    
+    // Initialize the keyword trends chart
+    function initializeKeywordTrendsChart(monthlyKeywords) {
+      if (!monthlyKeywords || Object.keys(monthlyKeywords).length === 0) return;
+      
+      const ctx = document.getElementById('keyword-trends-chart').getContext('2d');
+      
+      // Get months sorted chronologically
+      const months = Object.keys(monthlyKeywords).sort();
+      
+      // Extract all unique keywords across all months
+      const keywordSet = new Set();
+      Object.values(monthlyKeywords).forEach(keywords => {
+        keywords.forEach(kw => keywordSet.add(kw.text));
+      });
+      
+      // Find the most common keywords by summing their values across all months
+      const keywordCounts = {};
+      Object.values(monthlyKeywords).forEach(keywords => {
+        keywords.forEach(kw => {
+          keywordCounts[kw.text] = (keywordCounts[kw.text] || 0) + kw.value;
+        });
+      });
+      
+      // Sort keywords by total count and take the top ones
+      const topKeywords = Object.entries(keywordCounts)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 15)
+        .map(entry => entry[0]);
+      
+      // Default to showing the top 5 keywords
+      const initialKeywords = topKeywords.slice(0, 5);
+      
+      // Create datasets for selected keywords
+      const datasets = initialKeywords.map((keyword, index) => {
+        // Generate a color based on the keyword index
+        const hue = (index * 137) % 360; // Use golden angle for better color distribution
+        
+        return {
+          label: keyword,
+          data: months.map(month => {
+            const keywordObj = monthlyKeywords[month].find(k => k.text === keyword);
+            return keywordObj ? keywordObj.value : 0;
+          }),
+          borderColor: \`hsla(\${hue}, 70%, 50%, 1)\`,
+          backgroundColor: \`hsla(\${hue}, 70%, 60%, 0.2)\`,
+          tension: 0.4,
+          borderWidth: 2,
+          pointRadius: 3,
+          pointHoverRadius: 5,
+        };
+      });
+      
+      // Format month labels
+      const monthLabels = months.map(monthKey => {
+        const [year, monthNum] = monthKey.split('-');
+        const date = new Date(parseInt(year), parseInt(monthNum) - 1, 1);
+        return date.toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
+      });
+      
+      // Create the chart
+      window.keywordTrendsChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: monthLabels,
+          datasets,
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                usePointStyle: true,
+                boxWidth: 10,
+                padding: 20
+              }
+            },
+            title: {
+              display: true,
+              text: 'Top Keywords Over Time',
+              font: {
+                size: 16
+              }
+            },
+            tooltip: {
+              mode: 'index',
+              intersect: false
+            }
+          },
+          scales: {
+            x: {
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              title: {
+                display: true,
+                text: 'Keyword Frequency',
+                font: {
+                  size: 12
+                }
+              },
+              ticks: {
+                precision: 0
+              },
+              grid: {
+                color: 'rgba(0, 0, 0, 0.05)'
+              }
+            }
+          },
+          interaction: {
+            mode: 'nearest',
+            axis: 'x',
+            intersect: false
+          }
+        }
+      });
+      
+      // Generate keyword buttons
+      const keywordButtonsContainer = document.getElementById('keyword-trends-buttons');
+      keywordButtonsContainer.innerHTML = topKeywords.map(keyword => {
+        const isSelected = initialKeywords.includes(keyword);
+        return \`
+          <button
+            class="keyword-trend-btn px-3 py-1 text-sm rounded-full \${
+              isSelected
+                ? 'bg-blue-600 text-white'
+                : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+            }"
+            data-keyword="\${keyword}"
+          >
+            \${keyword}
+          </button>
+        \`;
+      }).join('');
+      
+      // Add event listeners to buttons
+      document.querySelectorAll('.keyword-trend-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const keyword = button.dataset.keyword;
+          toggleKeywordInChart(keyword, button);
+        });
+      });
+      
+      // Function to toggle a keyword in the chart
+      function toggleKeywordInChart(keyword, button) {
+        // Check if the keyword is already in the chart
+        const existingDatasetIndex = window.keywordTrendsChart.data.datasets.findIndex(
+          dataset => dataset.label === keyword
+        );
+        
+        if (existingDatasetIndex > -1) {
+          // Remove the keyword dataset
+          window.keywordTrendsChart.data.datasets.splice(existingDatasetIndex, 1);
+          button.classList.remove('bg-blue-600', 'text-white');
+          button.classList.add('bg-gray-200', 'text-gray-800', 'hover:bg-gray-300');
+        } else {
+          // Add the keyword dataset
+          const newIndex = window.keywordTrendsChart.data.datasets.length;
+          const hue = (newIndex * 137) % 360;
+          
+          window.keywordTrendsChart.data.datasets.push({
+            label: keyword,
+            data: months.map(month => {
+              const keywordObj = monthlyKeywords[month].find(k => k.text === keyword);
+              return keywordObj ? keywordObj.value : 0;
+            }),
+            borderColor: \`hsla(\${hue}, 70%, 50%, 1)\`,
+            backgroundColor: \`hsla(\${hue}, 70%, 60%, 0.2)\`,
+            tension: 0.4,
+            borderWidth: 2,
+            pointRadius: 3,
+            pointHoverRadius: 5,
+          });
+          
+          button.classList.remove('bg-gray-200', 'text-gray-800', 'hover:bg-gray-300');
+          button.classList.add('bg-blue-600', 'text-white');
+        }
+        
+        window.keywordTrendsChart.update();
+      }
+    }
+    
+    // Initialize the safety keyword trends chart
+    function initializeSafetyKeywordTrendsChart(monthlyKeywords, safetyTerms) {
+      if (!monthlyKeywords || Object.keys(monthlyKeywords).length === 0 || !safetyTerms || safetyTerms.length === 0) return;
+      
+      const ctx = document.getElementById('safety-keyword-chart').getContext('2d');
+      
+      // Convert safety terms to lowercase for case-insensitive matching
+      const lowerSafetyTerms = safetyTerms.map(term => term.toLowerCase());
+      
+      // Extract all keywords across all months
+      const allKeywords = new Set();
+      Object.values(monthlyKeywords).forEach(keywords => {
+        keywords.forEach(kw => allKeywords.add(kw.text.toLowerCase()));
+      });
+      
+      // Filter to find safety-related keywords
+      const safetyKeywords = Array.from(allKeywords).filter(keyword => {
+        // Check if this keyword contains any safety term
+        return lowerSafetyTerms.some(term => keyword.includes(term));
+      });
+      
+      // If no safety keywords found, display a message
+      if (safetyKeywords.length === 0) {
+        const container = document.getElementById('safety-keywords-title').parentNode.parentNode;
+        container.innerHTML = \`
+          <h2 class="text-xl font-semibold mb-4">AI Safety Related Keywords</h2>
+          <div class="h-80 flex items-center justify-center bg-gray-100 rounded-lg">
+            <p class="text-gray-500">No safety-related keywords found in the dataset</p>
+          </div>
+        \`;
+        return;
+      }
+      
+      // Find the frequency of each safety keyword
+      const keywordCounts = {};
+      Object.values(monthlyKeywords).forEach(keywords => {
+        keywords.forEach(kw => {
+          const lowerKeyword = kw.text.toLowerCase();
+          if (safetyKeywords.includes(lowerKeyword)) {
+            keywordCounts[kw.text] = (keywordCounts[kw.text] || 0) + kw.value;
+          }
+        });
+      });
+      
+      // Sort keywords by total count and take the top ones
+      const topSafetyKeywords = Object.entries(keywordCounts)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 20)
+        .map(entry => entry[0]);
+      
+      // Default to showing the top 5 safety keywords
+      const initialKeywords = topSafetyKeywords.slice(0, 5);
+      
+      // Get months sorted chronologically
+      const months = Object.keys(monthlyKeywords).sort();
+      
+      // Create datasets for selected keywords
+      const datasets = initialKeywords.map((keyword, index) => {
+        // Generate a color based on the keyword index
+        const hue = (index * 137) % 360; // Use golden angle for better color distribution
+        
+        return {
+          label: keyword,
+          data: months.map(month => {
+            const keywordObj = monthlyKeywords[month].find(k => k.text === keyword);
+            return keywordObj ? keywordObj.value : 0;
+          }),
+          borderColor: \`hsla(\${hue}, 70%, 50%, 1)\`,
+          backgroundColor: \`hsla(\${hue}, 70%, 60%, 0.2)\`,
+          tension: 0.4,
+          borderWidth: 2,
+          pointRadius: 3,
+          pointHoverRadius: 5,
+        };
+      });
+      
+      // Format month labels
+      const monthLabels = months.map(monthKey => {
+        const [year, monthNum] = monthKey.split('-');
+        const date = new Date(parseInt(year), parseInt(monthNum) - 1, 1);
+        return date.toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
+      });
+      
+      // Create the chart
+      window.safetyKeywordChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: monthLabels,
+          datasets,
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                usePointStyle: true,
+                boxWidth: 10,
+                padding: 20
+              }
+            },
+            title: {
+              display: true,
+              text: 'AI Safety Keyword Trends',
+              font: {
+                size: 16,
+                weight: 'bold'
+              }
+            },
+            tooltip: {
+              mode: 'index',
+              intersect: false
+            }
+          },
+          scales: {
+            x: {
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              title: {
+                display: true,
+                text: 'Keyword Frequency',
+                font: {
+                  size: 12
+                }
+              },
+              ticks: {
+                precision: 0
+              },
+              grid: {
+                color: 'rgba(0, 0, 0, 0.05)'
+              }
+            }
+          },
+          interaction: {
+            mode: 'nearest',
+            axis: 'x',
+            intersect: false
+          }
+        }
+      });
+      
+      // Generate keyword buttons
+      const keywordButtonsContainer = document.getElementById('safety-keyword-buttons');
+      keywordButtonsContainer.innerHTML = topSafetyKeywords.map(keyword => {
+        const isSelected = initialKeywords.includes(keyword);
+        return \`
+          <button
+            class="safety-keyword-btn px-3 py-1 text-sm rounded-full \${
+              isSelected
+                ? 'bg-blue-600 text-white'
+                : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+            }"
+            data-keyword="\${keyword}"
+          >
+            \${keyword}
+          </button>
+        \`;
+      }).join('');
+      
+      // Add event listeners to buttons
+      document.querySelectorAll('.safety-keyword-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const keyword = button.dataset.keyword;
+          toggleSafetyKeywordInChart(keyword, button);
+        });
+      });
+      
+      // Function to toggle a keyword in the chart
+      function toggleSafetyKeywordInChart(keyword, button) {
+        // Check if the keyword is already in the chart
+        const existingDatasetIndex = window.safetyKeywordChart.data.datasets.findIndex(
+          dataset => dataset.label === keyword
+        );
+        
+        if (existingDatasetIndex > -1) {
+          // Remove the keyword dataset
+          window.safetyKeywordChart.data.datasets.splice(existingDatasetIndex, 1);
+          button.classList.remove('bg-blue-600', 'text-white');
+          button.classList.add('bg-gray-200', 'text-gray-800', 'hover:bg-gray-300');
+        } else {
+          // Add the keyword dataset
+          const newIndex = window.safetyKeywordChart.data.datasets.length;
+          const hue = (newIndex * 137) % 360;
+          
+          window.safetyKeywordChart.data.datasets.push({
+            label: keyword,
+            data: months.map(month => {
+              const keywordObj = monthlyKeywords[month].find(k => k.text === keyword);
+              return keywordObj ? keywordObj.value : 0;
+            }),
+            borderColor: \`hsla(\${hue}, 70%, 50%, 1)\`,
+            backgroundColor: \`hsla(\${hue}, 70%, 60%, 0.2)\`,
+            tension: 0.4,
+            borderWidth: 2,
+            pointRadius: 3,
+            pointHoverRadius: 5,
+          });
+          
+          button.classList.remove('bg-gray-200', 'text-gray-800', 'hover:bg-gray-300');
+          button.classList.add('bg-blue-600', 'text-white');
+        }
+        
+        window.safetyKeywordChart.update();
+      }
     }
     
     // Global state for the app
@@ -532,7 +1345,7 @@ const htmlTemplate = `<!DOCTYPE html>
     }
     
     function setChartViewMode(mode) {
-      if (!window.chart || !appState.data) return;
+      if (!window.categoryChart || !appState.data) return;
       
       const { counts } = appState.data;
       
@@ -545,8 +1358,8 @@ const htmlTemplate = `<!DOCTYPE html>
         const days = getRecentDays(counts, 7);
         const categories = getCategories(counts);
         
-        window.chart.data.labels = days.map(day => new Date(day).toLocaleDateString());
-        window.chart.data.datasets = categories.map((category, index) => {
+        window.categoryChart.data.labels = days.map(day => new Date(day).toLocaleDateString());
+        window.categoryChart.data.datasets = categories.map((category, index) => {
           const hue = (index * 137) % 360;
           return {
             label: category,
@@ -557,8 +1370,8 @@ const htmlTemplate = `<!DOCTYPE html>
           };
         });
         
-        window.chart.options.plugins.title.text = 'Daily Papers by Category';
-        window.chart.update();
+        window.categoryChart.options.plugins.title.text = 'Daily Papers by Category';
+        window.categoryChart.update();
         
       } else if (mode === 'weekly') {
         // Update button styles
@@ -572,8 +1385,8 @@ const htmlTemplate = `<!DOCTYPE html>
           
         const categories = getCategories(counts);
         
-        window.chart.data.labels = weeks.map(week => week.replace('W', ' Week '));
-        window.chart.data.datasets = categories.map((category, index) => {
+        window.categoryChart.data.labels = weeks.map(week => week.replace('W', ' Week '));
+        window.categoryChart.data.datasets = categories.map((category, index) => {
           const hue = (index * 137) % 360;
           return {
             label: category,
@@ -584,8 +1397,8 @@ const htmlTemplate = `<!DOCTYPE html>
           };
         });
         
-        window.chart.options.plugins.title.text = 'Weekly Papers by Category';
-        window.chart.update();
+        window.categoryChart.options.plugins.title.text = 'Weekly Papers by Category';
+        window.categoryChart.update();
       }
     }
     
@@ -748,15 +1561,47 @@ const htmlTemplate = `<!DOCTYPE html>
     // Store data globally after loading
     async function loadAndInitialize() {
       try {
-        // Load data 
+        // Load all data files
         const papers = await fetch('./data/papers.json').then(res => res.json());
         const counts = await fetch('./data/counts.json').then(res => res.json());
         const keywords = await fetch('./data/keywords.json').then(res => res.json());
         const safetyPapers = await fetch('./data/safety_papers.json').then(res => res.json());
         const metadata = await fetch('./data/metadata.json').then(res => res.json());
         
+        // Load historical data
+        let monthlyKeywords = {};
+        let safetyTrends = { monthly_counts: {} };
+        let historicalPapers = [];
+        
+        try {
+          monthlyKeywords = await fetch('./data/monthly_keywords.json').then(res => res.json());
+        } catch (e) {
+          console.warn('Monthly keywords data not available');
+        }
+        
+        try {
+          safetyTrends = await fetch('./data/safety_trends.json').then(res => res.json());
+        } catch (e) {
+          console.warn('Safety trends data not available');
+        }
+        
+        try {
+          historicalPapers = await fetch('./data/historical_papers.json').then(res => res.json());
+        } catch (e) {
+          console.warn('Historical papers data not available');
+        }
+        
         // Store data in appState
-        appState.data = { papers, counts, keywords, safetyPapers, metadata };
+        appState.data = { 
+          papers, 
+          counts, 
+          keywords, 
+          safetyPapers, 
+          metadata,
+          monthlyKeywords,
+          safetyTrends,
+          historicalPapers
+        };
         
         // Render the dashboard
         renderDashboard(appState.data);
@@ -765,7 +1610,7 @@ const htmlTemplate = `<!DOCTYPE html>
         document.getElementById('app').innerHTML = \`
           <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
             <strong class="font-bold">Error!</strong>
-            <span class="block sm:inline">Failed to load dashboard data.</span>
+            <span class="block sm:inline">Failed to load dashboard data. Details: \${error.message}</span>
           </div>
         \`;
       }
@@ -800,22 +1645,14 @@ if (!fs.existsSync(outDataDir)) {
   console.log('Created data directory in output');
 }
 
-// Create sample data files if they don't exist
-// This is a fallback in case the real data files couldn't be copied
-const sampleDataFiles = {
-  'papers.json': '[]',
-  'counts.json': '{"daily":{},"weekly":{}}',
-  'keywords.json': '[]',
-  'safety_papers.json': '[]',
-  'metadata.json': '{"last_updated":"N/A","total_papers":0,"safety_papers_count":0,"categories":[],"safety_terms":[]}'
-};
+// Create manifest file to show what files have been processed
+const manifestContent = JSON.stringify({
+  buildTime: new Date().toISOString(),
+  createdFiles: ['index.html', '_redirects'],
+  features: ['historicalTrends', 'safetyKeywordTrends', 'monthlyCharts']
+}, null, 2);
 
-Object.entries(sampleDataFiles).forEach(([filename, content]) => {
-  const filePath = path.join(outDataDir, filename);
-  if (!fs.existsSync(filePath)) {
-    fs.writeFileSync(filePath, content);
-    console.log(`Created sample ${filename} in output/data`);
-  }
-});
+fs.writeFileSync(path.join(outDir, 'build-manifest.json'), manifestContent);
+console.log('Created build manifest in output directory');
 
 console.log('Static site creation completed');
