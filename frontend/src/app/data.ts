@@ -1,21 +1,56 @@
-import { Paper, CountsData, KeywordData, Metadata } from './types';
+import { Paper, CountsData, KeywordData, Metadata, SafetyTrends, MonthlyKeywords } from './types';
 
 // Helper function to load data from the JSON files
 export async function loadData() {
   try {
-    // Use direct path for more reliable imports
+    // Load core data files
     const papers: Paper[] = await fetch('/data/papers.json').then(res => res.json());
     const counts: CountsData = await fetch('/data/counts.json').then(res => res.json());
     const keywords: KeywordData[] = await fetch('/data/keywords.json').then(res => res.json());
     const safetyPapers: Paper[] = await fetch('/data/safety_papers.json').then(res => res.json());
     const metadata: Metadata = await fetch('/data/metadata.json').then(res => res.json());
     
+    // Initialize data for historical analysis
+    let historicalPapers: Paper[] = [];
+    let historicalSafetyPapers: Paper[] = [];
+    let monthlyKeywords: MonthlyKeywords = {};
+    let safetyTrends: SafetyTrends = { monthly_counts: {} };
+    
+    // Try to load historical data if available
+    try {
+      historicalPapers = await fetch('/data/historical_papers.json').then(res => res.json());
+    } catch (histError) {
+      console.warn('Historical papers data not available:', histError);
+    }
+    
+    try {
+      historicalSafetyPapers = await fetch('/data/historical_safety_papers.json').then(res => res.json());
+    } catch (histError) {
+      console.warn('Historical safety papers data not available:', histError);
+    }
+    
+    try {
+      monthlyKeywords = await fetch('/data/monthly_keywords.json').then(res => res.json());
+    } catch (histError) {
+      console.warn('Monthly keywords data not available:', histError);
+    }
+    
+    try {
+      safetyTrends = await fetch('/data/safety_trends.json').then(res => res.json());
+    } catch (histError) {
+      console.warn('Safety trends data not available:', histError);
+    }
+    
     return {
       papers,
       counts,
       keywords,
       safetyPapers,
-      metadata
+      metadata,
+      historicalPapers,
+      historicalSafetyPapers,
+      monthlyKeywords,
+      safetyTrends
     };
   } catch (error) {
     console.error('Failed to load data:', error);
@@ -31,7 +66,11 @@ export async function loadData() {
         safety_papers_count: 0,
         categories: [],
         safety_terms: []
-      }
+      },
+      historicalPapers: [],
+      historicalSafetyPapers: [],
+      monthlyKeywords: {},
+      safetyTrends: { monthly_counts: {} }
     };
   }
 }

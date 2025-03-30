@@ -196,6 +196,7 @@ def process_papers(papers):
     # Initialize counters and containers
     daily_counts = defaultdict(lambda: defaultdict(int))
     weekly_counts = defaultdict(lambda: defaultdict(int))
+    monthly_counts = defaultdict(lambda: defaultdict(int))
     all_abstracts = []
     all_tokens = []
     safety_papers = []
@@ -227,16 +228,22 @@ def process_papers(papers):
         year, week, _ = date_obj.isocalendar()
         week_key = f"{year}-W{week:02d}"
         
-        # Use the same category handling as for daily counts
+        # Update monthly counts
+        month_key = f"{date_obj.year}-{date_obj.month:02d}"
+        
+        # Process primary category for weekly and monthly counts
         if primary_category and isinstance(primary_category, str):
             weekly_counts[week_key][primary_category] += 1
+            monthly_counts[month_key][primary_category] += 1
         elif primary_category:
             try:
                 primary_cat_str = str(primary_category)
                 weekly_counts[week_key][primary_cat_str] += 1
+                monthly_counts[month_key][primary_cat_str] += 1
             except:
                 if paper["categories"] and len(paper["categories"]) > 0:
                     weekly_counts[week_key][paper["categories"][0]] += 1
+                    monthly_counts[month_key][paper["categories"][0]] += 1
         
         # Process abstract for NLP
         abstract = paper["abstract"]
@@ -255,9 +262,22 @@ def process_papers(papers):
     most_common_tokens = token_counter.most_common(100)
     simple_keywords = [{"text": token, "value": count} for token, count in most_common_tokens]
     
+    # Generate monthly keyword data
+    monthly_keywords = {}
+    current_month = datetime.datetime.now().strftime("%Y-%m")
+    monthly_keywords[current_month] = keywords_data
+    
+    # Calculate safety counts per month
+    safety_counts = {}
+    current_month = datetime.datetime.now().strftime("%Y-%m")
+    safety_counts[current_month] = len(safety_papers)
+    
     return {
         "daily_counts": dict(daily_counts),
         "weekly_counts": dict(weekly_counts),
+        "monthly_counts": dict(monthly_counts),
+        "monthly_keywords": monthly_keywords,
+        "monthly_safety_counts": safety_counts,
         "keywords": keywords_data,
         "simple_keywords": simple_keywords,
         "safety_papers": safety_papers,
@@ -316,13 +336,79 @@ def save_data_files(data, papers):
         paper_copy["abstract"] = None  # Remove full abstract
         papers_simplified.append(paper_copy)
     
+    # Load existing counts data if available to preserve historical data
+    counts_file = os.path.join(OUTPUT_DIR, "counts.json")
+    existing_counts = {"daily": {}, "weekly": {}, "monthly": {}}
+    
+    if os.path.exists(counts_file):
+        try:
+            with open(counts_file, 'r', encoding='utf-8') as f:
+                existing_counts = json.load(f)
+                logger.info(f"Loaded existing counts data")
+        except Exception as e:
+            logger.error(f"Error loading existing counts data: {e}")
+    
+    # Merge new counts data with existing
+    # For daily and weekly, we'll overwrite with new data
+    merged_counts = {
+        "daily": data["daily_counts"],
+        "weekly": data["weekly_counts"]
+    }
+    
+    # For monthly, we'll update the existing data
+    if "monthly" not in existing_counts:
+        existing_counts["monthly"] = {}
+    
+    if "monthly_counts" in data:
+        # Update existing monthly data with new data
+        if "monthly" in existing_counts:
+            existing_monthly = existing_counts["monthly"]
+            for month, counts in data["monthly_counts"].items():
+                existing_monthly[month] = counts
+            merged_counts["monthly"] = existing_monthly
+        else:
+            merged_counts["monthly"] = data["monthly_counts"]
+    else:
+        merged_counts["monthly"] = existing_counts.get("monthly", {})
+    
+    # Load existing safety trends data if available
+    safety_trends_file = os.path.join(OUTPUT_DIR, "safety_trends.json")
+    existing_safety_trends = {"monthly_counts": {}}
+    
+    if os.path.exists(safety_trends_file):
+        try:
+            with open(safety_trends_file, 'r', encoding='utf-8') as f:
+                existing_safety_trends = json.load(f)
+                logger.info(f"Loaded existing safety trends data")
+        except Exception as e:
+            logger.error(f"Error loading existing safety trends data: {e}")
+    
+    # Update safety trends with new monthly safety counts
+    if "monthly_safety_counts" in data:
+        for month, count in data["monthly_safety_counts"].items():
+            existing_safety_trends["monthly_counts"][month] = count
+    
+    # Load existing monthly keywords data if available
+    monthly_keywords_file = os.path.join(OUTPUT_DIR, "monthly_keywords.json")
+    existing_monthly_keywords = {}
+    
+    if os.path.exists(monthly_keywords_file):
+        try:
+            with open(monthly_keywords_file, 'r', encoding='utf-8') as f:
+                existing_monthly_keywords = json.load(f)
+                logger.info(f"Loaded existing monthly keywords data")
+        except Exception as e:
+            logger.error(f"Error loading existing monthly keywords data: {e}")
+    
+    # Update monthly keywords with new data
+    if "monthly_keywords" in data:
+        for month, keywords in data["monthly_keywords"].items():
+            existing_monthly_keywords[month] = keywords
+    
     # Create mapping for file paths
     file_mapping = {
         "papers.json": papers_simplified,
-        "counts.json": {
-            "daily": data["daily_counts"],
-            "weekly": data["weekly_counts"]
-        },
+        "counts.json": merged_counts,
         "keywords.json": data["keywords"],
         "safety_papers.json": data["safety_papers"],
         "metadata.json": {
@@ -331,7 +417,9 @@ def save_data_files(data, papers):
             "safety_papers_count": data["safety_papers_count"],
             "categories": CATEGORIES,
             "safety_terms": SAFETY_TERMS
-        }
+        },
+        "safety_trends.json": existing_safety_trends,
+        "monthly_keywords.json": existing_monthly_keywords
     }
     
     # Save each file

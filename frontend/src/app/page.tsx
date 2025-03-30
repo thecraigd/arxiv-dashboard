@@ -5,15 +5,21 @@ import DashboardMetrics from '../components/DashboardMetrics';
 import CategoryChart from '../components/CategoryChart';
 import KeywordCloud from '../components/KeywordCloud';
 import PaperList from '../components/PaperList';
+import TrendChart from '../components/TrendChart';
+import KeywordTrends from '../components/KeywordTrends';
 import { loadData } from './data';
-import { Paper, CountsData, KeywordData, Metadata } from './types';
+import { Paper, CountsData, KeywordData, Metadata, SafetyTrends, MonthlyKeywords } from './types';
 
 export default function Home() {
   const [papers, setPapers] = useState<Paper[]>([]);
   const [safetyPapers, setSafetyPapers] = useState<Paper[]>([]);
-  const [counts, setCounts] = useState<CountsData>({ daily: {}, weekly: {} });
+  const [counts, setCounts] = useState<CountsData>({ daily: {}, weekly: {}, monthly: {} });
   const [keywords, setKeywords] = useState<KeywordData[]>([]);
   const [metadata, setMetadata] = useState<Metadata | null>(null);
+  const [historicalPapers, setHistoricalPapers] = useState<Paper[]>([]);
+  const [historicalSafetyPapers, setHistoricalSafetyPapers] = useState<Paper[]>([]);
+  const [monthlyKeywords, setMonthlyKeywords] = useState<MonthlyKeywords>({});
+  const [safetyTrends, setSafetyTrends] = useState<SafetyTrends>({ monthly_counts: {} });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   
@@ -32,6 +38,12 @@ export default function Home() {
         setCounts(data.counts);
         setKeywords(data.keywords);
         setMetadata(data.metadata);
+        
+        // Set historical data if available
+        if (data.historicalPapers) setHistoricalPapers(data.historicalPapers);
+        if (data.historicalSafetyPapers) setHistoricalSafetyPapers(data.historicalSafetyPapers);
+        if (data.monthlyKeywords) setMonthlyKeywords(data.monthlyKeywords);
+        if (data.safetyTrends) setSafetyTrends(data.safetyTrends);
       } catch (err) {
         console.error('Error loading data:', err);
         setError('Failed to load dashboard data. Please try again later.');
@@ -118,6 +130,28 @@ export default function Home() {
           >
             Reset Filters
           </button>
+        </div>
+      )}
+      
+      {/* Long-term trends section */}
+      {counts.monthly && Object.keys(counts.monthly).length > 0 && (
+        <div className="mb-8">
+          <TrendChart 
+            countsData={counts} 
+            safetyCountsData={safetyTrends}
+            title="Publication Trends Over 6 Months" 
+          />
+        </div>
+      )}
+      
+      {/* Keyword trends over time */}
+      {monthlyKeywords && Object.keys(monthlyKeywords).length > 0 && (
+        <div className="mb-8">
+          <KeywordTrends
+            monthlyKeywords={monthlyKeywords}
+            title="Trending Keywords Over Time"
+            maxKeywords={5}
+          />
         </div>
       )}
       

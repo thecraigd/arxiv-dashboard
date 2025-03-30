@@ -1,0 +1,2414 @@
+{
+  "2025-03": [
+    {
+      "text": "models",
+      "value": 2200
+    },
+    {
+      "text": "model",
+      "value": 1884
+    },
+    {
+      "text": "data",
+      "value": 1691
+    },
+    {
+      "text": "learning",
+      "value": 1336
+    },
+    {
+      "text": "performance",
+      "value": 1285
+    },
+    {
+      "text": "methods",
+      "value": 1240
+    },
+    {
+      "text": "propose",
+      "value": 953
+    },
+    {
+      "text": "method",
+      "value": 917
+    },
+    {
+      "text": "framework",
+      "value": 913
+    },
+    {
+      "text": "approach",
+      "value": 913
+    },
+    {
+      "text": "tasks",
+      "value": 906
+    },
+    {
+      "text": "training",
+      "value": 898
+    },
+    {
+      "text": "results",
+      "value": 799
+    },
+    {
+      "text": "across",
+      "value": 798
+    },
+    {
+      "text": "language",
+      "value": 794
+    },
+    {
+      "text": "using",
+      "value": 783
+    },
+    {
+      "text": "existing",
+      "value": 773
+    },
+    {
+      "text": "however",
+      "value": 761
+    },
+    {
+      "text": "novel",
+      "value": 739
+    },
+    {
+      "text": "demonstrate",
+      "value": 735
+    },
+    {
+      "text": "image",
+      "value": 722
+    },
+    {
+      "text": "datasets",
+      "value": 696
+    },
+    {
+      "text": "paper",
+      "value": 659
+    },
+    {
+      "text": "generation",
+      "value": 644
+    },
+    {
+      "text": "experiments",
+      "value": 639
+    },
+    {
+      "text": "large",
+      "value": 638
+    },
+    {
+      "text": "information",
+      "value": 638
+    },
+    {
+      "text": "llms",
+      "value": 638
+    },
+    {
+      "text": "introduce",
+      "value": 632
+    },
+    {
+      "text": "dataset",
+      "value": 615
+    },
+    {
+      "text": "address",
+      "value": 602
+    },
+    {
+      "text": "images",
+      "value": 569
+    },
+    {
+      "text": "reasoning",
+      "value": 565
+    },
+    {
+      "text": "accuracy",
+      "value": 542
+    },
+    {
+      "text": "based",
+      "value": 530
+    },
+    {
+      "text": "features",
+      "value": 527
+    },
+    {
+      "text": "show",
+      "value": 506
+    },
+    {
+      "text": "work",
+      "value": 505
+    },
+    {
+      "text": "video",
+      "value": 504
+    },
+    {
+      "text": "challenges",
+      "value": 493
+    },
+    {
+      "text": "visual",
+      "value": 461
+    },
+    {
+      "text": "task",
+      "value": 457
+    },
+    {
+      "text": "often",
+      "value": 447
+    },
+    {
+      "text": "knowledge",
+      "value": 444
+    },
+    {
+      "text": "two",
+      "value": 443
+    },
+    {
+      "text": "also",
+      "value": 440
+    },
+    {
+      "text": "analysis",
+      "value": 438
+    },
+    {
+      "text": "first",
+      "value": 434
+    },
+    {
+      "text": "extensive",
+      "value": 430
+    },
+    {
+      "text": "significant",
+      "value": 428
+    },
+    {
+      "text": "proposed",
+      "value": 426
+    },
+    {
+      "text": "systems",
+      "value": 426
+    },
+    {
+      "text": "detection",
+      "value": 425
+    },
+    {
+      "text": "significantly",
+      "value": 419
+    },
+    {
+      "text": "new",
+      "value": 418
+    },
+    {
+      "text": "approaches",
+      "value": 417
+    },
+    {
+      "text": "human",
+      "value": 403
+    },
+    {
+      "text": "diffusion",
+      "value": 398
+    },
+    {
+      "text": "process",
+      "value": 397
+    },
+    {
+      "text": "neural",
+      "value": 395
+    },
+    {
+      "text": "applications",
+      "value": 383
+    },
+    {
+      "text": "code",
+      "value": 378
+    },
+    {
+      "text": "quality",
+      "value": 377
+    },
+    {
+      "text": "available",
+      "value": 376
+    },
+    {
+      "text": "complex",
+      "value": 375
+    },
+    {
+      "text": "multiple",
+      "value": 373
+    },
+    {
+      "text": "evaluation",
+      "value": 373
+    },
+    {
+      "text": "achieves",
+      "value": 372
+    },
+    {
+      "text": "potential",
+      "value": 364
+    },
+    {
+      "text": "due",
+      "value": 363
+    },
+    {
+      "text": "diverse",
+      "value": 362
+    },
+    {
+      "text": "https",
+      "value": 361
+    },
+    {
+      "text": "efficiency",
+      "value": 360
+    },
+    {
+      "text": "different",
+      "value": 360
+    },
+    {
+      "text": "text",
+      "value": 357
+    },
+    {
+      "text": "various",
+      "value": 356
+    },
+    {
+      "text": "network",
+      "value": 355
+    },
+    {
+      "text": "optimization",
+      "value": 354
+    },
+    {
+      "text": "study",
+      "value": 354
+    },
+    {
+      "text": "research",
+      "value": 351
+    },
+    {
+      "text": "without",
+      "value": 340
+    },
+    {
+      "text": "feature",
+      "value": 340
+    },
+    {
+      "text": "understanding",
+      "value": 338
+    },
+    {
+      "text": "effectiveness",
+      "value": 335
+    },
+    {
+      "text": "key",
+      "value": 333
+    },
+    {
+      "text": "recent",
+      "value": 332
+    },
+    {
+      "text": "segmentation",
+      "value": 330
+    },
+    {
+      "text": "including",
+      "value": 330
+    },
+    {
+      "text": "computational",
+      "value": 328
+    },
+    {
+      "text": "efficient",
+      "value": 326
+    },
+    {
+      "text": "capabilities",
+      "value": 326
+    },
+    {
+      "text": "compared",
+      "value": 326
+    },
+    {
+      "text": "enhance",
+      "value": 322
+    },
+    {
+      "text": "semantic",
+      "value": 318
+    },
+    {
+      "text": "effectively",
+      "value": 313
+    },
+    {
+      "text": "time",
+      "value": 312
+    },
+    {
+      "text": "scenarios",
+      "value": 312
+    },
+    {
+      "text": "design",
+      "value": 305
+    },
+    {
+      "text": "present",
+      "value": 304
+    },
+    {
+      "text": "deep",
+      "value": 300
+    }
+  ],
+  "2025-02": [
+    {
+      "text": "models",
+      "value": 2258
+    },
+    {
+      "text": "model",
+      "value": 1736
+    },
+    {
+      "text": "data",
+      "value": 1729
+    },
+    {
+      "text": "learning",
+      "value": 1335
+    },
+    {
+      "text": "performance",
+      "value": 1263
+    },
+    {
+      "text": "methods",
+      "value": 1068
+    },
+    {
+      "text": "llms",
+      "value": 1068
+    },
+    {
+      "text": "language",
+      "value": 950
+    },
+    {
+      "text": "training",
+      "value": 946
+    },
+    {
+      "text": "approach",
+      "value": 899
+    },
+    {
+      "text": "tasks",
+      "value": 879
+    },
+    {
+      "text": "method",
+      "value": 869
+    },
+    {
+      "text": "results",
+      "value": 822
+    },
+    {
+      "text": "across",
+      "value": 806
+    },
+    {
+      "text": "framework",
+      "value": 804
+    },
+    {
+      "text": "propose",
+      "value": 801
+    },
+    {
+      "text": "using",
+      "value": 792
+    },
+    {
+      "text": "large",
+      "value": 779
+    },
+    {
+      "text": "however",
+      "value": 769
+    },
+    {
+      "text": "existing",
+      "value": 717
+    },
+    {
+      "text": "demonstrate",
+      "value": 715
+    },
+    {
+      "text": "novel",
+      "value": 661
+    },
+    {
+      "text": "datasets",
+      "value": 659
+    },
+    {
+      "text": "paper",
+      "value": 651
+    },
+    {
+      "text": "dataset",
+      "value": 623
+    },
+    {
+      "text": "information",
+      "value": 587
+    },
+    {
+      "text": "accuracy",
+      "value": 580
+    },
+    {
+      "text": "introduce",
+      "value": 579
+    },
+    {
+      "text": "reasoning",
+      "value": 577
+    },
+    {
+      "text": "address",
+      "value": 563
+    },
+    {
+      "text": "show",
+      "value": 559
+    },
+    {
+      "text": "experiments",
+      "value": 555
+    },
+    {
+      "text": "work",
+      "value": 522
+    },
+    {
+      "text": "generation",
+      "value": 517
+    },
+    {
+      "text": "knowledge",
+      "value": 495
+    },
+    {
+      "text": "challenges",
+      "value": 485
+    },
+    {
+      "text": "human",
+      "value": 477
+    },
+    {
+      "text": "based",
+      "value": 476
+    },
+    {
+      "text": "systems",
+      "value": 464
+    },
+    {
+      "text": "image",
+      "value": 460
+    },
+    {
+      "text": "also",
+      "value": 449
+    },
+    {
+      "text": "task",
+      "value": 446
+    },
+    {
+      "text": "often",
+      "value": 438
+    },
+    {
+      "text": "code",
+      "value": 434
+    },
+    {
+      "text": "proposed",
+      "value": 433
+    },
+    {
+      "text": "analysis",
+      "value": 427
+    },
+    {
+      "text": "features",
+      "value": 427
+    },
+    {
+      "text": "research",
+      "value": 424
+    },
+    {
+      "text": "study",
+      "value": 423
+    },
+    {
+      "text": "significant",
+      "value": 421
+    },
+    {
+      "text": "different",
+      "value": 419
+    },
+    {
+      "text": "images",
+      "value": 417
+    },
+    {
+      "text": "complex",
+      "value": 411
+    },
+    {
+      "text": "various",
+      "value": 407
+    },
+    {
+      "text": "detection",
+      "value": 399
+    },
+    {
+      "text": "two",
+      "value": 398
+    },
+    {
+      "text": "neural",
+      "value": 393
+    },
+    {
+      "text": "first",
+      "value": 385
+    },
+    {
+      "text": "approaches",
+      "value": 379
+    },
+    {
+      "text": "new",
+      "value": 379
+    },
+    {
+      "text": "evaluation",
+      "value": 378
+    },
+    {
+      "text": "time",
+      "value": 373
+    },
+    {
+      "text": "significantly",
+      "value": 369
+    },
+    {
+      "text": "llm",
+      "value": 366
+    },
+    {
+      "text": "process",
+      "value": 357
+    },
+    {
+      "text": "extensive",
+      "value": 357
+    },
+    {
+      "text": "multiple",
+      "value": 352
+    },
+    {
+      "text": "diverse",
+      "value": 350
+    },
+    {
+      "text": "classification",
+      "value": 348
+    },
+    {
+      "text": "potential",
+      "value": 348
+    },
+    {
+      "text": "available",
+      "value": 347
+    },
+    {
+      "text": "network",
+      "value": 344
+    },
+    {
+      "text": "applications",
+      "value": 343
+    },
+    {
+      "text": "quality",
+      "value": 342
+    },
+    {
+      "text": "visual",
+      "value": 338
+    },
+    {
+      "text": "scenarios",
+      "value": 338
+    },
+    {
+      "text": "deep",
+      "value": 334
+    },
+    {
+      "text": "optimization",
+      "value": 334
+    },
+    {
+      "text": "system",
+      "value": 330
+    },
+    {
+      "text": "effective",
+      "value": 329
+    },
+    {
+      "text": "effectiveness",
+      "value": 329
+    },
+    {
+      "text": "without",
+      "value": 328
+    },
+    {
+      "text": "efficiency",
+      "value": 327
+    },
+    {
+      "text": "due",
+      "value": 326
+    },
+    {
+      "text": "achieves",
+      "value": 323
+    },
+    {
+      "text": "https",
+      "value": 322
+    },
+    {
+      "text": "networks",
+      "value": 321
+    },
+    {
+      "text": "compared",
+      "value": 321
+    },
+    {
+      "text": "including",
+      "value": 320
+    },
+    {
+      "text": "design",
+      "value": 317
+    },
+    {
+      "text": "algorithm",
+      "value": 316
+    },
+    {
+      "text": "key",
+      "value": 309
+    },
+    {
+      "text": "used",
+      "value": 308
+    },
+    {
+      "text": "problem",
+      "value": 307
+    },
+    {
+      "text": "present",
+      "value": 300
+    },
+    {
+      "text": "enhance",
+      "value": 296
+    },
+    {
+      "text": "capabilities",
+      "value": 296
+    },
+    {
+      "text": "benchmark",
+      "value": 295
+    },
+    {
+      "text": "recent",
+      "value": 294
+    },
+    {
+      "text": "machine",
+      "value": 293
+    }
+  ],
+  "2025-01": [
+    {
+      "text": "models",
+      "value": 2122
+    },
+    {
+      "text": "model",
+      "value": 1889
+    },
+    {
+      "text": "data",
+      "value": 1700
+    },
+    {
+      "text": "learning",
+      "value": 1434
+    },
+    {
+      "text": "performance",
+      "value": 1282
+    },
+    {
+      "text": "methods",
+      "value": 1129
+    },
+    {
+      "text": "approach",
+      "value": 967
+    },
+    {
+      "text": "method",
+      "value": 912
+    },
+    {
+      "text": "training",
+      "value": 847
+    },
+    {
+      "text": "using",
+      "value": 837
+    },
+    {
+      "text": "tasks",
+      "value": 821
+    },
+    {
+      "text": "framework",
+      "value": 818
+    },
+    {
+      "text": "propose",
+      "value": 812
+    },
+    {
+      "text": "results",
+      "value": 799
+    },
+    {
+      "text": "language",
+      "value": 793
+    },
+    {
+      "text": "llms",
+      "value": 767
+    },
+    {
+      "text": "across",
+      "value": 729
+    },
+    {
+      "text": "demonstrate",
+      "value": 716
+    },
+    {
+      "text": "paper",
+      "value": 715
+    },
+    {
+      "text": "novel",
+      "value": 699
+    },
+    {
+      "text": "however",
+      "value": 690
+    },
+    {
+      "text": "datasets",
+      "value": 685
+    },
+    {
+      "text": "existing",
+      "value": 654
+    },
+    {
+      "text": "large",
+      "value": 647
+    },
+    {
+      "text": "dataset",
+      "value": 614
+    },
+    {
+      "text": "accuracy",
+      "value": 574
+    },
+    {
+      "text": "information",
+      "value": 564
+    },
+    {
+      "text": "based",
+      "value": 554
+    },
+    {
+      "text": "experiments",
+      "value": 520
+    },
+    {
+      "text": "proposed",
+      "value": 519
+    },
+    {
+      "text": "work",
+      "value": 500
+    },
+    {
+      "text": "show",
+      "value": 494
+    },
+    {
+      "text": "also",
+      "value": 493
+    },
+    {
+      "text": "introduce",
+      "value": 492
+    },
+    {
+      "text": "neural",
+      "value": 490
+    },
+    {
+      "text": "address",
+      "value": 480
+    },
+    {
+      "text": "challenges",
+      "value": 478
+    },
+    {
+      "text": "analysis",
+      "value": 472
+    },
+    {
+      "text": "network",
+      "value": 469
+    },
+    {
+      "text": "image",
+      "value": 466
+    },
+    {
+      "text": "generation",
+      "value": 464
+    },
+    {
+      "text": "study",
+      "value": 462
+    },
+    {
+      "text": "systems",
+      "value": 460
+    },
+    {
+      "text": "significant",
+      "value": 448
+    },
+    {
+      "text": "new",
+      "value": 442
+    },
+    {
+      "text": "images",
+      "value": 442
+    },
+    {
+      "text": "detection",
+      "value": 435
+    },
+    {
+      "text": "two",
+      "value": 434
+    },
+    {
+      "text": "different",
+      "value": 424
+    },
+    {
+      "text": "knowledge",
+      "value": 424
+    },
+    {
+      "text": "often",
+      "value": 408
+    },
+    {
+      "text": "features",
+      "value": 401
+    },
+    {
+      "text": "task",
+      "value": 399
+    },
+    {
+      "text": "potential",
+      "value": 394
+    },
+    {
+      "text": "deep",
+      "value": 386
+    },
+    {
+      "text": "system",
+      "value": 385
+    },
+    {
+      "text": "research",
+      "value": 385
+    },
+    {
+      "text": "process",
+      "value": 385
+    },
+    {
+      "text": "optimization",
+      "value": 382
+    },
+    {
+      "text": "various",
+      "value": 379
+    },
+    {
+      "text": "time",
+      "value": 379
+    },
+    {
+      "text": "networks",
+      "value": 377
+    },
+    {
+      "text": "approaches",
+      "value": 375
+    },
+    {
+      "text": "significantly",
+      "value": 369
+    },
+    {
+      "text": "first",
+      "value": 367
+    },
+    {
+      "text": "problem",
+      "value": 367
+    },
+    {
+      "text": "complex",
+      "value": 358
+    },
+    {
+      "text": "algorithm",
+      "value": 356
+    },
+    {
+      "text": "used",
+      "value": 355
+    },
+    {
+      "text": "due",
+      "value": 348
+    },
+    {
+      "text": "efficiency",
+      "value": 344
+    },
+    {
+      "text": "human",
+      "value": 343
+    },
+    {
+      "text": "prediction",
+      "value": 335
+    },
+    {
+      "text": "effectiveness",
+      "value": 333
+    },
+    {
+      "text": "extensive",
+      "value": 332
+    },
+    {
+      "text": "classification",
+      "value": 331
+    },
+    {
+      "text": "use",
+      "value": 330
+    },
+    {
+      "text": "multiple",
+      "value": 329
+    },
+    {
+      "text": "including",
+      "value": 327
+    },
+    {
+      "text": "applications",
+      "value": 324
+    },
+    {
+      "text": "reasoning",
+      "value": 323
+    },
+    {
+      "text": "compared",
+      "value": 322
+    },
+    {
+      "text": "efficient",
+      "value": 319
+    },
+    {
+      "text": "present",
+      "value": 312
+    },
+    {
+      "text": "computational",
+      "value": 311
+    },
+    {
+      "text": "techniques",
+      "value": 310
+    },
+    {
+      "text": "without",
+      "value": 309
+    },
+    {
+      "text": "machine",
+      "value": 308
+    },
+    {
+      "text": "diverse",
+      "value": 307
+    },
+    {
+      "text": "achieves",
+      "value": 307
+    },
+    {
+      "text": "scenarios",
+      "value": 304
+    },
+    {
+      "text": "loss",
+      "value": 296
+    },
+    {
+      "text": "evaluation",
+      "value": 295
+    },
+    {
+      "text": "attention",
+      "value": 289
+    },
+    {
+      "text": "provide",
+      "value": 284
+    },
+    {
+      "text": "quality",
+      "value": 284
+    },
+    {
+      "text": "within",
+      "value": 283
+    },
+    {
+      "text": "available",
+      "value": 283
+    },
+    {
+      "text": "capabilities",
+      "value": 282
+    },
+    {
+      "text": "llm",
+      "value": 282
+    }
+  ],
+  "2024-12": [
+    {
+      "text": "models",
+      "value": 2189
+    },
+    {
+      "text": "model",
+      "value": 1955
+    },
+    {
+      "text": "data",
+      "value": 1744
+    },
+    {
+      "text": "learning",
+      "value": 1456
+    },
+    {
+      "text": "performance",
+      "value": 1304
+    },
+    {
+      "text": "methods",
+      "value": 1234
+    },
+    {
+      "text": "method",
+      "value": 1029
+    },
+    {
+      "text": "propose",
+      "value": 918
+    },
+    {
+      "text": "tasks",
+      "value": 860
+    },
+    {
+      "text": "language",
+      "value": 845
+    },
+    {
+      "text": "results",
+      "value": 842
+    },
+    {
+      "text": "approach",
+      "value": 828
+    },
+    {
+      "text": "framework",
+      "value": 825
+    },
+    {
+      "text": "using",
+      "value": 822
+    },
+    {
+      "text": "however",
+      "value": 794
+    },
+    {
+      "text": "training",
+      "value": 790
+    },
+    {
+      "text": "paper",
+      "value": 747
+    },
+    {
+      "text": "llms",
+      "value": 742
+    },
+    {
+      "text": "existing",
+      "value": 732
+    },
+    {
+      "text": "demonstrate",
+      "value": 727
+    },
+    {
+      "text": "novel",
+      "value": 721
+    },
+    {
+      "text": "datasets",
+      "value": 699
+    },
+    {
+      "text": "information",
+      "value": 691
+    },
+    {
+      "text": "across",
+      "value": 668
+    },
+    {
+      "text": "large",
+      "value": 659
+    },
+    {
+      "text": "accuracy",
+      "value": 652
+    },
+    {
+      "text": "experiments",
+      "value": 623
+    },
+    {
+      "text": "based",
+      "value": 588
+    },
+    {
+      "text": "image",
+      "value": 582
+    },
+    {
+      "text": "dataset",
+      "value": 572
+    },
+    {
+      "text": "proposed",
+      "value": 561
+    },
+    {
+      "text": "generation",
+      "value": 538
+    },
+    {
+      "text": "images",
+      "value": 538
+    },
+    {
+      "text": "features",
+      "value": 527
+    },
+    {
+      "text": "address",
+      "value": 526
+    },
+    {
+      "text": "introduce",
+      "value": 521
+    },
+    {
+      "text": "task",
+      "value": 498
+    },
+    {
+      "text": "significant",
+      "value": 495
+    },
+    {
+      "text": "analysis",
+      "value": 490
+    },
+    {
+      "text": "show",
+      "value": 490
+    },
+    {
+      "text": "work",
+      "value": 488
+    },
+    {
+      "text": "neural",
+      "value": 487
+    },
+    {
+      "text": "detection",
+      "value": 487
+    },
+    {
+      "text": "challenges",
+      "value": 483
+    },
+    {
+      "text": "also",
+      "value": 478
+    },
+    {
+      "text": "two",
+      "value": 477
+    },
+    {
+      "text": "different",
+      "value": 471
+    },
+    {
+      "text": "various",
+      "value": 470
+    },
+    {
+      "text": "systems",
+      "value": 467
+    },
+    {
+      "text": "knowledge",
+      "value": 460
+    },
+    {
+      "text": "new",
+      "value": 456
+    },
+    {
+      "text": "study",
+      "value": 449
+    },
+    {
+      "text": "research",
+      "value": 446
+    },
+    {
+      "text": "extensive",
+      "value": 433
+    },
+    {
+      "text": "process",
+      "value": 431
+    },
+    {
+      "text": "deep",
+      "value": 426
+    },
+    {
+      "text": "often",
+      "value": 410
+    },
+    {
+      "text": "network",
+      "value": 408
+    },
+    {
+      "text": "time",
+      "value": 404
+    },
+    {
+      "text": "visual",
+      "value": 404
+    },
+    {
+      "text": "complex",
+      "value": 404
+    },
+    {
+      "text": "first",
+      "value": 402
+    },
+    {
+      "text": "human",
+      "value": 393
+    },
+    {
+      "text": "graph",
+      "value": 391
+    },
+    {
+      "text": "networks",
+      "value": 387
+    },
+    {
+      "text": "text",
+      "value": 383
+    },
+    {
+      "text": "potential",
+      "value": 382
+    },
+    {
+      "text": "significantly",
+      "value": 374
+    },
+    {
+      "text": "within",
+      "value": 370
+    },
+    {
+      "text": "effectiveness",
+      "value": 366
+    },
+    {
+      "text": "code",
+      "value": 366
+    },
+    {
+      "text": "reasoning",
+      "value": 364
+    },
+    {
+      "text": "applications",
+      "value": 363
+    },
+    {
+      "text": "approaches",
+      "value": 359
+    },
+    {
+      "text": "system",
+      "value": 358
+    },
+    {
+      "text": "including",
+      "value": 356
+    },
+    {
+      "text": "video",
+      "value": 351
+    },
+    {
+      "text": "optimization",
+      "value": 351
+    },
+    {
+      "text": "feature",
+      "value": 350
+    },
+    {
+      "text": "quality",
+      "value": 339
+    },
+    {
+      "text": "available",
+      "value": 337
+    },
+    {
+      "text": "algorithm",
+      "value": 333
+    },
+    {
+      "text": "attention",
+      "value": 332
+    },
+    {
+      "text": "diverse",
+      "value": 332
+    },
+    {
+      "text": "multiple",
+      "value": 331
+    },
+    {
+      "text": "classification",
+      "value": 326
+    },
+    {
+      "text": "capabilities",
+      "value": 325
+    },
+    {
+      "text": "problem",
+      "value": 324
+    },
+    {
+      "text": "use",
+      "value": 323
+    },
+    {
+      "text": "efficiency",
+      "value": 322
+    },
+    {
+      "text": "https",
+      "value": 320
+    },
+    {
+      "text": "techniques",
+      "value": 318
+    },
+    {
+      "text": "design",
+      "value": 318
+    },
+    {
+      "text": "recent",
+      "value": 317
+    },
+    {
+      "text": "enhance",
+      "value": 316
+    },
+    {
+      "text": "due",
+      "value": 316
+    },
+    {
+      "text": "specifically",
+      "value": 314
+    },
+    {
+      "text": "understanding",
+      "value": 313
+    },
+    {
+      "text": "compared",
+      "value": 311
+    },
+    {
+      "text": "used",
+      "value": 306
+    }
+  ],
+  "2024-11": [
+    {
+      "text": "models",
+      "value": 2395
+    },
+    {
+      "text": "model",
+      "value": 1933
+    },
+    {
+      "text": "data",
+      "value": 1876
+    },
+    {
+      "text": "performance",
+      "value": 1363
+    },
+    {
+      "text": "learning",
+      "value": 1280
+    },
+    {
+      "text": "methods",
+      "value": 1244
+    },
+    {
+      "text": "method",
+      "value": 1020
+    },
+    {
+      "text": "approach",
+      "value": 964
+    },
+    {
+      "text": "using",
+      "value": 921
+    },
+    {
+      "text": "tasks",
+      "value": 902
+    },
+    {
+      "text": "propose",
+      "value": 881
+    },
+    {
+      "text": "training",
+      "value": 850
+    },
+    {
+      "text": "results",
+      "value": 836
+    },
+    {
+      "text": "framework",
+      "value": 822
+    },
+    {
+      "text": "however",
+      "value": 814
+    },
+    {
+      "text": "novel",
+      "value": 805
+    },
+    {
+      "text": "language",
+      "value": 802
+    },
+    {
+      "text": "image",
+      "value": 795
+    },
+    {
+      "text": "across",
+      "value": 784
+    },
+    {
+      "text": "demonstrate",
+      "value": 755
+    },
+    {
+      "text": "datasets",
+      "value": 738
+    },
+    {
+      "text": "paper",
+      "value": 720
+    },
+    {
+      "text": "images",
+      "value": 719
+    },
+    {
+      "text": "existing",
+      "value": 712
+    },
+    {
+      "text": "information",
+      "value": 698
+    },
+    {
+      "text": "llms",
+      "value": 645
+    },
+    {
+      "text": "large",
+      "value": 642
+    },
+    {
+      "text": "generation",
+      "value": 636
+    },
+    {
+      "text": "dataset",
+      "value": 615
+    },
+    {
+      "text": "introduce",
+      "value": 601
+    },
+    {
+      "text": "experiments",
+      "value": 592
+    },
+    {
+      "text": "address",
+      "value": 558
+    },
+    {
+      "text": "accuracy",
+      "value": 546
+    },
+    {
+      "text": "challenges",
+      "value": 515
+    },
+    {
+      "text": "proposed",
+      "value": 511
+    },
+    {
+      "text": "task",
+      "value": 511
+    },
+    {
+      "text": "features",
+      "value": 510
+    },
+    {
+      "text": "also",
+      "value": 509
+    },
+    {
+      "text": "work",
+      "value": 500
+    },
+    {
+      "text": "neural",
+      "value": 496
+    },
+    {
+      "text": "based",
+      "value": 495
+    },
+    {
+      "text": "show",
+      "value": 495
+    },
+    {
+      "text": "detection",
+      "value": 490
+    },
+    {
+      "text": "various",
+      "value": 485
+    },
+    {
+      "text": "significant",
+      "value": 472
+    },
+    {
+      "text": "often",
+      "value": 469
+    },
+    {
+      "text": "visual",
+      "value": 457
+    },
+    {
+      "text": "human",
+      "value": 455
+    },
+    {
+      "text": "network",
+      "value": 444
+    },
+    {
+      "text": "new",
+      "value": 440
+    },
+    {
+      "text": "systems",
+      "value": 439
+    },
+    {
+      "text": "video",
+      "value": 438
+    },
+    {
+      "text": "extensive",
+      "value": 431
+    },
+    {
+      "text": "two",
+      "value": 429
+    },
+    {
+      "text": "study",
+      "value": 423
+    },
+    {
+      "text": "different",
+      "value": 419
+    },
+    {
+      "text": "due",
+      "value": 409
+    },
+    {
+      "text": "knowledge",
+      "value": 407
+    },
+    {
+      "text": "diffusion",
+      "value": 405
+    },
+    {
+      "text": "potential",
+      "value": 403
+    },
+    {
+      "text": "complex",
+      "value": 398
+    },
+    {
+      "text": "analysis",
+      "value": 394
+    },
+    {
+      "text": "quality",
+      "value": 392
+    },
+    {
+      "text": "approaches",
+      "value": 390
+    },
+    {
+      "text": "significantly",
+      "value": 389
+    },
+    {
+      "text": "process",
+      "value": 388
+    },
+    {
+      "text": "object",
+      "value": 388
+    },
+    {
+      "text": "first",
+      "value": 387
+    },
+    {
+      "text": "applications",
+      "value": 381
+    },
+    {
+      "text": "research",
+      "value": 379
+    },
+    {
+      "text": "diverse",
+      "value": 367
+    },
+    {
+      "text": "time",
+      "value": 367
+    },
+    {
+      "text": "multiple",
+      "value": 363
+    },
+    {
+      "text": "segmentation",
+      "value": 363
+    },
+    {
+      "text": "deep",
+      "value": 362
+    },
+    {
+      "text": "networks",
+      "value": 361
+    },
+    {
+      "text": "compared",
+      "value": 355
+    },
+    {
+      "text": "prediction",
+      "value": 352
+    },
+    {
+      "text": "available",
+      "value": 351
+    },
+    {
+      "text": "code",
+      "value": 351
+    },
+    {
+      "text": "effectiveness",
+      "value": 351
+    },
+    {
+      "text": "without",
+      "value": 346
+    },
+    {
+      "text": "classification",
+      "value": 344
+    },
+    {
+      "text": "problem",
+      "value": 342
+    },
+    {
+      "text": "scenarios",
+      "value": 342
+    },
+    {
+      "text": "graph",
+      "value": 340
+    },
+    {
+      "text": "within",
+      "value": 336
+    },
+    {
+      "text": "system",
+      "value": 334
+    },
+    {
+      "text": "text",
+      "value": 333
+    },
+    {
+      "text": "recent",
+      "value": 333
+    },
+    {
+      "text": "evaluation",
+      "value": 330
+    },
+    {
+      "text": "including",
+      "value": 324
+    },
+    {
+      "text": "feature",
+      "value": 322
+    },
+    {
+      "text": "present",
+      "value": 321
+    },
+    {
+      "text": "efficiency",
+      "value": 321
+    },
+    {
+      "text": "capabilities",
+      "value": 318
+    },
+    {
+      "text": "semantic",
+      "value": 317
+    },
+    {
+      "text": "enhance",
+      "value": 317
+    },
+    {
+      "text": "algorithm",
+      "value": 316
+    },
+    {
+      "text": "effectively",
+      "value": 311
+    }
+  ],
+  "2024-10": [
+    {
+      "text": "models",
+      "value": 2281
+    },
+    {
+      "text": "data",
+      "value": 1886
+    },
+    {
+      "text": "model",
+      "value": 1857
+    },
+    {
+      "text": "learning",
+      "value": 1522
+    },
+    {
+      "text": "performance",
+      "value": 1202
+    },
+    {
+      "text": "methods",
+      "value": 1073
+    },
+    {
+      "text": "approach",
+      "value": 927
+    },
+    {
+      "text": "tasks",
+      "value": 907
+    },
+    {
+      "text": "method",
+      "value": 882
+    },
+    {
+      "text": "using",
+      "value": 848
+    },
+    {
+      "text": "results",
+      "value": 816
+    },
+    {
+      "text": "language",
+      "value": 804
+    },
+    {
+      "text": "training",
+      "value": 797
+    },
+    {
+      "text": "llms",
+      "value": 794
+    },
+    {
+      "text": "propose",
+      "value": 777
+    },
+    {
+      "text": "framework",
+      "value": 741
+    },
+    {
+      "text": "however",
+      "value": 713
+    },
+    {
+      "text": "novel",
+      "value": 704
+    },
+    {
+      "text": "paper",
+      "value": 703
+    },
+    {
+      "text": "datasets",
+      "value": 696
+    },
+    {
+      "text": "across",
+      "value": 678
+    },
+    {
+      "text": "large",
+      "value": 660
+    },
+    {
+      "text": "demonstrate",
+      "value": 660
+    },
+    {
+      "text": "dataset",
+      "value": 610
+    },
+    {
+      "text": "work",
+      "value": 592
+    },
+    {
+      "text": "existing",
+      "value": 591
+    },
+    {
+      "text": "show",
+      "value": 582
+    },
+    {
+      "text": "information",
+      "value": 578
+    },
+    {
+      "text": "based",
+      "value": 573
+    },
+    {
+      "text": "neural",
+      "value": 554
+    },
+    {
+      "text": "experiments",
+      "value": 549
+    },
+    {
+      "text": "accuracy",
+      "value": 540
+    },
+    {
+      "text": "also",
+      "value": 528
+    },
+    {
+      "text": "new",
+      "value": 526
+    },
+    {
+      "text": "different",
+      "value": 517
+    },
+    {
+      "text": "systems",
+      "value": 506
+    },
+    {
+      "text": "introduce",
+      "value": 503
+    },
+    {
+      "text": "image",
+      "value": 502
+    },
+    {
+      "text": "generation",
+      "value": 491
+    },
+    {
+      "text": "various",
+      "value": 483
+    },
+    {
+      "text": "images",
+      "value": 478
+    },
+    {
+      "text": "proposed",
+      "value": 476
+    },
+    {
+      "text": "two",
+      "value": 463
+    },
+    {
+      "text": "task",
+      "value": 461
+    },
+    {
+      "text": "research",
+      "value": 442
+    },
+    {
+      "text": "features",
+      "value": 442
+    },
+    {
+      "text": "analysis",
+      "value": 442
+    },
+    {
+      "text": "often",
+      "value": 430
+    },
+    {
+      "text": "significant",
+      "value": 422
+    },
+    {
+      "text": "problem",
+      "value": 421
+    },
+    {
+      "text": "address",
+      "value": 417
+    },
+    {
+      "text": "human",
+      "value": 411
+    },
+    {
+      "text": "networks",
+      "value": 406
+    },
+    {
+      "text": "study",
+      "value": 405
+    },
+    {
+      "text": "challenges",
+      "value": 399
+    },
+    {
+      "text": "network",
+      "value": 397
+    },
+    {
+      "text": "deep",
+      "value": 395
+    },
+    {
+      "text": "process",
+      "value": 392
+    },
+    {
+      "text": "knowledge",
+      "value": 389
+    },
+    {
+      "text": "time",
+      "value": 388
+    },
+    {
+      "text": "detection",
+      "value": 387
+    },
+    {
+      "text": "applications",
+      "value": 384
+    },
+    {
+      "text": "system",
+      "value": 376
+    },
+    {
+      "text": "first",
+      "value": 369
+    },
+    {
+      "text": "used",
+      "value": 364
+    },
+    {
+      "text": "code",
+      "value": 358
+    },
+    {
+      "text": "significantly",
+      "value": 354
+    },
+    {
+      "text": "approaches",
+      "value": 351
+    },
+    {
+      "text": "due",
+      "value": 350
+    },
+    {
+      "text": "graph",
+      "value": 349
+    },
+    {
+      "text": "available",
+      "value": 348
+    },
+    {
+      "text": "potential",
+      "value": 340
+    },
+    {
+      "text": "complex",
+      "value": 337
+    },
+    {
+      "text": "extensive",
+      "value": 334
+    },
+    {
+      "text": "algorithm",
+      "value": 332
+    },
+    {
+      "text": "multiple",
+      "value": 330
+    },
+    {
+      "text": "machine",
+      "value": 329
+    },
+    {
+      "text": "use",
+      "value": 329
+    },
+    {
+      "text": "https",
+      "value": 327
+    },
+    {
+      "text": "including",
+      "value": 322
+    },
+    {
+      "text": "present",
+      "value": 320
+    },
+    {
+      "text": "compared",
+      "value": 316
+    },
+    {
+      "text": "diffusion",
+      "value": 316
+    },
+    {
+      "text": "optimization",
+      "value": 315
+    },
+    {
+      "text": "inference",
+      "value": 315
+    },
+    {
+      "text": "provide",
+      "value": 314
+    },
+    {
+      "text": "prediction",
+      "value": 312
+    },
+    {
+      "text": "design",
+      "value": 309
+    },
+    {
+      "text": "benchmark",
+      "value": 302
+    },
+    {
+      "text": "without",
+      "value": 301
+    },
+    {
+      "text": "effectiveness",
+      "value": 299
+    },
+    {
+      "text": "diverse",
+      "value": 297
+    },
+    {
+      "text": "classification",
+      "value": 297
+    },
+    {
+      "text": "feature",
+      "value": 296
+    },
+    {
+      "text": "techniques",
+      "value": 296
+    },
+    {
+      "text": "text",
+      "value": 293
+    },
+    {
+      "text": "scenarios",
+      "value": 290
+    },
+    {
+      "text": "llm",
+      "value": 290
+    },
+    {
+      "text": "visual",
+      "value": 287
+    },
+    {
+      "text": "attention",
+      "value": 286
+    }
+  ]
+}

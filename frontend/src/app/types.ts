@@ -23,11 +23,26 @@ export interface CountsData {
       [category: string]: number;
     };
   };
+  monthly?: {
+    [month: string]: {
+      [category: string]: number;
+    };
+  };
 }
 
 export interface KeywordData {
   text: string;
   value: number;
+}
+
+export interface MonthlyKeywords {
+  [month: string]: KeywordData[];
+}
+
+export interface SafetyTrends {
+  monthly_counts: {
+    [month: string]: number;
+  };
 }
 
 export interface Metadata {
