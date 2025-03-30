@@ -7,6 +7,7 @@ import KeywordCloud from '../components/KeywordCloud';
 import PaperList from '../components/PaperList';
 import TrendChart from '../components/TrendChart';
 import KeywordTrends from '../components/KeywordTrends';
+import SafetyKeywordTrends from '../components/SafetyKeywordTrends';
 import { loadData } from './data';
 import { Paper, CountsData, KeywordData, Metadata, SafetyTrends, MonthlyKeywords } from './types';
 
@@ -133,27 +134,54 @@ export default function Home() {
         </div>
       )}
       
-      {/* Long-term trends section */}
-      {counts.monthly && Object.keys(counts.monthly).length > 0 && (
-        <div className="mb-8">
-          <TrendChart 
-            countsData={counts} 
-            safetyCountsData={safetyTrends}
-            title="Publication Trends Over 6 Months" 
-          />
+      {/* Historical Trend Section - Featured prominently */}
+      <section className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl shadow mb-10 border border-blue-100 animate-gradient-x">
+        <div className="flex items-center mb-6">
+          <div className="w-1 h-8 bg-primary-600 mr-3 rounded"></div>
+          <h2 className="text-2xl font-bold text-gray-800">AI Research Historical Trends (6 Months)</h2>
         </div>
-      )}
-      
-      {/* Keyword trends over time */}
-      {monthlyKeywords && Object.keys(monthlyKeywords).length > 0 && (
-        <div className="mb-8">
-          <KeywordTrends
-            monthlyKeywords={monthlyKeywords}
-            title="Trending Keywords Over Time"
-            maxKeywords={5}
-          />
+        
+        <p className="text-gray-600 mb-8">
+          Analyze AI research trends from arXiv over the past 6 months. Explore publication patterns, 
+          track AI safety topics, and identify emerging research themes.
+        </p>
+        
+        <div className="space-y-10">
+          {/* Publication volume trends */}
+          {counts.monthly && Object.keys(counts.monthly).length > 0 && (
+            <div className="bg-white p-6 rounded-lg shadow-card border border-gray-100">
+              <TrendChart 
+                countsData={counts} 
+                safetyCountsData={safetyTrends}
+                title="Publication Volume by Category" 
+              />
+            </div>
+          )}
+          
+          {/* Safety keyword trends */}
+          {metadata && metadata.safety_terms && monthlyKeywords && Object.keys(monthlyKeywords).length > 0 && (
+            <div className="bg-white p-6 rounded-lg shadow-card border border-gray-100">
+              <SafetyKeywordTrends
+                monthlyKeywords={monthlyKeywords}
+                safetyTerms={metadata.safety_terms}
+                title="AI Safety Related Keywords" 
+                maxKeywords={8}
+              />
+            </div>
+          )}
+          
+          {/* General keyword trends */}
+          {monthlyKeywords && Object.keys(monthlyKeywords).length > 0 && (
+            <div className="bg-white p-6 rounded-lg shadow-card border border-gray-100">
+              <KeywordTrends
+                monthlyKeywords={monthlyKeywords}
+                title="Popular Research Topics Over Time"
+                maxKeywords={5}
+              />
+            </div>
+          )}
         </div>
-      )}
+      </section>
       
       {/* Main dashboard grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
