@@ -1,0 +1,402 @@
+[
+  {
+    "text": "data",
+    "value": 9576
+  },
+  {
+    "text": "models",
+    "value": 8683
+  },
+  {
+    "text": "model",
+    "value": 8381
+  },
+  {
+    "text": "learning",
+    "value": 7803
+  },
+  {
+    "text": "based",
+    "value": 7305
+  },
+  {
+    "text": "performance",
+    "value": 6187
+  },
+  {
+    "text": "methods",
+    "value": 6067
+  },
+  {
+    "text": "training",
+    "value": 5396
+  },
+  {
+    "text": "approach",
+    "value": 5383
+  },
+  {
+    "text": "image",
+    "value": 5309
+  },
+  {
+    "text": "method",
+    "value": 5289
+  },
+  {
+    "text": "framework",
+    "value": 5238
+  },
+  {
+    "text": "language",
+    "value": 5186
+  },
+  {
+    "text": "tasks",
+    "value": 5098
+  },
+  {
+    "text": "high",
+    "value": 4817
+  },
+  {
+    "text": "using",
+    "value": 4690
+  },
+  {
+    "text": "results",
+    "value": 4681
+  },
+  {
+    "text": "propose",
+    "value": 4664
+  },
+  {
+    "text": "llms",
+    "value": 4517
+  },
+  {
+    "text": "video",
+    "value": 4398
+  },
+  {
+    "text": "multi",
+    "value": 4363
+  },
+  {
+    "text": "time",
+    "value": 4352
+  },
+  {
+    "text": "state",
+    "value": 4320
+  },
+  {
+    "text": "datasets",
+    "value": 4274
+  },
+  {
+    "text": "paper",
+    "value": 4269
+  },
+  {
+    "text": "real",
+    "value": 4265
+  },
+  {
+    "text": "novel",
+    "value": 4265
+  },
+  {
+    "text": "large",
+    "value": 4259
+  },
+  {
+    "text": "information",
+    "value": 4257
+  },
+  {
+    "text": "generation",
+    "value": 4233
+  },
+  {
+    "text": "existing",
+    "value": 4161
+  },
+  {
+    "text": "reasoning",
+    "value": 4077
+  },
+  {
+    "text": "task",
+    "value": 4040
+  },
+  {
+    "text": "dataset",
+    "value": 4024
+  },
+  {
+    "text": "text",
+    "value": 3965
+  },
+  {
+    "text": "demonstrate",
+    "value": 3955
+  },
+  {
+    "text": "accuracy",
+    "value": 3945
+  },
+  {
+    "text": "3d",
+    "value": 3933
+  },
+  {
+    "text": "images",
+    "value": 3909
+  },
+  {
+    "text": "human",
+    "value": 3854
+  },
+  {
+    "text": "introduce",
+    "value": 3713
+  },
+  {
+    "text": "experiments",
+    "value": 3671
+  },
+  {
+    "text": "work",
+    "value": 3521
+  },
+  {
+    "text": "quality",
+    "value": 3485
+  },
+  {
+    "text": "features",
+    "value": 3473
+  },
+  {
+    "text": "world",
+    "value": 3467
+  },
+  {
+    "text": "visual",
+    "value": 3457
+  },
+  {
+    "text": "neural",
+    "value": 3419
+  },
+  {
+    "text": "address",
+    "value": 3390
+  },
+  {
+    "text": "systems",
+    "value": 3360
+  },
+  {
+    "text": "analysis",
+    "value": 3344
+  },
+  {
+    "text": "art",
+    "value": 3343
+  },
+  {
+    "text": "fine",
+    "value": 3321
+  },
+  {
+    "text": "diffusion",
+    "value": 3319
+  },
+  {
+    "text": "proposed",
+    "value": 3316
+  },
+  {
+    "text": "state art",
+    "value": 3302
+  },
+  {
+    "text": "detection",
+    "value": 3281
+  },
+  {
+    "text": "approaches",
+    "value": 3160
+  },
+  {
+    "text": "optimization",
+    "value": 3115
+  },
+  {
+    "text": "multiple",
+    "value": 3106
+  },
+  {
+    "text": "efficient",
+    "value": 3103
+  },
+  {
+    "text": "new",
+    "value": 3099
+  },
+  {
+    "text": "knowledge",
+    "value": 3090
+  },
+  {
+    "text": "challenges",
+    "value": 3088
+  },
+  {
+    "text": "ai",
+    "value": 3067
+  },
+  {
+    "text": "language models",
+    "value": 2995
+  },
+  {
+    "text": "different",
+    "value": 2983
+  },
+  {
+    "text": "study",
+    "value": 2964
+  },
+  {
+    "text": "specific",
+    "value": 2964
+  },
+  {
+    "text": "level",
+    "value": 2957
+  },
+  {
+    "text": "real world",
+    "value": 2947
+  },
+  {
+    "text": "llm",
+    "value": 2933
+  },
+  {
+    "text": "domain",
+    "value": 2932
+  },
+  {
+    "text": "efficiency",
+    "value": 2929
+  },
+  {
+    "text": "process",
+    "value": 2888
+  },
+  {
+    "text": "significant",
+    "value": 2826
+  },
+  {
+    "text": "evaluation",
+    "value": 2814
+  },
+  {
+    "text": "applications",
+    "value": 2798
+  },
+  {
+    "text": "achieves",
+    "value": 2784
+  },
+  {
+    "text": "research",
+    "value": 2756
+  },
+  {
+    "text": "attention",
+    "value": 2749
+  },
+  {
+    "text": "vision",
+    "value": 2736
+  },
+  {
+    "text": "significantly",
+    "value": 2735
+  },
+  {
+    "text": "complex",
+    "value": 2714
+  },
+  {
+    "text": "including",
+    "value": 2712
+  },
+  {
+    "text": "potential",
+    "value": 2703
+  },
+  {
+    "text": "various",
+    "value": 2701
+  },
+  {
+    "text": "large language",
+    "value": 2693
+  },
+  {
+    "text": "extensive",
+    "value": 2654
+  },
+  {
+    "text": "code",
+    "value": 2614
+  },
+  {
+    "text": "semantic",
+    "value": 2586
+  },
+  {
+    "text": "trained",
+    "value": 2583
+  },
+  {
+    "text": "understanding",
+    "value": 2582
+  },
+  {
+    "text": "recent",
+    "value": 2577
+  },
+  {
+    "text": "available",
+    "value": 2574
+  },
+  {
+    "text": "scale",
+    "value": 2568
+  },
+  {
+    "text": "diverse",
+    "value": 2510
+  },
+  {
+    "text": "https",
+    "value": 2482
+  },
+  {
+    "text": "github",
+    "value": 2466
+  },
+  {
+    "text": "segmentation",
+    "value": 2442
+  }
+]
