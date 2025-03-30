@@ -19,5 +19,12 @@ if [ $? -ne 0 ]; then
   exit 0
 fi
 
+# Ensure data directory exists in output
+mkdir -p out/data
+
+# Copy data files to the output directory
+echo "Copying data files to output directory..."
+cp -r public/data/* out/data/
+
 echo "Build successful!"
 exit 0
