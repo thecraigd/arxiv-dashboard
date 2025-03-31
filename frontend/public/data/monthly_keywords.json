@@ -2,15 +2,15 @@
   "2025-03": [
     {
       "text": "models",
-      "value": 2200
+      "value": 2175
     },
     {
       "text": "model",
-      "value": 1884
+      "value": 1911
     },
     {
       "text": "data",
-      "value": 1691
+      "value": 1724
     },
     {
       "text": "learning",
@@ -18,386 +18,386 @@
     },
     {
       "text": "performance",
-      "value": 1285
+      "value": 1289
     },
     {
       "text": "methods",
-      "value": 1240
-    },
-    {
-      "text": "propose",
-      "value": 953
+      "value": 1263
     },
     {
       "text": "method",
-      "value": 917
-    },
-    {
-      "text": "framework",
-      "value": 913
-    },
-    {
-      "text": "approach",
-      "value": 913
+      "value": 936
     },
     {
       "text": "tasks",
-      "value": 906
+      "value": 934
+    },
+    {
+      "text": "approach",
+      "value": 928
+    },
+    {
+      "text": "propose",
+      "value": 926
     },
     {
       "text": "training",
-      "value": 898
+      "value": 911
+    },
+    {
+      "text": "framework",
+      "value": 910
     },
     {
       "text": "results",
-      "value": 799
-    },
-    {
-      "text": "across",
-      "value": 798
+      "value": 831
     },
     {
       "text": "language",
-      "value": 794
+      "value": 801
+    },
+    {
+      "text": "across",
+      "value": 801
     },
     {
       "text": "using",
-      "value": 783
+      "value": 800
     },
     {
       "text": "existing",
-      "value": 773
+      "value": 764
     },
     {
       "text": "however",
-      "value": 761
-    },
-    {
-      "text": "novel",
-      "value": 739
-    },
-    {
-      "text": "demonstrate",
-      "value": 735
+      "value": 758
     },
     {
       "text": "image",
-      "value": 722
+      "value": 741
     },
     {
       "text": "datasets",
-      "value": 696
+      "value": 736
     },
     {
-      "text": "paper",
-      "value": 659
+      "text": "demonstrate",
+      "value": 724
     },
     {
-      "text": "generation",
-      "value": 644
-    },
-    {
-      "text": "experiments",
-      "value": 639
+      "text": "novel",
+      "value": 714
     },
     {
       "text": "large",
-      "value": 638
+      "value": 660
     },
     {
-      "text": "information",
-      "value": 638
+      "text": "paper",
+      "value": 655
     },
     {
       "text": "llms",
-      "value": 638
-    },
-    {
-      "text": "introduce",
-      "value": 632
+      "value": 651
     },
     {
       "text": "dataset",
-      "value": 615
+      "value": 650
     },
     {
-      "text": "address",
-      "value": 602
+      "text": "introduce",
+      "value": 644
+    },
+    {
+      "text": "generation",
+      "value": 640
+    },
+    {
+      "text": "experiments",
+      "value": 629
+    },
+    {
+      "text": "information",
+      "value": 627
     },
     {
       "text": "images",
-      "value": 569
+      "value": 613
     },
     {
-      "text": "reasoning",
-      "value": 565
-    },
-    {
-      "text": "accuracy",
-      "value": 542
+      "text": "address",
+      "value": 573
     },
     {
       "text": "based",
-      "value": 530
+      "value": 568
     },
     {
-      "text": "features",
-      "value": 527
+      "text": "reasoning",
+      "value": 558
+    },
+    {
+      "text": "accuracy",
+      "value": 554
     },
     {
       "text": "show",
-      "value": 506
+      "value": 517
     },
     {
       "text": "work",
-      "value": 505
+      "value": 512
     },
     {
-      "text": "video",
-      "value": 504
+      "text": "features",
+      "value": 506
     },
     {
       "text": "challenges",
-      "value": 493
+      "value": 487
     },
     {
-      "text": "visual",
-      "value": 461
+      "text": "video",
+      "value": 481
     },
     {
       "text": "task",
-      "value": 457
+      "value": 480
     },
     {
       "text": "often",
-      "value": 447
+      "value": 461
     },
     {
-      "text": "knowledge",
-      "value": 444
-    },
-    {
-      "text": "two",
-      "value": 443
-    },
-    {
-      "text": "also",
-      "value": 440
-    },
-    {
-      "text": "analysis",
-      "value": 438
-    },
-    {
-      "text": "first",
-      "value": 434
-    },
-    {
-      "text": "extensive",
-      "value": 430
-    },
-    {
-      "text": "significant",
-      "value": 428
+      "text": "visual",
+      "value": 455
     },
     {
       "text": "proposed",
-      "value": 426
-    },
-    {
-      "text": "systems",
-      "value": 426
+      "value": 449
     },
     {
       "text": "detection",
-      "value": 425
+      "value": 448
     },
     {
-      "text": "significantly",
-      "value": 419
+      "text": "two",
+      "value": 445
+    },
+    {
+      "text": "analysis",
+      "value": 430
+    },
+    {
+      "text": "also",
+      "value": 424
+    },
+    {
+      "text": "first",
+      "value": 424
     },
     {
       "text": "new",
+      "value": 420
+    },
+    {
+      "text": "significant",
       "value": 418
     },
     {
+      "text": "extensive",
+      "value": 414
+    },
+    {
+      "text": "significantly",
+      "value": 413
+    },
+    {
+      "text": "knowledge",
+      "value": 411
+    },
+    {
       "text": "approaches",
-      "value": 417
-    },
-    {
-      "text": "human",
-      "value": 403
-    },
-    {
-      "text": "diffusion",
-      "value": 398
+      "value": 405
     },
     {
       "text": "process",
-      "value": 397
+      "value": 401
+    },
+    {
+      "text": "human",
+      "value": 399
+    },
+    {
+      "text": "systems",
+      "value": 399
     },
     {
       "text": "neural",
-      "value": 395
-    },
-    {
-      "text": "applications",
-      "value": 383
-    },
-    {
-      "text": "code",
-      "value": 378
-    },
-    {
-      "text": "quality",
-      "value": 377
-    },
-    {
-      "text": "available",
-      "value": 376
+      "value": 397
     },
     {
       "text": "complex",
-      "value": 375
+      "value": 387
     },
     {
       "text": "multiple",
-      "value": 373
-    },
-    {
-      "text": "evaluation",
-      "value": 373
+      "value": 387
     },
     {
       "text": "achieves",
-      "value": 372
+      "value": 382
     },
     {
-      "text": "potential",
-      "value": 364
-    },
-    {
-      "text": "due",
-      "value": 363
-    },
-    {
-      "text": "diverse",
-      "value": 362
-    },
-    {
-      "text": "https",
-      "value": 361
-    },
-    {
-      "text": "efficiency",
-      "value": 360
-    },
-    {
-      "text": "different",
-      "value": 360
-    },
-    {
-      "text": "text",
-      "value": 357
-    },
-    {
-      "text": "various",
-      "value": 356
-    },
-    {
-      "text": "network",
-      "value": 355
-    },
-    {
-      "text": "optimization",
-      "value": 354
-    },
-    {
-      "text": "study",
-      "value": 354
+      "text": "evaluation",
+      "value": 379
     },
     {
       "text": "research",
+      "value": 374
+    },
+    {
+      "text": "applications",
+      "value": 372
+    },
+    {
+      "text": "diffusion",
+      "value": 372
+    },
+    {
+      "text": "various",
+      "value": 372
+    },
+    {
+      "text": "different",
+      "value": 372
+    },
+    {
+      "text": "due",
+      "value": 366
+    },
+    {
+      "text": "efficiency",
+      "value": 365
+    },
+    {
+      "text": "available",
+      "value": 364
+    },
+    {
+      "text": "code",
+      "value": 361
+    },
+    {
+      "text": "text",
+      "value": 361
+    },
+    {
+      "text": "diverse",
+      "value": 358
+    },
+    {
+      "text": "study",
+      "value": 357
+    },
+    {
+      "text": "https",
+      "value": 353
+    },
+    {
+      "text": "optimization",
       "value": 351
     },
     {
       "text": "without",
-      "value": 340
+      "value": 349
     },
     {
-      "text": "feature",
-      "value": 340
+      "text": "network",
+      "value": 349
     },
     {
-      "text": "understanding",
-      "value": 338
+      "text": "potential",
+      "value": 346
     },
     {
       "text": "effectiveness",
-      "value": 335
+      "value": 345
     },
     {
-      "text": "key",
-      "value": 333
+      "text": "understanding",
+      "value": 344
     },
     {
-      "text": "recent",
-      "value": 332
+      "text": "feature",
+      "value": 343
     },
     {
-      "text": "segmentation",
-      "value": 330
+      "text": "quality",
+      "value": 340
     },
     {
       "text": "including",
-      "value": 330
+      "value": 339
+    },
+    {
+      "text": "segmentation",
+      "value": 337
     },
     {
       "text": "computational",
-      "value": 328
+      "value": 333
     },
     {
       "text": "efficient",
-      "value": 326
+      "value": 331
     },
     {
       "text": "capabilities",
-      "value": 326
+      "value": 329
     },
     {
       "text": "compared",
-      "value": 326
+      "value": 323
     },
     {
-      "text": "enhance",
-      "value": 322
-    },
-    {
-      "text": "semantic",
-      "value": 318
-    },
-    {
-      "text": "effectively",
-      "value": 313
-    },
-    {
-      "text": "time",
-      "value": 312
-    },
-    {
-      "text": "scenarios",
-      "value": 312
-    },
-    {
-      "text": "design",
-      "value": 305
-    },
-    {
-      "text": "present",
-      "value": 304
+      "text": "key",
+      "value": 320
     },
     {
       "text": "deep",
+      "value": 317
+    },
+    {
+      "text": "semantic",
+      "value": 317
+    },
+    {
+      "text": "recent",
+      "value": 316
+    },
+    {
+      "text": "enhance",
+      "value": 313
+    },
+    {
+      "text": "effectively",
+      "value": 303
+    },
+    {
+      "text": "benchmark",
+      "value": 303
+    },
+    {
+      "text": "scenarios",
+      "value": 302
+    },
+    {
+      "text": "present",
+      "value": 301
+    },
+    {
+      "text": "networks",
       "value": 300
     }
   ],
@@ -1216,11 +1216,11 @@
     },
     {
       "text": "data",
-      "value": 1744
+      "value": 1743
     },
     {
       "text": "learning",
-      "value": 1456
+      "value": 1457
     },
     {
       "text": "performance",
@@ -1367,15 +1367,15 @@
       "value": 490
     },
     {
+      "text": "detection",
+      "value": 488
+    },
+    {
       "text": "work",
       "value": 488
     },
     {
       "text": "neural",
-      "value": 487
-    },
-    {
-      "text": "detection",
       "value": 487
     },
     {
@@ -1488,7 +1488,7 @@
     },
     {
       "text": "code",
-      "value": 366
+      "value": 365
     },
     {
       "text": "reasoning",
@@ -1610,11 +1610,11 @@
   "2024-11": [
     {
       "text": "models",
-      "value": 2395
+      "value": 2394
     },
     {
       "text": "model",
-      "value": 1933
+      "value": 1932
     },
     {
       "text": "data",
@@ -1622,7 +1622,7 @@
     },
     {
       "text": "performance",
-      "value": 1363
+      "value": 1362
     },
     {
       "text": "learning",
@@ -1630,7 +1630,7 @@
     },
     {
       "text": "methods",
-      "value": 1244
+      "value": 1245
     },
     {
       "text": "method",
@@ -1646,19 +1646,19 @@
     },
     {
       "text": "tasks",
-      "value": 902
+      "value": 903
     },
     {
       "text": "propose",
-      "value": 881
+      "value": 882
     },
     {
       "text": "training",
-      "value": 850
+      "value": 852
     },
     {
       "text": "results",
-      "value": 836
+      "value": 835
     },
     {
       "text": "framework",
@@ -1666,11 +1666,11 @@
     },
     {
       "text": "however",
-      "value": 814
+      "value": 815
     },
     {
       "text": "novel",
-      "value": 805
+      "value": 806
     },
     {
       "text": "language",
@@ -1682,11 +1682,11 @@
     },
     {
       "text": "across",
-      "value": 784
+      "value": 785
     },
     {
       "text": "demonstrate",
-      "value": 755
+      "value": 757
     },
     {
       "text": "datasets",
@@ -1702,7 +1702,7 @@
     },
     {
       "text": "existing",
-      "value": 712
+      "value": 713
     },
     {
       "text": "information",
@@ -1718,7 +1718,7 @@
     },
     {
       "text": "generation",
-      "value": 636
+      "value": 634
     },
     {
       "text": "dataset",
@@ -1726,15 +1726,15 @@
     },
     {
       "text": "introduce",
-      "value": 601
+      "value": 600
     },
     {
       "text": "experiments",
-      "value": 592
+      "value": 593
     },
     {
       "text": "address",
-      "value": 558
+      "value": 557
     },
     {
       "text": "accuracy",
@@ -1782,11 +1782,11 @@
     },
     {
       "text": "various",
-      "value": 485
+      "value": 486
     },
     {
       "text": "significant",
-      "value": 472
+      "value": 471
     },
     {
       "text": "often",
@@ -1818,7 +1818,7 @@
     },
     {
       "text": "extensive",
-      "value": 431
+      "value": 432
     },
     {
       "text": "two",
@@ -1830,7 +1830,7 @@
     },
     {
       "text": "different",
-      "value": 419
+      "value": 418
     },
     {
       "text": "due",
@@ -1846,7 +1846,7 @@
     },
     {
       "text": "potential",
-      "value": 403
+      "value": 402
     },
     {
       "text": "complex",
@@ -1854,7 +1854,7 @@
     },
     {
       "text": "analysis",
-      "value": 394
+      "value": 395
     },
     {
       "text": "quality",
@@ -1862,15 +1862,11 @@
     },
     {
       "text": "approaches",
-      "value": 390
+      "value": 389
     },
     {
       "text": "significantly",
       "value": 389
-    },
-    {
-      "text": "process",
-      "value": 388
     },
     {
       "text": "object",
@@ -1878,6 +1874,10 @@
     },
     {
       "text": "first",
+      "value": 387
+    },
+    {
+      "text": "process",
       "value": 387
     },
     {
@@ -1894,19 +1894,19 @@
     },
     {
       "text": "time",
-      "value": 367
+      "value": 366
     },
     {
       "text": "multiple",
       "value": 363
     },
     {
-      "text": "segmentation",
+      "text": "deep",
       "value": 363
     },
     {
-      "text": "deep",
-      "value": 362
+      "text": "segmentation",
+      "value": 363
     },
     {
       "text": "networks",
@@ -1922,19 +1922,19 @@
     },
     {
       "text": "available",
-      "value": 351
+      "value": 350
     },
     {
       "text": "code",
-      "value": 351
+      "value": 350
     },
     {
       "text": "effectiveness",
-      "value": 351
+      "value": 350
     },
     {
       "text": "without",
-      "value": 346
+      "value": 347
     },
     {
       "text": "classification",
@@ -1981,11 +1981,11 @@
       "value": 322
     },
     {
-      "text": "present",
-      "value": 321
+      "text": "efficiency",
+      "value": 322
     },
     {
-      "text": "efficiency",
+      "text": "present",
       "value": 321
     },
     {
@@ -1997,11 +1997,11 @@
       "value": 317
     },
     {
-      "text": "enhance",
-      "value": 317
+      "text": "algorithm",
+      "value": 316
     },
     {
-      "text": "algorithm",
+      "text": "enhance",
       "value": 316
     },
     {
@@ -2012,7 +2012,7 @@
   "2024-10": [
     {
       "text": "models",
-      "value": 2281
+      "value": 2282
     },
     {
       "text": "data",
@@ -2036,7 +2036,7 @@
     },
     {
       "text": "approach",
-      "value": 927
+      "value": 928
     },
     {
       "text": "tasks",
@@ -2044,7 +2044,7 @@
     },
     {
       "text": "method",
-      "value": 882
+      "value": 881
     },
     {
       "text": "using",
@@ -2052,7 +2052,7 @@
     },
     {
       "text": "results",
-      "value": 816
+      "value": 817
     },
     {
       "text": "language",
@@ -2116,15 +2116,15 @@
     },
     {
       "text": "show",
-      "value": 582
+      "value": 583
     },
     {
       "text": "information",
-      "value": 578
+      "value": 579
     },
     {
       "text": "based",
-      "value": 573
+      "value": 575
     },
     {
       "text": "neural",
@@ -2187,11 +2187,11 @@
       "value": 461
     },
     {
-      "text": "research",
-      "value": 442
+      "text": "features",
+      "value": 443
     },
     {
-      "text": "features",
+      "text": "research",
       "value": 442
     },
     {
@@ -2200,7 +2200,7 @@
     },
     {
       "text": "often",
-      "value": 430
+      "value": 429
     },
     {
       "text": "significant",
@@ -2224,7 +2224,7 @@
     },
     {
       "text": "study",
-      "value": 405
+      "value": 404
     },
     {
       "text": "challenges",
@@ -2268,7 +2268,7 @@
     },
     {
       "text": "used",
-      "value": 364
+      "value": 362
     },
     {
       "text": "code",
@@ -2300,7 +2300,7 @@
     },
     {
       "text": "complex",
-      "value": 337
+      "value": 336
     },
     {
       "text": "extensive",
@@ -2315,11 +2315,11 @@
       "value": 330
     },
     {
-      "text": "machine",
-      "value": 329
+      "text": "use",
+      "value": 330
     },
     {
-      "text": "use",
+      "text": "machine",
       "value": 329
     },
     {
@@ -2332,7 +2332,7 @@
     },
     {
       "text": "present",
-      "value": 320
+      "value": 319
     },
     {
       "text": "compared",
@@ -2351,12 +2351,12 @@
       "value": 315
     },
     {
-      "text": "provide",
+      "text": "prediction",
       "value": 314
     },
     {
-      "text": "prediction",
-      "value": 312
+      "text": "provide",
+      "value": 313
     },
     {
       "text": "design",
@@ -2375,16 +2375,16 @@
       "value": 299
     },
     {
+      "text": "feature",
+      "value": 297
+    },
+    {
       "text": "diverse",
       "value": 297
     },
     {
       "text": "classification",
       "value": 297
-    },
-    {
-      "text": "feature",
-      "value": 296
     },
     {
       "text": "techniques",

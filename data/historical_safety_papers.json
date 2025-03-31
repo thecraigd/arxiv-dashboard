@@ -1,5 +1,1673 @@
 [
   {
+    "id": "2503.22679v1",
+    "title": "Q-Insight: Understanding Image Quality via Visual Reinforcement Learning",
+    "authors": [
+      "Weiqi Li",
+      "Xuanyu Zhang",
+      "Shijie Zhao",
+      "Yabin Zhang",
+      "Junlin Li",
+      "Li Zhang",
+      "Jian Zhang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Image quality assessment (IQA) focuses on the perceptual visual quality of\nimages, playing a crucial role in downstream tasks such as image\nreconstruction, compression, and generation. The rapid advan..."
+  },
+  {
+    "id": "2503.22677v1",
+    "title": "DSO: Aligning 3D Generators with Simulation Feedback for Physical Soundness",
+    "authors": [
+      "Ruining Li",
+      "Chuanxia Zheng",
+      "Christian Rupprecht",
+      "Andrea Vedaldi"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Most 3D object generators focus on aesthetic quality, often neglecting\nphysical constraints necessary in applications. One such constraint is that the\n3D object should be self-supporting, i.e., remain..."
+  },
+  {
+    "id": "2503.22577v1",
+    "title": "Breaking Language Barriers in Visual Language Models via Multilingual Textual Regularization",
+    "authors": [
+      "Iñigo Pikabea",
+      "Iñaki Lacunza",
+      "Oriol Pareras",
+      "Carlos Escolano",
+      "Aitor Gonzalez-Agirre",
+      "Javier Hernando",
+      "Marta Villegas"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Rapid advancements in Visual Language Models (VLMs) have transformed\nmultimodal understanding but are often constrained by generating English\nresponses regardless of the input language. This phenomeno..."
+  },
+  {
+    "id": "2503.22573v1",
+    "title": "A Framework for Cryptographic Verifiability of End-to-End AI Pipelines",
+    "authors": [
+      "Kar Balan",
+      "Robert Learney",
+      "Tim Wood"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CR",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "transparency",
+      "safety",
+      "AI safety"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "The increasing integration of Artificial Intelligence across multiple\nindustry sectors necessitates robust mechanisms for ensuring transparency,\ntrust, and auditability of its development and deployme..."
+  },
+  {
+    "id": "2503.22563v1",
+    "title": "RELD: Regularization by Latent Diffusion Models for Image Restoration",
+    "authors": [
+      "Pasquale Cascarano",
+      "Lorenzo Stacchio",
+      "Andrea Sebastiani",
+      "Alessandro Benfenati",
+      "Ulugbek S. Kamilov",
+      "Gustavo Marfia"
+    ],
+    "abstract": null,
+    "categories": [
+      "eess.IV",
+      "cs.CV"
+    ],
+    "primary_category": "eess.IV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "adversarial"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "In recent years, Diffusion Models have become the new state-of-the-art in\ndeep generative modeling, ending the long-time dominance of Generative\nAdversarial Networks. Inspired by the Regularization by..."
+  },
+  {
+    "id": "2503.22547v1",
+    "title": "Bridging the Dimensional Chasm: Uncover Layer-wise Dimensional Reduction in Transformers through Token Correlation",
+    "authors": [
+      "Zhuo-Yang Song",
+      "Zeyu Li",
+      "Qing-Hong Cao",
+      "Ming-xing Luo",
+      "Hua Xing Zhu"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CL",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "The geometric evolution of token representations in large language models\n(LLMs) presents a fundamental paradox: while human language inherently\norganizes semantic information in low-dimensional space..."
+  },
+  {
+    "id": "2503.22541v1",
+    "title": "SafeCast: Risk-Responsive Motion Forecasting for Autonomous Vehicles",
+    "authors": [
+      "Haicheng Liao",
+      "Hanlin Kong",
+      "Bin Rao",
+      "Bonan Wang",
+      "Chengyue Wang",
+      "Guyang Yu",
+      "Yuming Huang",
+      "Ruru Tang",
+      "Chengzhong Xu",
+      "Zhenning Li"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "safety"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Accurate motion forecasting is essential for the safety and reliability of\nautonomous driving (AD) systems. While existing methods have made significant\nprogress, they often overlook explicit safety c..."
+  },
+  {
+    "id": "2503.22531v1",
+    "title": "Deterministic Medical Image Translation via High-fidelity Brownian Bridges",
+    "authors": [
+      "Qisheng He",
+      "Nicholas Summerfield",
+      "Peiyong Wang",
+      "Carri Glide-Hurst",
+      "Ming Dong"
+    ],
+    "abstract": null,
+    "categories": [
+      "eess.IV",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "primary_category": "eess.IV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "adversarial"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Recent studies have shown that diffusion models produce superior synthetic\nimages when compared to Generative Adversarial Networks (GANs). However, their\noutputs are often non-deterministic and lack h..."
+  },
+  {
+    "id": "2503.22528v1",
+    "title": "MixFunn: A Neural Network for Differential Equations with Improved Generalization and Interpretability",
+    "authors": [
+      "Tiago de Souza Farias",
+      "Gubio Gomes de Lima",
+      "Jonas Maziero",
+      "Celso Jorge Villas-Boas"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG",
+      "physics.app-ph",
+      "physics.comp-ph"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "We introduce MixFunn, a novel neural network architecture designed to solve\ndifferential equations with enhanced precision, interpretability, and\ngeneralization capability. The architecture comprises ..."
+  },
+  {
+    "id": "2503.22498v1",
+    "title": "Learnable cut flow",
+    "authors": [
+      "Jing Li",
+      "Hao Sun"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG",
+      "hep-ph"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Neural networks have emerged as a powerful paradigm for tasks in high energy\nphysics, yet their opaque training process renders them as a black box. In\ncontrast, the traditional cut flow method offers..."
+  },
+  {
+    "id": "2503.22496v1",
+    "title": "Scenario Dreamer: Vectorized Latent Diffusion for Generating Driving Simulation Environments",
+    "authors": [
+      "Luke Rowe",
+      "Roger Girgis",
+      "Anthony Gosselin",
+      "Liam Paull",
+      "Christopher Pal",
+      "Felix Heide"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "adversarial"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "We introduce Scenario Dreamer, a fully data-driven generative simulator for\nautonomous vehicle planning that generates both the initial traffic scene -\ncomprising a lane graph and agent bounding boxes..."
+  },
+  {
+    "id": "2503.22480v1",
+    "title": "Probabilistic Uncertain Reward Model: A Natural Generalization of Bradley-Terry Reward Model",
+    "authors": [
+      "Wangtao Sun",
+      "Xiang Cheng",
+      "Xing Yu",
+      "Haotian Xu",
+      "Zhao Yang",
+      "Shizhu He",
+      "Jun Zhao",
+      "Kang Liu"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "reward hacking"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Reinforcement Learning from Human Feedback (RLHF) has emerged as a critical\ntechnique for training large language models. However, reward hacking-a\nphenomenon where models exploit flaws in the reward ..."
+  },
+  {
+    "id": "2503.22462v1",
+    "title": "SemAlign3D: Semantic Correspondence between RGB-Images through Aligning 3D Object-Class Representations",
+    "authors": [
+      "Krispin Wandel",
+      "Hesheng Wang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Semantic correspondence made tremendous progress through the recent\nadvancements of large vision models (LVM). While these LVMs have been shown to\nreliably capture local semantics, the same can curren..."
+  },
+  {
+    "id": "2503.22413v1",
+    "title": "Instance-Level Data-Use Auditing of Visual ML Models",
+    "authors": [
+      "Zonghao Huang",
+      "Neil Zhenqiang Gong",
+      "Michael K. Reiter"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CR",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "transparency"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "The growing trend of legal disputes over the unauthorized use of data in\nmachine learning (ML) systems highlights the urgent need for reliable data-use\nauditing mechanisms to ensure accountability and..."
+  },
+  {
+    "id": "2503.22399v1",
+    "title": "VITAL: More Understandable Feature Visualization through Distribution Alignment and Relevant Information Flow",
+    "authors": [
+      "Ada Gorgun",
+      "Bernt Schiele",
+      "Jonas Fischer"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Neural networks are widely adopted to solve complex and challenging tasks.\nEspecially in high-stakes decision-making, understanding their reasoning\nprocess is crucial, yet proves challenging for moder..."
+  },
+  {
+    "id": "2503.22389v1",
+    "title": "MASCOTS: Model-Agnostic Symbolic COunterfactual explanations for Time Series",
+    "authors": [
+      "Dawid Płudowski",
+      "Francesco Spinnato",
+      "Piotr Wilczyński",
+      "Krzysztof Kotowski",
+      "Evridiki Vasileia Ntagiou",
+      "Riccardo Guidotti",
+      "Przemysław Biecek"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Counterfactual explanations provide an intuitive way to understand model\ndecisions by identifying minimal changes required to alter an outcome. However,\napplying counterfactual methods to time series ..."
+  },
+  {
+    "id": "2503.22359v1",
+    "title": "Mitigating Knowledge Discrepancies among Multiple Datasets for Task-agnostic Unified Face Alignment",
+    "authors": [
+      "Jiahao Xia",
+      "Min Xu",
+      "Wenjian Huang",
+      "Jianguo Zhang",
+      "Haimin Zhang",
+      "Chunxia Xiao"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Despite the similar structures of human faces, existing face alignment\nmethods cannot learn unified knowledge from multiple datasets with different\nlandmark annotations. The limited training samples i..."
+  },
+  {
+    "id": "2503.22357v1",
+    "title": "EchoFlow: A Foundation Model for Cardiac Ultrasound Image and Video Generation",
+    "authors": [
+      "Hadrien Reynaud",
+      "Alberto Gomez",
+      "Paul Leeson",
+      "Qingjie Meng",
+      "Bernhard Kainz"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "adversarial"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Advances in deep learning have significantly enhanced medical image analysis,\nyet the availability of large-scale medical datasets remains constrained by\npatient privacy concerns. We present EchoFlow,..."
+  },
+  {
+    "id": "2503.22309v1",
+    "title": "A Dataset for Semantic Segmentation in the Presence of Unknowns",
+    "authors": [
+      "Zakaria Laskar",
+      "Tomas Vojir",
+      "Matej Grcic",
+      "Iaroslav Melekhov",
+      "Shankar Gangisettye",
+      "Juho Kannala",
+      "Jiri Matas",
+      "Giorgos Tolias",
+      "C. V. Jawahar"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "safety"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Before deployment in the real-world deep neural networks require thorough\nevaluation of how they handle both knowns, inputs represented in the training\ndata, and unknowns (anomalies). This is especial..."
+  },
+  {
+    "id": "2503.22291v1",
+    "title": "VisTa: Visual-contextual and Text-augmented Zero-shot Object-level OOD Detection",
+    "authors": [
+      "Bin Zhang",
+      "Xiaoyang Qu",
+      "Guokuan Li",
+      "Jiguang Wan",
+      "Jianzong Wang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "As object detectors are increasingly deployed as black-box cloud services or\npre-trained models with restricted access to the original training data, the\nchallenge of zero-shot object-level out-of-dis..."
+  },
+  {
+    "id": "2503.22285v1",
+    "title": "RUNA: Object-level Out-of-Distribution Detection via Regional Uncertainty Alignment of Multimodal Representations",
+    "authors": [
+      "Bin Zhang",
+      "Jinggang Chen",
+      "Xiaoyang Qu",
+      "Guokuan Li",
+      "Kai Lu",
+      "Jiguang Wan",
+      "Jing Xiao",
+      "Jianzong Wang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Enabling object detectors to recognize out-of-distribution (OOD) objects is\nvital for building reliable systems. A primary obstacle stems from the fact\nthat models frequently do not receive supervisor..."
+  },
+  {
+    "id": "2503.22281v1",
+    "title": "Divide to Conquer: A Field Decomposition Approach for Multi-Organ Whole-Body CT Image Registration",
+    "authors": [
+      "Xuan Loc Pham",
+      "Mathias Prokop",
+      "Bram van Ginneken",
+      "Alessa Hering"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Image registration is an essential technique for the analysis of Computed\nTomography (CT) images in clinical practice. However, existing methodologies\nare predominantly tailored to a specific organ of..."
+  },
+  {
+    "id": "2503.22265v1",
+    "title": "DeepAudio-V1:Towards Multi-Modal Multi-Stage End-to-End Video to Speech and Audio Generation",
+    "authors": [
+      "Haomin Zhang",
+      "Chang Liu",
+      "Junjie Zheng",
+      "Zihao Chen",
+      "Chaofan Ding",
+      "Xinhan Di"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV",
+      "cs.SD",
+      "eess.AS"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Currently, high-quality, synchronized audio is synthesized using various\nmulti-modal joint learning frameworks, leveraging video and optional text\ninputs. In the video-to-audio benchmarks, video-to-au..."
+  },
+  {
+    "id": "2503.22263v1",
+    "title": "FLIP: Towards Comprehensive and Reliable Evaluation of Federated Prompt Learning",
+    "authors": [
+      "Dongping Liao",
+      "Xitong Gao",
+      "Yabo Xu",
+      "Chengzhong Xu"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "distributional shift"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "The increasing emphasis on privacy and data security has driven the adoption\nof federated learning, a decentralized approach to train machine learning\nmodels without sharing raw data. Prompt learning,..."
+  },
+  {
+    "id": "2503.22257v1",
+    "title": "DynaGraph: Interpretable Multi-Label Prediction from EHRs via Dynamic Graph Learning and Contrastive Augmentation",
+    "authors": [
+      "Munib Mesinovic",
+      "Soheila Molaei",
+      "Peter Watkinson",
+      "Tingting Zhu"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Learning from longitudinal electronic health records is limited if it does\nnot capture the temporal trajectories of the patient's state in a clinical\nsetting. Graph models allow us to capture the hidd..."
+  },
+  {
+    "id": "2503.22241v1",
+    "title": "Agent-Centric Personalized Multiple Clustering with Multi-Modal LLMs",
+    "authors": [
+      "Ziye Chen",
+      "Yiqun Duan",
+      "Riheng Zhu",
+      "Zhenbang Sun",
+      "Mingming Gong"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.AI",
+      "68T07, 68T05, 05C82"
+    ],
+    "primary_category": "cs.AI",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Personalized multiple clustering aims to generate diverse partitions of a\ndataset based on different user-specific aspects, rather than a single\nclustering. It has recently drawn research interest for..."
+  },
+  {
+    "id": "2503.22230v1",
+    "title": "Exploring Data Scaling Trends and Effects in Reinforcement Learning from Human Feedback",
+    "authors": [
+      "Wei Shen",
+      "Guanlin Liu",
+      "Zheng Wu",
+      "Ruofei Zhu",
+      "Qingping Yang",
+      "Chao Xin",
+      "Yu Yue",
+      "Lin Yan"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "reward hacking"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Reinforcement Learning from Human Feedback (RLHF) is crucial for aligning\nlarge language models with human preferences. While recent research has focused\non algorithmic improvements, the importance of..."
+  },
+  {
+    "id": "2503.22223v1",
+    "title": "DREMnet: An Interpretable Denoising Framework for Semi-Airborne Transient Electromagnetic Signal",
+    "authors": [
+      "Shuang Wang",
+      "Ming Guo",
+      "Xuben Wang",
+      "Fei Deng",
+      "Lifeng Mao",
+      "Bin Wang",
+      "Wenlong Gao"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "The semi-airborne transient electromagnetic method (SATEM) is capable of\nconducting rapid surveys over large-scale and hard-to-reach areas. However, the\nacquired signals are often contaminated by comp..."
+  },
+  {
+    "id": "2503.22218v1",
+    "title": "ABC-GS: Alignment-Based Controllable Style Transfer for 3D Gaussian Splatting",
+    "authors": [
+      "Wenjie Liu",
+      "Zhongliang Liu",
+      "Xiaoyan Yang",
+      "Man Sha",
+      "Yang Li"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV",
+      "eess.IV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "3D scene stylization approaches based on Neural Radiance Fields (NeRF)\nachieve promising results by optimizing with Nearest Neighbor Feature Matching\n(NNFM) loss. However, NNFM loss does not consider ..."
+  },
+  {
+    "id": "2503.22214v1",
+    "title": "Interpretable Deep Learning Paradigm for Airborne Transient Electromagnetic Inversion",
+    "authors": [
+      "Shuang Wang",
+      "Xuben Wang",
+      "Fei Deng",
+      "Xiaodong Yu",
+      "Peifan Jiang",
+      "Lifeng Mao"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "The extraction of geoelectric structural information from airborne transient\nelectromagnetic(ATEM)data primarily involves data processing and inversion.\nConventional methods rely on empirical paramete..."
+  },
+  {
+    "id": "2503.22208v1",
+    "title": "DeepSound-V1: Start to Think Step-by-Step in the Audio Generation from Videos",
+    "authors": [
+      "Yunming Liang",
+      "Zihao Chen",
+      "Chaofan Ding",
+      "Xinhan Di"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.SD",
+      "cs.CV",
+      "eess.AS"
+    ],
+    "primary_category": "cs.SD",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment",
+      "misalignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Currently, high-quality, synchronized audio is synthesized from video and\noptional text inputs using various multi-modal joint learning frameworks.\nHowever, the precise alignment between the visual an..."
+  },
+  {
+    "id": "2503.22205v1",
+    "title": "Data-Free Universal Attack by Exploiting the Intrinsic Vulnerability of Deep Models",
+    "authors": [
+      "YangTian Yan",
+      "Jinyu Tian"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "adversarial",
+      "adversarial example"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Deep neural networks (DNNs) are susceptible to Universal Adversarial\nPerturbations (UAPs), which are instance agnostic perturbations that can\ndeceive a target model across a wide range of samples. Unl..."
+  },
+  {
+    "id": "2503.22204v1",
+    "title": "Segment then Splat: A Unified Approach for 3D Open-Vocabulary Segmentation based on Gaussian Splatting",
+    "authors": [
+      "Yiren Lu",
+      "Yunlai Zhou",
+      "Yiran Qiao",
+      "Chaoda Song",
+      "Tuo Liang",
+      "Jing Ma",
+      "Yu Yin"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment",
+      "misalignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Open-vocabulary querying in 3D space is crucial for enabling more intelligent\nperception in applications such as robotics, autonomous systems, and augmented\nreality. However, most existing methods rel..."
+  },
+  {
+    "id": "2503.22200v1",
+    "title": "Enhance Generation Quality of Flow Matching V2A Model via Multi-Step CoT-Like Guidance and Combined Preference Optimization",
+    "authors": [
+      "Haomin Zhang",
+      "Sizhe Shan",
+      "Haoyu Wang",
+      "Zihao Chen",
+      "Xiulong Liu",
+      "Chaofan Ding",
+      "Xinhan Di"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.SD",
+      "cs.CV",
+      "eess.AS"
+    ],
+    "primary_category": "cs.SD",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Creating high-quality sound effects from videos and text prompts requires\nprecise alignment between visual and audio domains, both semantically and\ntemporally, along with step-by-step guidance for pro..."
+  },
+  {
+    "id": "2503.22193v1",
+    "title": "Unbiased Max-Min Embedding Classification for Transductive Few-Shot Learning: Clustering and Classification Are All You Need",
+    "authors": [
+      "Yang Liu",
+      "Feixiang Liu",
+      "Jiale Du",
+      "Xinbo Gao",
+      "Jungong Han"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Convolutional neural networks and supervised learning have achieved\nremarkable success in various fields but are limited by the need for large\nannotated datasets. Few-shot learning (FSL) addresses thi..."
+  },
+  {
+    "id": "2503.22182v1",
+    "title": "Sell It Before You Make It: Revolutionizing E-Commerce with Personalized AI-Generated Items",
+    "authors": [
+      "Jianghao Lin",
+      "Peng Du",
+      "Jiaqi Liu",
+      "Weite Li",
+      "Yong Yu",
+      "Weinan Zhang",
+      "Yang Cao"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.IR",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.IR",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "E-commerce has revolutionized retail, yet its traditional workflows remain\ninefficient, with significant time and resource costs tied to product design\nand manufacturing inventory. This paper introduc..."
+  },
+  {
+    "id": "2503.22181v1",
+    "title": "e-person Architecture and Framework for Human-AI Co-adventure Relationship",
+    "authors": [
+      "Kanako Esaki",
+      "Tadayuki Matsumura",
+      "Yang Shao",
+      "Hiroyuki Mizuno"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CY",
+      "cs.AI",
+      "cs.HC"
+    ],
+    "primary_category": "cs.CY",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "ethics"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "This paper proposes the e-person architecture for constructing a unified and\nincremental development of AI ethics. The e-person architecture takes the\nreduction of uncertainty through collaborative co..."
+  },
+  {
+    "id": "2503.22179v1",
+    "title": "High-Fidelity Diffusion Face Swapping with ID-Constrained Facial Conditioning",
+    "authors": [
+      "Dailan He",
+      "Xiahong Wang",
+      "Shulun Wang",
+      "Guanglu Song",
+      "Bingqi Ma",
+      "Hao Shao",
+      "Yu Liu",
+      "Hongsheng Li"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment",
+      "adversarial"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Face swapping aims to seamlessly transfer a source facial identity onto a\ntarget while preserving target attributes such as pose and expression.\nDiffusion models, known for their superior generative c..."
+  },
+  {
+    "id": "2503.22176v1",
+    "title": "A Multi-Site Study on AI-Driven Pathology Detection and Osteoarthritis Grading from Knee X-Ray",
+    "authors": [
+      "Bargava Subramanian",
+      "Naveen Kumarasami",
+      "Praveen Shastry",
+      "Kalyan Sivasailam",
+      "Anandakumar D",
+      "Keerthana R",
+      "Mounigasri M",
+      "Abilaasha G",
+      "Kishore Prasath Venkatesh"
+    ],
+    "abstract": null,
+    "categories": [
+      "eess.IV",
+      "cs.CV",
+      "68T07"
+    ],
+    "primary_category": "eess.IV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Introduction: Bone health disorders like osteoarthritis and osteoporosis pose\nmajor global health challenges, often leading to delayed diagnoses due to\nlimited diagnostic tools. This study presents an..."
+  },
+  {
+    "id": "2503.22172v1",
+    "title": "Concept-Aware LoRA for Domain-Aligned Segmentation Dataset Generation",
+    "authors": [
+      "Minho Park",
+      "Sunghyun Park",
+      "Jungsoo Lee",
+      "Hyojin Park",
+      "Kyuwoong Hwang",
+      "Fatih Porikli",
+      "Jaegul Choo",
+      "Sungha Choi"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "This paper addresses the challenge of data scarcity in semantic segmentation\nby generating datasets through text-to-image (T2I) generation models, reducing\nimage acquisition and labeling costs. Segmen..."
+  },
+  {
+    "id": "2503.22168v1",
+    "title": "Spatial Transport Optimization by Repositioning Attention Map for Training-Free Text-to-Image Synthesis",
+    "authors": [
+      "Woojung Han",
+      "Yeonkyung Lee",
+      "Chanyoung Kim",
+      "Kwanghyun Park",
+      "Seong Jae Hwang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Diffusion-based text-to-image (T2I) models have recently excelled in\nhigh-quality image generation, particularly in a training-free manner, enabling\ncost-effective adaptability and generalization acro..."
+  },
+  {
+    "id": "2503.22165v1",
+    "title": "Landscape of Thoughts: Visualizing the Reasoning Process of Large Language Models",
+    "authors": [
+      "Zhanke Zhou",
+      "Zhaocheng Zhu",
+      "Xuan Li",
+      "Mikhail Galkin",
+      "Xiao Feng",
+      "Sanmi Koyejo",
+      "Jian Tang",
+      "Bo Han"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "safety"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Numerous applications of large language models (LLMs) rely on their ability\nto perform step-by-step reasoning. However, the reasoning behavior of LLMs\nremains poorly understood, posing challenges to r..."
+  },
+  {
+    "id": "2503.22164v1",
+    "title": "PharmAgents: Building a Virtual Pharma with Large Language Model Agents",
+    "authors": [
+      "Bowen Gao",
+      "Yanwen Huang",
+      "Yiqiao Liu",
+      "Wenxuan Xie",
+      "Wei-Ying Ma",
+      "Ya-Qin Zhang",
+      "Yanyan Lan"
+    ],
+    "abstract": null,
+    "categories": [
+      "q-bio.BM",
+      "cs.AI"
+    ],
+    "primary_category": "q-bio.BM",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "The discovery of novel small molecule drugs remains a critical scientific\nchallenge with far-reaching implications for treating diseases and advancing\nhuman health. Traditional drug development--espec..."
+  },
+  {
+    "id": "2503.22163v1",
+    "title": "T-CIL: Temperature Scaling using Adversarial Perturbation for Calibration in Class-Incremental Learning",
+    "authors": [
+      "Seong-Hyeon Hwang",
+      "Minsu Kim",
+      "Steven Euijong Whang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "adversarial"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "We study model confidence calibration in class-incremental learning, where\nmodels learn from sequential tasks with different class sets. While existing\nworks primarily focus on accuracy, maintaining c..."
+  },
+  {
+    "id": "2503.22154v1",
+    "title": "Permutation-Invariant and Orientation-Aware Dataset Distillation for 3D Point Clouds",
+    "authors": [
+      "Jae-Young Yim",
+      "Dongwook Kim",
+      "Jae-Young Sim"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "We should collect large amount of data to train deep neural networks for\nvarious applications. Recently, the dataset distillation for images and texts\nhas been attracting a lot of attention, that redu..."
+  },
+  {
+    "id": "2503.22151v1",
+    "title": "When Autonomy Breaks: The Hidden Existential Risk of AI",
+    "authors": [
+      "Joshua Krook"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CY",
+      "cs.AI",
+      "cs.HC"
+    ],
+    "primary_category": "cs.CY",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "existential risk"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "AI risks are typically framed around physical threats to humanity, a loss of\ncontrol or an accidental error causing humanity's extinction. However, I argue\nin line with the gradual disempowerment thes..."
+  },
+  {
+    "id": "2503.22138v1",
+    "title": "Enhancing Dance-to-Music Generation via Negative Conditioning Latent Diffusion Model",
+    "authors": [
+      "Changchang Sun",
+      "Gaowen Liu",
+      "Charles Fleming",
+      "Yan Yan"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.SD",
+      "cs.CV",
+      "eess.AS"
+    ],
+    "primary_category": "cs.SD",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Conditional diffusion models have gained increasing attention since their\nimpressive results for cross-modal synthesis, where the strong alignment\nbetween conditioning input and generated output can b..."
+  },
+  {
+    "id": "2503.22137v1",
+    "title": "Sharpe Ratio-Guided Active Learning for Preference Optimization in RLHF",
+    "authors": [
+      "Syrine Belakaria",
+      "Joshua Kazdan",
+      "Charles Marx",
+      "Chris Cundy",
+      "Willie Neiswanger",
+      "Sanmi Koyejo",
+      "Barbara E. Engelhardt",
+      "Stefano Ermon"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "cs.AI",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Reinforcement learning from human feedback (RLHF) has become a cornerstone of\nthe training and alignment pipeline for large language models (LLMs). Recent\nadvances, such as direct preference optimizat..."
+  },
+  {
+    "id": "2503.22119v1",
+    "title": "Multimodal Machine Learning for Real Estate Appraisal: A Comprehensive Survey",
+    "authors": [
+      "Chenya Huang",
+      "Zhidong Li",
+      "Fang Chen",
+      "Bin Liang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Real estate appraisal has undergone a significant transition from manual to\nautomated valuation and is entering a new phase of evolution. Leveraging\ncomprehensive attention to various data sources, a ..."
+  },
+  {
+    "id": "2503.22115v1",
+    "title": "Beyond Single-Sentence Prompts: Upgrading Value Alignment Benchmarks with Dialogues and Stories",
+    "authors": [
+      "Yazhou Zhang",
+      "Qimeng Liu",
+      "Qiuchi Li",
+      "Peng Zhang",
+      "Jing Qin"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CY"
+    ],
+    "primary_category": "cs.CL",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment",
+      "value alignment",
+      "safety",
+      "AI safety",
+      "adversarial",
+      "ethics"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Evaluating the value alignment of large language models (LLMs) has\ntraditionally relied on single-sentence adversarial prompts, which directly\nprobe models with ethically sensitive or controversial qu..."
+  },
+  {
+    "id": "2503.22081v1",
+    "title": "A Survey on Remote Sensing Foundation Models: From Vision to Multimodality",
+    "authors": [
+      "Ziyue Huang",
+      "Hongxi Yan",
+      "Qiqi Zhan",
+      "Shuai Yang",
+      "Mingming Zhang",
+      "Chenkai Zhang",
+      "YiMing Lei",
+      "Zeming Liu",
+      "Qingjie Liu",
+      "Yunhong Wang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "The rapid advancement of remote sensing foundation models, particularly\nvision and multimodal models, has significantly enhanced the capabilities of\nintelligent geospatial data interpretation. These m..."
+  },
+  {
+    "id": "2503.22076v1",
+    "title": "Concise One-Layer Transformers Can Do Function Evaluation (Sometimes)",
+    "authors": [
+      "Lena Strobl",
+      "Dana Angluin",
+      "Robert Frank"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "While transformers have proven enormously successful in a range of tasks,\ntheir fundamental properties as models of computation are not well understood.\nThis paper contributes to the study of the expr..."
+  },
+  {
+    "id": "2503.22074v1",
+    "title": "Penrose Tiled Low-Rank Compression and Section-Wise Q&A Fine-Tuning: A General Framework for Domain-Specific Large Language Model Adaptation",
+    "authors": [
+      "Chuan-Wei Kuo",
+      "Siyu Chen",
+      "Chenqi Yan",
+      "Yu Yang Fredrik Liu"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CL",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Large language models (LLMs) hold great promise for specialized scientific\ndomains such as materials science, yet adapting them efficiently and accurately\nto domain-specific knowledge remains challeng..."
+  },
+  {
+    "id": "2503.22051v1",
+    "title": "Non-Monotonic Attention-based Read/Write Policy Learning for Simultaneous Translation",
+    "authors": [
+      "Zeeshan Ahmed",
+      "Frank Seide",
+      "Zhe Liu",
+      "Rastislav Rabatin",
+      "Jachym Kolar",
+      "Niko Moritz",
+      "Ruiming Xie",
+      "Simone Merello",
+      "Christian Fuegen"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CL",
+    "submitted_date": "2025-03-28",
+    "last_updated": "2025-03-28",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Simultaneous or streaming machine translation generates translation while\nreading the input stream. These systems face a quality/latency trade-off,\naiming to achieve high translation quality similar t..."
+  },
+  {
+    "id": "2503.22040v1",
+    "title": "The Risks of Using Large Language Models for Text Annotation in Social Science Research",
+    "authors": [
+      "Hao Lin",
+      "Yongjun Zhang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CL",
+      "cs.CY"
+    ],
+    "primary_category": "cs.CL",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "transparency"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Generative artificial intelligence (GenAI) or large language models (LLMs)\nhave the potential to revolutionize computational social science, particularly\nin automated textual analysis. In this paper, ..."
+  },
+  {
+    "id": "2503.22023v1",
+    "title": "Safeguarding Autonomy: a Focus on Machine Learning Decision Systems",
+    "authors": [
+      "Paula Subías-Beltrán",
+      "Oriol Pujol",
+      "Itziar de Lecuona"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CY",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CY",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "ethics"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "As global discourse on AI regulation gains momentum, this paper focuses on\ndelineating the impact of ML on autonomy and fostering awareness. Respect for\nautonomy is a basic principle in bioethics that..."
+  },
+  {
+    "id": "2503.22019v1",
+    "title": "AGILE: A Diffusion-Based Attention-Guided Image and Label Translation for Efficient Cross-Domain Plant Trait Identification",
+    "authors": [
+      "Earl Ranario",
+      "Lars Lundqvist",
+      "Heesup Yun",
+      "Brian N. Bailey",
+      "J. Mason Earles"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Semantically consistent cross-domain image translation facilitates the\ngeneration of training data by transferring labels across different domains,\nmaking it particularly useful for plant trait identi..."
+  },
+  {
+    "id": "2503.21989v1",
+    "title": "Bresa: Bio-inspired Reflexive Safe Reinforcement Learning for Contact-Rich Robotic Tasks",
+    "authors": [
+      "Heng Zhang",
+      "Gokhan Solak",
+      "Arash Ajoudani"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "safety"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Ensuring safety in reinforcement learning (RL)-based robotic systems is a\ncritical challenge, especially in contact-rich tasks within unstructured\nenvironments. While the state-of-the-art safe RL appr..."
+  },
+  {
+    "id": "2503.21975v1",
+    "title": "Pretrained Bayesian Non-parametric Knowledge Prior in Robotic Long-Horizon Reinforcement Learning",
+    "authors": [
+      "Yuan Meng",
+      "Xiangtong Yao",
+      "Kejia Chen",
+      "Yansong Wu",
+      "Liding Zhang",
+      "Zhenshan Bing",
+      "Alois Knoll"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Reinforcement learning (RL) methods typically learn new tasks from scratch,\noften disregarding prior knowledge that could accelerate the learning process.\nWhile some methods incorporate previously lea..."
+  },
+  {
+    "id": "2503.21964v1",
+    "title": "NeuroLIP: Interpretable and Fair Cross-Modal Alignment of fMRI and Phenotypic Text",
+    "authors": [
+      "Yanting Yang",
+      "Xiaoxiao Li"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG",
+      "q-bio.NC"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "alignment",
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Integrating functional magnetic resonance imaging (fMRI) connectivity data\nwith phenotypic textual descriptors (e.g., disease label, demographic data)\nholds significant potential to advance our unders..."
+  },
+  {
+    "id": "2503.21956v1",
+    "title": "Enhancing Pavement Crack Classification with Bidirectional Cascaded Neural Networks",
+    "authors": [
+      "Taqwa I. Alhadidi",
+      "Asmaa Alazmi",
+      "Shadi Jaradat",
+      "Ahmed Jaber",
+      "Huthaifa Ashqar",
+      "Mohammed Elhenawy"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "safety"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Pavement distress, such as cracks and potholes, is a significant issue\naffecting road safety and maintenance. In this study, we present the\nimplementation and evaluation of Bidirectional Cascaded Neur..."
+  },
+  {
+    "id": "2503.21949v1",
+    "title": "Reward Design for Reinforcement Learning Agents",
+    "authors": [
+      "Rati Devidze"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Reward functions are central in reinforcement learning (RL), guiding agents\ntowards optimal decision-making. The complexity of RL tasks requires\nmeticulously designed reward functions that effectively..."
+  },
+  {
+    "id": "2503.21937v1",
+    "title": "Lobster: A GPU-Accelerated Framework for Neurosymbolic Programming",
+    "authors": [
+      "Paul Biberstein",
+      "Ziyang Li",
+      "Joseph Devietti",
+      "Mayur Naik"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.PL",
+      "cs.AI",
+      "cs.DC",
+      "cs.LG"
+    ],
+    "primary_category": "cs.PL",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Neurosymbolic programs combine deep learning with symbolic reasoning to\nachieve better data efficiency, interpretability, and generalizability compared\nto standalone deep learning approaches. However,..."
+  },
+  {
+    "id": "2503.21902v1",
+    "title": "OntoAligner: A Comprehensive Modular and Robust Python Toolkit for Ontology Alignment",
+    "authors": [
+      "Hamed Babaei Giglou",
+      "Jennifer D'Souza",
+      "Oliver Karras",
+      "Sören Auer"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "primary_category": "cs.AI",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Ontology Alignment (OA) is fundamental for achieving semantic\ninteroperability across diverse knowledge systems. We present OntoAligner, a\ncomprehensive, modular, and robust Python toolkit for ontolog..."
+  },
+  {
+    "id": "2503.21888v1",
+    "title": "RedditESS: A Mental Health Social Support Interaction Dataset -- Understanding Effective Social Support to Refine AI-Driven Support Tools",
+    "authors": [
+      "Zeyad Alghamdi",
+      "Tharindu Kumarage",
+      "Garima Agrawal",
+      "Mansooreh Karami",
+      "Ibrahim Almuteb",
+      "Huan Liu"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CL",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Effective mental health support is crucial for alleviating psychological\ndistress. While large language model (LLM)-based assistants have shown promise\nin mental health interventions, existing researc..."
+  },
+  {
+    "id": "2503.21878v1",
+    "title": "Is Best-of-N the Best of Them? Coverage, Scaling, and Optimality in Inference-Time Alignment",
+    "authors": [
+      "Audrey Huang",
+      "Adam Block",
+      "Qinghua Liu",
+      "Nan Jiang",
+      "Dylan J. Foster",
+      "Akshay Krishnamurthy"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "stat.ML"
+    ],
+    "primary_category": "cs.AI",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "alignment",
+      "reward hacking"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Inference-time computation provides an important axis for scaling language\nmodel performance, but naively scaling compute through techniques like\nBest-of-$N$ sampling can cause performance to degrade ..."
+  },
+  {
     "id": "2503.21780v1",
     "title": "Semantic Library Adaptation: LoRA Retrieval and Fusion for Open-Vocabulary Semantic Segmentation",
     "authors": [
@@ -248,6 +1916,31 @@
     "abstract_snippet": "Alignment of Large Language models (LLMs) is crucial for safe and trustworthy\ndeployment in applications. Reinforcement learning from human feedback (RLHF)\nhas emerged as an effective technique to ali..."
   },
   {
+    "id": "2503.21851v1",
+    "title": "On Large Multimodal Models as Open-World Image Classifiers",
+    "authors": [
+      "Alessandro Conti",
+      "Massimiliano Mancini",
+      "Enrico Fini",
+      "Yiming Wang",
+      "Paolo Rota",
+      "Elisa Ricci"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Traditional image classification requires a predefined list of semantic\ncategories. In contrast, Large Multimodal Models (LMMs) can sidestep this\nrequirement by classifying images directly using natur..."
+  },
+  {
     "id": "2503.21695v1",
     "title": "AMA-SAM: Adversarial Multi-Domain Alignment of Segment Anything Model for High-Fidelity Histology Nuclei Segmentation",
     "authors": [
@@ -271,6 +1964,31 @@
     "is_safety_paper": true,
     "month": "2025-03",
     "abstract_snippet": "Accurate segmentation of cell nuclei in histopathology images is essential\nfor numerous biomedical research and clinical applications. However, existing\ncell nucleus segmentation methods only consider..."
+  },
+  {
+    "id": "2503.21847v1",
+    "title": "ReCoM: Realistic Co-Speech Motion Generation with Recurrent Embedded Transformer",
+    "authors": [
+      "Yong Xie",
+      "Yunlian Sun",
+      "Hongwen Zhang",
+      "Yebin Liu",
+      "Jinhui Tang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.GR",
+      "cs.AI"
+    ],
+    "primary_category": "cs.GR",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "We present ReCoM, an efficient framework for generating high-fidelity and\ngeneralizable human body motions synchronized with speech. The core innovation\nlies in the Recurrent Embedded Transformer (RET..."
   },
   {
     "id": "2503.21659v1",
@@ -337,6 +2055,33 @@
     "is_safety_paper": true,
     "month": "2025-03",
     "abstract_snippet": "Identifying low-dimensional latent structures within high-dimensional data\nhas long been a central topic in the machine learning community, driven by the\nneed for data compression, storage, transmissi..."
+  },
+  {
+    "id": "2503.21843v1",
+    "title": "CMD-HAR: Cross-Modal Disentanglement for Wearable Human Activity Recognition",
+    "authors": [
+      "Hanyu Liu",
+      "Siyao Li",
+      "Ying Yu",
+      "Yixuan Jiang",
+      "Hang Xiao",
+      "Jingxi Long",
+      "Haotian Tang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Human Activity Recognition (HAR) is a fundamental technology for numerous\nhuman - centered intelligent applications. Although deep learning methods have\nbeen utilized to accelerate feature extraction,..."
   },
   {
     "id": "2503.21598v1",
@@ -572,7 +2317,7 @@
     "abstract_snippet": "In this work, we propose a metric called Number of Thoughts (NofT) to\ndetermine the difficulty of tasks pre-prompting and support Large Language\nModels (LLMs) in production contexts. By setting thresh..."
   },
   {
-    "id": "2503.21431v1",
+    "id": "2503.21431v2",
     "title": "Nearest Neighbour Equilibrium Clustering",
     "authors": [
       "David P. Hofmeyr"
@@ -584,7 +2329,7 @@
     ],
     "primary_category": "cs.LG",
     "submitted_date": "2025-03-27",
-    "last_updated": "2025-03-27",
+    "last_updated": "2025-03-28",
     "safety_keywords_found": [
       "alignment"
     ],
@@ -674,9 +2419,10 @@
     ],
     "abstract": null,
     "categories": [
+      "cs.LG",
       "cs.AI"
     ],
-    "primary_category": "cs.AI",
+    "primary_category": "cs.LG",
     "submitted_date": "2025-03-27",
     "last_updated": "2025-03-27",
     "safety_keywords_found": [
@@ -1168,6 +2914,7 @@
     "abstract": null,
     "categories": [
       "cs.RO",
+      "cs.LG",
       "cs.MA"
     ],
     "primary_category": "cs.RO",
@@ -1181,8 +2928,8 @@
     "abstract_snippet": "The integration of autonomous mobile robots (AMRs) in industrial\nenvironments, particularly warehouses, has revolutionized logistics and\noperational efficiency. However, ensuring the safety of human w..."
   },
   {
-    "id": "2503.21106v1",
-    "title": "Function Alignment: A New Theory for Mind and Intelligence, Part I: Foundations",
+    "id": "2503.21106v2",
+    "title": "Function Alignment: A New Theory of Mind and Intelligence, Part I: Foundations",
     "authors": [
       "Gus G. Xia"
     ],
@@ -1194,7 +2941,7 @@
     ],
     "primary_category": "cs.CL",
     "submitted_date": "2025-03-27",
-    "last_updated": "2025-03-27",
+    "last_updated": "2025-03-28",
     "safety_keywords_found": [
       "alignment",
       "interpretability"
@@ -1275,6 +3022,30 @@
     "is_safety_paper": true,
     "month": "2025-03",
     "abstract_snippet": "Monte-Carlo Tree Search (MCTS) is a powerful tool for many non-differentiable\nsearch related problems such as adversarial games. However, the performance of\nsuch approach highly depends on the order o..."
+  },
+  {
+    "id": "2503.21834v1",
+    "title": "A Multi-Modal Knowledge-Enhanced Framework for Vessel Trajectory Prediction",
+    "authors": [
+      "Haomin Yu",
+      "Tianyi Li",
+      "Kristian Torp",
+      "Christian S. Jensen"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-27",
+    "last_updated": "2025-03-27",
+    "safety_keywords_found": [
+      "safety"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Accurate vessel trajectory prediction facilitates improved navigational\nsafety, routing, and environmental protection. However, existing prediction\nmethods are challenged by the irregular sampling tim..."
   },
   {
     "id": "2503.20995v1",
@@ -1362,7 +3133,8 @@
     "abstract": null,
     "categories": [
       "cs.CL",
-      "cs.SD"
+      "cs.SD",
+      "eess.AS"
     ],
     "primary_category": "cs.CL",
     "submitted_date": "2025-03-26",
@@ -1485,7 +3257,7 @@
     "abstract_snippet": "The application of quantum computers to machine learning tasks is an exciting\npotential direction to explore in search of quantum advantage. In the absence\nof large quantum computers to empirically ev..."
   },
   {
-    "id": "2503.20871v1",
+    "id": "2503.20871v2",
     "title": "VinaBench: Benchmark for Faithful and Consistent Visual Narratives",
     "authors": [
       "Silin Gao",
@@ -1506,7 +3278,7 @@
     ],
     "primary_category": "cs.CV",
     "submitted_date": "2025-03-26",
-    "last_updated": "2025-03-26",
+    "last_updated": "2025-03-28",
     "safety_keywords_found": [
       "alignment"
     ],
@@ -1869,6 +3641,28 @@
     "abstract_snippet": "This paper describes the comprehensive safety framework that underpinned the\ndevelopment, release process, and regulatory approval of BMW's first SAE Level\n3 Automated Driving System. The framework co..."
   },
   {
+    "id": "2503.21827v1",
+    "title": "Hybrid Multi-Stage Learning Framework for Edge Detection: A Survey",
+    "authors": [
+      "Mark Phil Pacot",
+      "Jayno Juventud",
+      "Gleen Dalaorao"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-26",
+    "last_updated": "2025-03-26",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Edge detection remains a fundamental yet challenging task in computer vision,\nespecially under varying illumination, noise, and complex scene conditions.\nThis paper introduces a Hybrid Multi-Stage Lea..."
+  },
+  {
     "id": "2503.20839v1",
     "title": "TAR: Teacher-Aligned Representations via Contrastive Learning for Quadrupedal Locomotion",
     "authors": [
@@ -2203,6 +3997,33 @@
     "abstract_snippet": "Recent advancements in speech-driven 3D talking head generation have made\nsignificant progress in lip synchronization. However, existing models still\nstruggle to capture the perceptual alignment betwe..."
   },
   {
+    "id": "2503.21824v1",
+    "title": "Protecting Your Video Content: Disrupting Automated Video-based LLM Annotations",
+    "authors": [
+      "Haitong Liu",
+      "Kuofeng Gao",
+      "Yang Bai",
+      "Jinmin Li",
+      "Jinxiao Shan",
+      "Tao Dai",
+      "Shu-Tao Xia"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV",
+      "cs.CR"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-26",
+    "last_updated": "2025-03-26",
+    "safety_keywords_found": [
+      "adversarial"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Recently, video-based large language models (video-based LLMs) have achieved\nimpressive performance across various video comprehension tasks. However, this\nrapid advancement raises significant privacy..."
+  },
+  {
     "id": "2503.20302v1",
     "title": "A Multilingual, Culture-First Approach to Addressing Misgendering in LLM Applications",
     "authors": [
@@ -2326,6 +4147,57 @@
     "is_safety_paper": true,
     "month": "2025-03",
     "abstract_snippet": "Single-cell sequencing technology maps cells to a high-dimensional space\nencoding their internal activity. This process mirrors parallel developments in\nmachine learning, where large language models i..."
+  },
+  {
+    "id": "2503.21823v1",
+    "title": "Low-Rank Adaptation of Pre-Trained Stable Diffusion for Rigid-Body Target ISAR Imaging",
+    "authors": [
+      "Boan Zhang",
+      "Hang Dong",
+      "Jiongge Zhang",
+      "Long Tian",
+      "Rongrong Wang",
+      "Zhenhua Wu",
+      "Xiyang Liu",
+      "Hongwei Liu"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "submitted_date": "2025-03-26",
+    "last_updated": "2025-03-26",
+    "safety_keywords_found": [
+      "adversarial"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Traditional range-instantaneous Doppler (RID) methods for rigid-body target\nimaging often suffer from low resolution due to the limitations of\ntime-frequency analysis (TFA). To address this challenge,..."
+  },
+  {
+    "id": "2503.21819v1",
+    "title": "Optimizing Safe and Aligned Language Generation: A Multi-Objective GRPO Approach",
+    "authors": [
+      "Xuying Li",
+      "Zhuo Li",
+      "Yuji Kosuga",
+      "Victor Bian"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CL"
+    ],
+    "primary_category": "cs.CL",
+    "submitted_date": "2025-03-26",
+    "last_updated": "2025-03-26",
+    "safety_keywords_found": [
+      "alignment",
+      "safety"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Aligning large language models (LLMs) with human values and safety\nconstraints is challenging, especially when objectives like helpfulness,\ntruthfulness, and avoidance of harm conflict. Reinforcement ..."
   },
   {
     "id": "2503.20252v1",
@@ -2547,6 +4419,32 @@
     "is_safety_paper": true,
     "month": "2025-03",
     "abstract_snippet": "Skills have been introduced to offline reinforcement learning (RL) as\ntemporal abstractions to tackle complex, long-horizon tasks, promoting\nconsistent behavior and enabling meaningful exploration. Wh..."
+  },
+  {
+    "id": "2503.21815v1",
+    "title": "ATP: Adaptive Threshold Pruning for Efficient Data Encoding in Quantum Neural Networks",
+    "authors": [
+      "Mohamed Afane",
+      "Gabrielle Ebbrecht",
+      "Ying Wang",
+      "Juntao Chen",
+      "Junaid Farooq"
+    ],
+    "abstract": null,
+    "categories": [
+      "quant-ph",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "quant-ph",
+    "submitted_date": "2025-03-26",
+    "last_updated": "2025-03-26",
+    "safety_keywords_found": [
+      "adversarial"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Quantum Neural Networks (QNNs) offer promising capabilities for complex data\ntasks, but are often constrained by limited qubit resources and high\nentanglement, which can hinder scalability and efficie..."
   },
   {
     "id": "2503.20134v1",
@@ -2909,6 +4807,49 @@
     "is_safety_paper": true,
     "month": "2025-03",
     "abstract_snippet": "Recent advancements in large multimodal models have led to the emergence of\nremarkable generalist capabilities in digital domains, yet their translation to\nphysical agents such as robots remains a sig..."
+  },
+  {
+    "id": "2503.21813v1",
+    "title": "OAEI-LLM-T: A TBox Benchmark Dataset for Understanding LLM Hallucinations in Ontology Matching Systems",
+    "authors": [
+      "Zhangcheng Qiang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CL",
+      "cs.IR"
+    ],
+    "primary_category": "cs.CL",
+    "submitted_date": "2025-03-25",
+    "last_updated": "2025-03-25",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Hallucinations are inevitable in downstream tasks using large language models\n(LLMs). While addressing hallucinations becomes a substantial challenge for\nLLM-based ontology matching (OM) systems, we i..."
+  },
+  {
+    "id": "2503.21812v1",
+    "title": "IPGO: Indirect Prompt Gradient Optimization on Text-to-Image Generative Models with High Data Efficiency",
+    "authors": [
+      "Jianping Ye",
+      "Michel Wedel",
+      "Kunpeng Zhang"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "submitted_date": "2025-03-25",
+    "last_updated": "2025-03-25",
+    "safety_keywords_found": [
+      "alignment"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Text-to-Image Diffusion models excel at generating images from text prompts\nbut often lack optimal alignment with content semantics, aesthetics, and human\npreferences. To address these issues, in this..."
   },
   {
     "id": "2503.19916v1",
@@ -3789,7 +5730,7 @@
     "abstract_snippet": "Recent advancements in vision-language models have achieved remarkable\nresults in making language models understand vision inputs. However, a unified\napproach to align these models across diverse task..."
   },
   {
-    "id": "2503.19503v1",
+    "id": "2503.19503v2",
     "title": "Adaptive Weighted Parameter Fusion with CLIP for Class-Incremental Learning",
     "authors": [
       "Juncen Guo",
@@ -3806,7 +5747,7 @@
     ],
     "primary_category": "cs.CV",
     "submitted_date": "2025-03-25",
-    "last_updated": "2025-03-25",
+    "last_updated": "2025-03-28",
     "safety_keywords_found": [
       "alignment"
     ],
@@ -4126,6 +6067,31 @@
     "abstract_snippet": "Concept bottleneck models (CBM) aim to produce inherently interpretable\nmodels that rely on human-understandable concepts for their predictions.\nHowever, existing approaches to design interpretable ge..."
   },
   {
+    "id": "2503.21805v1",
+    "title": "ImF: Implicit Fingerprint for Large Language Models",
+    "authors": [
+      "Wu jiaxuan",
+      "Peng Wanli",
+      "Fu hang",
+      "Xue Yiming",
+      "Wen juan"
+    ],
+    "abstract": null,
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CL",
+    "submitted_date": "2025-03-25",
+    "last_updated": "2025-03-25",
+    "safety_keywords_found": [
+      "adversarial"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Training large language models (LLMs) is resource-intensive and expensive,\nmaking intellectual property (IP) protection essential. Most existing model\nfingerprint methods inject fingerprints into LLMs..."
+  },
+  {
     "id": "2503.19361v1",
     "title": "ImageSet2Text: Describing Sets of Images through Text",
     "authors": [
@@ -4385,6 +6351,39 @@
     "is_safety_paper": true,
     "month": "2025-03",
     "abstract_snippet": "Offline reinforcement learning (RL) aims to learn from historical data\nwithout requiring (costly) access to the environment. To facilitate offline RL\nresearch, we previously introduced NeoRL, which hi..."
+  },
+  {
+    "id": "2503.21802v1",
+    "title": "Structured and sparse partial least squares coherence for multivariate cortico-muscular analysis",
+    "authors": [
+      "Jingyao Sun",
+      "Qilu Zhang",
+      "Di Ma",
+      "Tianyu Jia",
+      "Shijie Jia",
+      "Xiaoxue Zhai",
+      "Ruimou Xie",
+      "Ping-Ju Lin",
+      "Zhibin Li",
+      "Yu Pan",
+      "Linhong Ji",
+      "Chong Li"
+    ],
+    "abstract": null,
+    "categories": [
+      "stat.AP",
+      "cs.LG",
+      "stat.ML"
+    ],
+    "primary_category": "stat.AP",
+    "submitted_date": "2025-03-25",
+    "last_updated": "2025-03-25",
+    "safety_keywords_found": [
+      "interpretability"
+    ],
+    "is_safety_paper": true,
+    "month": "2025-03",
+    "abstract_snippet": "Multivariate cortico-muscular analysis has recently emerged as a promising\napproach for evaluating the corticospinal neural pathway. However, current\nmultivariate approaches encounter challenges such ..."
   },
   {
     "id": "2503.19262v1",
@@ -8220,1493 +10219,6 @@
     "abstract_snippet": "Using the language of dynamical systems, Imitation learning (IL) provides an\nintuitive and effective way of teaching stable task-space motions to robots\nwith goal convergence. Yet, IL techniques are a..."
   },
   {
-    "id": "2503.17080v1",
-    "title": "Seeing What Matters: Empowering CLIP with Patch Generation-to-Selection",
-    "authors": [
-      "Gensheng Pei",
-      "Tao Chen",
-      "Yujia Wang",
-      "Xinhao Cai",
-      "Xiangbo Shu",
-      "Tianfei Zhou",
-      "Yazhou Yao"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "The CLIP model has demonstrated significant advancements in aligning visual\nand language modalities through large-scale pre-training on image-text pairs,\nenabling strong zero-shot classification and r..."
-  },
-  {
-    "id": "2503.17059v1",
-    "title": "DIDiffGes: Decoupled Semi-Implicit Diffusion Models for Real-time Gesture Generation from Speech",
-    "authors": [
-      "Yongkang Cheng",
-      "Shaoli Huang",
-      "Xuelin Chen",
-      "Jifeng Ning",
-      "Mingming Gong"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.GR",
-      "cs.CV",
-      "cs.SD",
-      "eess.AS"
-    ],
-    "primary_category": "cs.GR",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "adversarial"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Diffusion models have demonstrated remarkable synthesis quality and diversity\nin generating co-speech gestures. However, the computationally intensive\nsampling steps associated with diffusion models h..."
-  },
-  {
-    "id": "2503.17018v1",
-    "title": "Symbolic Audio Classification via Modal Decision Tree Learning",
-    "authors": [
-      "Enrico Marzano",
-      "Giovanni Pagliarini",
-      "Riccardo Pasini",
-      "Guido Sciavicco",
-      "Ionel Eduard Stan"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.SD",
-      "cs.AI",
-      "cs.LG",
-      "eess.AS",
-      "68T05",
-      "I.2.6"
-    ],
-    "primary_category": "cs.SD",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "transparency"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "The range of potential applications of acoustic analysis is wide.\nClassification of sounds, in particular, is a typical machine learning task\nthat received a lot of attention in recent years. The most..."
-  },
-  {
-    "id": "2503.17014v1",
-    "title": "Behavioral Conflict Avoidance Between Humans and Quadruped Robots in Shared Environments",
-    "authors": [
-      "Shuang Wei",
-      "Muhua Zhang",
-      "Yun Gan",
-      "Deqing Huang",
-      "Lei Ma",
-      "Chenguang Yang"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.RO"
-    ],
-    "primary_category": "cs.RO",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "safety"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Nowadays, robots are increasingly operated in environments shared with\nhumans, where conflicts between human and robot behaviors may compromise\nsafety. This paper presents a proactive behavioral confl..."
-  },
-  {
-    "id": "2503.17003v2",
-    "title": "A Survey on Personalized Alignment -- The Missing Piece for Large Language Models in Real-World Applications",
-    "authors": [
-      "Jian Guan",
-      "Junfei Wu",
-      "Jia-Nan Li",
-      "Chuanqi Cheng",
-      "Wei Wu"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CL"
-    ],
-    "primary_category": "cs.CL",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-24",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Large Language Models (LLMs) have demonstrated remarkable capabilities, yet\ntheir transition to real-world applications reveals a critical limitation: the\ninability to adapt to individual preferences ..."
-  },
-  {
-    "id": "2503.16975v1",
-    "title": "EasyRobust: A Comprehensive and Easy-to-use Toolkit for Robust and Generalized Vision",
-    "authors": [
-      "Xiaofeng Mao",
-      "Yuefeng Chen",
-      "Rong Zhang",
-      "Hui Xue",
-      "Zhao Li",
-      "Hang Su"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "adversarial",
-      "adversarial attack",
-      "adversarial example"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Deep neural networks (DNNs) has shown great promise in computer vision tasks.\nHowever, machine vision achieved by DNNs cannot be as robust as human\nperception. Adversarial attacks and data distributio..."
-  },
-  {
-    "id": "2503.16969v1",
-    "title": "Extending Behavior Trees for Robotic Missions with Quality Requirements",
-    "authors": [
-      "Razan Ghzouli",
-      "Rebekka Wohlrab",
-      "Jennifer Horkoff"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.SE",
-      "cs.RO"
-    ],
-    "primary_category": "cs.SE",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "safety"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Context and motivation: In recent years, behavior trees have gained growing\ninterest within the robotics community as a specification and control switching\nmechanism for the different tasks that form ..."
-  },
-  {
-    "id": "2503.16965v1",
-    "title": "When Words Outperform Vision: VLMs Can Self-Improve Via Text-Only Training For Human-Centered Decision Making",
-    "authors": [
-      "Zhe Hu",
-      "Jing Li",
-      "Yu Yin"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CL",
-      "cs.CV"
-    ],
-    "primary_category": "cs.CL",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Embodied decision-making is fundamental for AI agents operating in real-world\nenvironments. While Visual Language Models (VLMs) have advanced this\ncapability, they still struggle with complex decision..."
-  },
-  {
-    "id": "2503.16963v1",
-    "title": "Center-guided Classifier for Semantic Segmentation of Remote Sensing Images",
-    "authors": [
-      "Wei Zhang",
-      "Mengting Ma",
-      "Yizhen Jiang",
-      "Rongrong Lian",
-      "Zhenkai Wu",
-      "Kangning Cui",
-      "Xiaowen Ma"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "interpretability"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Compared with natural images, remote sensing images (RSIs) have the unique\ncharacteristic. i.e., larger intraclass variance, which makes semantic\nsegmentation for remote sensing images more challengin..."
-  },
-  {
-    "id": "2503.16960v1",
-    "title": "Somatic Safety: An Embodied Approach Towards Safe Human-Robot Interaction",
-    "authors": [
-      "Steve Benford",
-      "Eike Schneiders",
-      "Juan Pablo Martinez Avila",
-      "Praminda Caleb-Solly",
-      "Patrick Robert Brundell",
-      "Simon Castle-Green",
-      "Feng Zhou",
-      "Rachael Garrett",
-      "Kristina Höök",
-      "Sarah Whatley",
-      "Kate Marsh",
-      "Paul Tennent"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.HC",
-      "cs.RO"
-    ],
-    "primary_category": "cs.HC",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "safety"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "As robots enter the messy human world so the vital matter of safety takes on\na fresh complexion with physical contact becoming inevitable and even\ndesirable. We report on an artistic-exploration of ho..."
-  },
-  {
-    "id": "2503.16945v1",
-    "title": "PE-CLIP: A Parameter-Efficient Fine-Tuning of Vision Language Models for Dynamic Facial Expression Recognition",
-    "authors": [
-      "Ibtissam Saadi",
-      "Abdenour Hadid",
-      "Douglas W. Cunningham",
-      "Abdelmalik Taleb-Ahmed",
-      "Yassin El Hillali"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Vision-Language Models (VLMs) like CLIP offer promising solutions for Dynamic\nFacial Expression Recognition (DFER) but face challenges such as inefficient\nfull fine-tuning, high complexity, and poor a..."
-  },
-  {
-    "id": "2503.16930v1",
-    "title": "Vision-Language Gradient Descent-driven All-in-One Deep Unfolding Networks",
-    "authors": [
-      "Haijin Zeng",
-      "Xiangming Wang",
-      "Yongyong Chen",
-      "Jingyong Su",
-      "Jie Liu"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "interpretability"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Dynamic image degradations, including noise, blur and lighting\ninconsistencies, pose significant challenges in image restoration, often due to\nsensor limitations or adverse environmental conditions. E..."
-  },
-  {
-    "id": "2503.16929v1",
-    "title": "TEMPO: Temporal Preference Optimization of Video LLMs via Difficulty Scheduling and Pre-SFT Alignment",
-    "authors": [
-      "Shicheng Li",
-      "Lei Li",
-      "Kun Ouyang",
-      "Shuhuai Ren",
-      "Yuanxin Liu",
-      "Yuanxing Zhang",
-      "Fuzheng Zhang",
-      "Lingpeng Kong",
-      "Qi Liu",
-      "Xu Sun"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Video Large Language Models (Video LLMs) have achieved significant success by\nleveraging a two-stage paradigm: pretraining on large-scale video-text data for\nvision-language alignment, followed by sup..."
-  },
-  {
-    "id": "2503.16916v1",
-    "title": "Temporal Action Detection Model Compression by Progressive Block Drop",
-    "authors": [
-      "Xiaoyong Chen",
-      "Yong Guo",
-      "Jiaming Liang",
-      "Sitong Zhuang",
-      "Runhao Zeng",
-      "Xiping Hu"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Temporal action detection (TAD) aims to identify and localize action\ninstances in untrimmed videos, which is essential for various video\nunderstanding tasks. However, recent improvements in model perf..."
-  },
-  {
-    "id": "2503.16910v1",
-    "title": "Salient Object Detection in Traffic Scene through the TSOD10K Dataset",
-    "authors": [
-      "Yu Qiu",
-      "Yuhang Sun",
-      "Jie Mei",
-      "Lin Xiao",
-      "Jing Xu"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "safety"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Traffic Salient Object Detection (TSOD) aims to segment the objects critical\nto driving safety by combining semantic (e.g., collision risks) and visual\nsaliency. Unlike SOD in natural scene images (NS..."
-  },
-  {
-    "id": "2503.16875v1",
-    "title": "Federated Cross-Domain Click-Through Rate Prediction With Large Language Model Augmentation",
-    "authors": [
-      "Jiangcheng Qin",
-      "Xueyuan Zhang",
-      "Baisong Liu",
-      "Jiangbo Qian",
-      "Yangyang Wang"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.IR",
-      "cs.CL",
-      "cs.DC"
-    ],
-    "primary_category": "cs.IR",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Accurately predicting click-through rates (CTR) under stringent privacy\nconstraints poses profound challenges, particularly when user-item interactions\nare sparse and fragmented across domains. Conven..."
-  },
-  {
-    "id": "2503.16874v1",
-    "title": "MARS: A Multi-Agent Framework Incorporating Socratic Guidance for Automated Prompt Optimization",
-    "authors": [
-      "Jian Zhang",
-      "Zhangqi Wang",
-      "Haiping Zhu",
-      "Jun Liu",
-      "Qika Lin",
-      "Erik Cambria"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "primary_category": "cs.CL",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "interpretability"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "The basic question-answering format of large language models involves\ninputting a prompt and receiving a response, and the quality of the prompt\ndirectly impacts the effectiveness of the response. Aut..."
-  },
-  {
-    "id": "2503.16872v1",
-    "title": "Lie Detector: Unified Backdoor Detection via Cross-Examination Framework",
-    "authors": [
-      "Xuan Wang",
-      "Siyuan Liang",
-      "Dongping Liao",
-      "Han Fang",
-      "Aishan Liu",
-      "Xiaochun Cao",
-      "Yu-liang Lu",
-      "Ee-Chien Chang",
-      "Xitong Gao"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.LG",
-      "cs.CV"
-    ],
-    "primary_category": "cs.LG",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "alignment",
-      "adversarial"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Institutions with limited data and computing resources often outsource model\ntraining to third-party providers in a semi-honest setting, assuming adherence\nto prescribed training protocols with pre-de..."
-  },
-  {
-    "id": "2503.16867v1",
-    "title": "ETVA: Evaluation of Text-to-Video Alignment via Fine-grained Question Generation and Answering",
-    "authors": [
-      "Kaisi Guan",
-      "Zhengfeng Lai",
-      "Yuchong Sun",
-      "Peng Zhang",
-      "Wei Liu",
-      "Kieran Liu",
-      "Meng Cao",
-      "Ruihua Song"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Precisely evaluating semantic alignment between text prompts and generated\nvideos remains a challenge in Text-to-Video (T2V) Generation. Existing\ntext-to-video alignment metrics like CLIPScore only ge..."
-  },
-  {
-    "id": "2503.16861v2",
-    "title": "In-House Evaluation Is Not Enough: Towards Robust Third-Party Flaw Disclosure for General-Purpose AI",
-    "authors": [
-      "Shayne Longpre",
-      "Kevin Klyman",
-      "Ruth E. Appel",
-      "Sayash Kapoor",
-      "Rishi Bommasani",
-      "Michelle Sahar",
-      "Sean McGregor",
-      "Avijit Ghosh",
-      "Borhane Blili-Hamelin",
-      "Nathan Butters",
-      "Alondra Nelson",
-      "Amit Elazari",
-      "Andrew Sellars",
-      "Casey John Ellis",
-      "Dane Sherrets",
-      "Dawn Song",
-      "Harley Geiger",
-      "Ilona Cohen",
-      "Lauren McIlvenny",
-      "Madhulika Srikumar",
-      "Mark M. Jaycox",
-      "Markus Anderljung",
-      "Nadine Farid Johnson",
-      "Nicholas Carlini",
-      "Nicolas Miailhe",
-      "Nik Marda",
-      "Peter Henderson",
-      "Rebecca S. Portnoff",
-      "Rebecca Weiss",
-      "Victoria Westerhoff",
-      "Yacine Jernite",
-      "Rumman Chowdhury",
-      "Percy Liang",
-      "Arvind Narayanan"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.AI"
-    ],
-    "primary_category": "cs.AI",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-25",
-    "safety_keywords_found": [
-      "safety"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "The widespread deployment of general-purpose AI (GPAI) systems introduces\nsignificant new risks. Yet the infrastructure, practices, and norms for\nreporting flaws in GPAI systems remain seriously under..."
-  },
-  {
-    "id": "2503.16851v1",
-    "title": "Towards LLM Guardrails via Sparse Representation Steering",
-    "authors": [
-      "Zeqing He",
-      "Zhibo Wang",
-      "Huiyu Xu",
-      "Kui Ren"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CR",
-      "cs.CL"
-    ],
-    "primary_category": "cs.CR",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "interpretability",
-      "safety"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Large Language Models (LLMs) have demonstrated remarkable performance in\nnatural language generation tasks, yet their uncontrolled outputs pose\nsignificant ethical and safety risks. Recently, represen..."
-  },
-  {
-    "id": "2503.16849v1",
-    "title": "Safe On-Orbit Dislodging of Deployable Structures via Robust Adaptive MPC",
-    "authors": [
-      "Longsen Gao",
-      "Claus Danielson",
-      "Andrew Kwas",
-      "Rafael Fierro"
-    ],
-    "abstract": null,
-    "categories": [
-      "eess.SY",
-      "cs.RO",
-      "cs.SY"
-    ],
-    "primary_category": "eess.SY",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "safety"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "This paper proposes a novel robust adaptive model predictive controller for\non-orbit dislodging. We consider the scenario where a servicer, equipped with a\nrobot arm, must dislodge a client, a time-va..."
-  },
-  {
-    "id": "2503.16842v1",
-    "title": "Downstream Analysis of Foundational Medical Vision Models for Disease Progression",
-    "authors": [
-      "Basar Demir",
-      "Soumitri Chattopadhyay",
-      "Thomas Hastings Greer",
-      "Boqi Chen",
-      "Marc Niethammer"
-    ],
-    "abstract": null,
-    "categories": [
-      "eess.IV",
-      "cs.CV"
-    ],
-    "primary_category": "eess.IV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Medical vision foundational models are used for a wide variety of tasks,\nincluding medical image segmentation and registration. This work evaluates the\nability of these models to predict disease progr..."
-  },
-  {
-    "id": "2503.16833v1",
-    "title": "The Deployment of End-to-End Audio Language Models Should Take into Account the Principle of Least Privilege",
-    "authors": [
-      "Luxi He",
-      "Xiangyu Qi",
-      "Michel Liao",
-      "Inyoung Cheong",
-      "Prateek Mittal",
-      "Danqi Chen",
-      "Peter Henderson"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.SD",
-      "cs.AI",
-      "cs.CL",
-      "cs.CY",
-      "eess.AS"
-    ],
-    "primary_category": "cs.SD",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "safety"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "We are at a turning point for language models that accept audio input. The\nlatest end-to-end audio language models (Audio LMs) process speech directly\ninstead of relying on a separate transcription st..."
-  },
-  {
-    "id": "2503.16832v1",
-    "title": "Joint Self-Supervised Video Alignment and Action Segmentation",
-    "authors": [
-      "Ali Shah Ali",
-      "Syed Ahmed Mahmood",
-      "Mubin Saeed",
-      "Andrey Konin",
-      "M. Zeeshan Zia",
-      "Quoc-Huy Tran"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "We introduce a novel approach for simultaneous self-supervised video\nalignment and action segmentation based on a unified optimal transport\nframework. In particular, we first tackle self-supervised vi..."
-  },
-  {
-    "id": "2503.16825v1",
-    "title": "SGFormer: Satellite-Ground Fusion for 3D Semantic Scene Completion",
-    "authors": [
-      "Xiyue Guo",
-      "Jiarui Hu",
-      "Junjie Hu",
-      "Hujun Bao",
-      "Guofeng Zhang"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV",
-      "cs.RO"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "alignment",
-      "misalignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Recently, camera-based solutions have been extensively explored for scene\nsemantic completion (SSC). Despite their success in visible areas, existing\nmethods struggle to capture complete scene semanti..."
-  },
-  {
-    "id": "2503.16814v1",
-    "title": "When Debate Fails: Bias Reinforcement in Large Language Models",
-    "authors": [
-      "Jihwan Oh",
-      "Minchan Jeong",
-      "Jongwoo Ko",
-      "Se-Young Yun"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.LG",
-      "cs.CL"
-    ],
-    "primary_category": "cs.LG",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "adversarial"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Large Language Models $($LLMs$)$ solve complex problems using training-free\nmethods like prompt engineering and in-context learning, yet ensuring reasoning\ncorrectness remains challenging. While self-..."
-  },
-  {
-    "id": "2503.16779v1",
-    "title": "Chain-of-Tools: Utilizing Massive Unseen Tools in the CoT Reasoning of Frozen Language Models",
-    "authors": [
-      "Mengsong Wu",
-      "Tong Zhu",
-      "Han Han",
-      "Xiang Zhang",
-      "Wenbiao Shao",
-      "Wenliang Chen"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "primary_category": "cs.CL",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "interpretability"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Tool learning can further broaden the usage scenarios of large language\nmodels (LLMs). However most of the existing methods either need to finetune\nthat the model can only use tools seen in the traini..."
-  },
-  {
-    "id": "2503.17417v1",
-    "title": "Generative Modeling of Class Probability for Multi-Modal Representation Learning",
-    "authors": [
-      "Jungkyoo Shin",
-      "Bumsoo Kim",
-      "Eunwoo Kim"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "primary_category": "cs.LG",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "alignment",
-      "misalignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Multi-modal understanding plays a crucial role in artificial intelligence by\nenabling models to jointly interpret inputs from different modalities. However,\nconventional approaches such as contrastive..."
-  },
-  {
-    "id": "2503.17416v1",
-    "title": "Debugging and Runtime Analysis of Neural Networks with VLMs (A Case Study)",
-    "authors": [
-      "Boyue Caroline Hu",
-      "Divya Gopinath",
-      "Corina S. Pasareanu",
-      "Nina Narodytska",
-      "Ravi Mangal",
-      "Susmit Jha"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.SE",
-      "cs.AI",
-      "cs.LG"
-    ],
-    "primary_category": "cs.SE",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "adversarial",
-      "adversarial attack"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Debugging of Deep Neural Networks (DNNs), particularly vision models, is very\nchallenging due to the complex and opaque decision-making processes in these\nnetworks. In this paper, we explore multi-mod..."
-  },
-  {
-    "id": "2503.16771v1",
-    "title": "On Explaining (Large) Language Models For Code Using Global Code-Based Explanations",
-    "authors": [
-      "David N. Palacio",
-      "Dipin Khati",
-      "Daniel Rodriguez-Cardenas",
-      "Alejandro Velasco",
-      "Denys Poshyvanyk"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.SE",
-      "cs.LG"
-    ],
-    "primary_category": "cs.SE",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "interpretability"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "In recent years, Language Models for Code (LLM4Code) have significantly\nchanged the landscape of software engineering (SE) on downstream tasks, such as\ncode generation, by making software development ..."
-  },
-  {
-    "id": "2503.17414v1",
-    "title": "Opportunities and Challenges of Frontier Data Governance With Synthetic Data",
-    "authors": [
-      "Madhavendra Thakur",
-      "Jason Hausenloy"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CY",
-      "cs.AI",
-      "cs.LG"
-    ],
-    "primary_category": "cs.CY",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "adversarial"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Synthetic data, or data generated by machine learning models, is increasingly\nemerging as a solution to the data access problem. However, its use introduces\nsignificant governance and accountability c..."
-  },
-  {
-    "id": "2503.16760v1",
-    "title": "Rethinking the Role of Spatial Mixing",
-    "authors": [
-      "George Cazenavette",
-      "Joel Julin",
-      "Simon Lucey"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV",
-      "cs.LG"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-21",
-    "last_updated": "2025-03-21",
-    "safety_keywords_found": [
-      "adversarial"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Until quite recently, the backbone of nearly every state-of-the-art computer\nvision model has been the 2D convolution. At its core, a 2D convolution\nsimultaneously mixes information across both the sp..."
-  },
-  {
-    "id": "2503.16743v1",
-    "title": "SuperARC: A Test for General and Super Intelligence Based on First Principles of Recursion Theory and Algorithmic Probability",
-    "authors": [
-      "Alberto Hernández-Espinosa",
-      "Luan Ozelim",
-      "Felipe S. Abrahão",
-      "Hector Zenil"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.AI",
-      "cs.IT",
-      "math.IT"
-    ],
-    "primary_category": "cs.AI",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "superintelligence"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "We introduce an open-ended test grounded in algorithmic probability that can\navoid benchmark contamination in the quantitative evaluation of frontier models\nin the context of their Artificial General ..."
-  },
-  {
-    "id": "2503.16734v1",
-    "title": "Towards Agentic Recommender Systems in the Era of Multimodal Large Language Models",
-    "authors": [
-      "Chengkai Huang",
-      "Junda Wu",
-      "Yu Xia",
-      "Zixu Yu",
-      "Ruhan Wang",
-      "Tong Yu",
-      "Ruiyi Zhang",
-      "Ryan A. Rossi",
-      "Branislav Kveton",
-      "Dongruo Zhou",
-      "Julian McAuley",
-      "Lina Yao"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.AI",
-      "cs.IR"
-    ],
-    "primary_category": "cs.AI",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "safety"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Recent breakthroughs in Large Language Models (LLMs) have led to the\nemergence of agentic AI systems that extend beyond the capabilities of\nstandalone models. By empowering LLMs to perceive external e..."
-  },
-  {
-    "id": "2503.16724v1",
-    "title": "Towards Automated Semantic Interpretability in Reinforcement Learning via Vision-Language Models",
-    "authors": [
-      "Zhaoxin Li",
-      "Zhang Xi-Jia",
-      "Batuhan Altundas",
-      "Letian Chen",
-      "Rohan Paleja",
-      "Matthew Gombolay"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.AI",
-      "cs.LG"
-    ],
-    "primary_category": "cs.AI",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "interpretability",
-      "transparency"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Semantic Interpretability in Reinforcement Learning (RL) enables\ntransparency, accountability, and safer deployment by making the agent's\ndecisions understandable and verifiable. Achieving this, howev..."
-  },
-  {
-    "id": "2503.16718v1",
-    "title": "CAARMA: Class Augmentation with Adversarial Mixup Regularization",
-    "authors": [
-      "Massa Baali",
-      "Xiang Li",
-      "Hao Chen",
-      "Rita Singh",
-      "Bhiksha Raj"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.SD",
-      "cs.CL",
-      "cs.LG"
-    ],
-    "primary_category": "cs.SD",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "adversarial"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Speaker verification is a typical zero-shot learning task, where inference of\nunseen classes is performed by comparing embeddings of test instances to known\nexamples. The models performing inference m..."
-  },
-  {
-    "id": "2503.16707v1",
-    "title": "Cross-Modal and Uncertainty-Aware Agglomeration for Open-Vocabulary 3D Scene Understanding",
-    "authors": [
-      "Jinlong Li",
-      "Cristiano Saltori",
-      "Fabio Poiesi",
-      "Nicu Sebe"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "The lack of a large-scale 3D-text corpus has led recent works to distill\nopen-vocabulary knowledge from vision-language models (VLMs). owever, these\nmethods typically rely on a single VLM to align the..."
-  },
-  {
-    "id": "2503.16673v1",
-    "title": "Subgradient Method for System Identification with Non-Smooth Objectives",
-    "authors": [
-      "Baturalp Yalcin",
-      "Javad Lavaei"
-    ],
-    "abstract": null,
-    "categories": [
-      "math.OC",
-      "cs.CC",
-      "cs.LG",
-      "cs.SY",
-      "eess.SY",
-      "62, 90, 93"
-    ],
-    "primary_category": "math.OC",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "safety"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "This paper investigates a subgradient-based algorithm to solve the system\nidentification problem for linear time-invariant systems with non-smooth\nobjectives. This is essential for robust system ident..."
-  },
-  {
-    "id": "2503.16622v1",
-    "title": "Leveraging Large Language Models for Explainable Activity Recognition in Smart Homes: A Critical Evaluation",
-    "authors": [
-      "Michele Fiori",
-      "Gabriele Civitarese",
-      "Priyankar Choudhary",
-      "Claudio Bettini"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CL"
-    ],
-    "primary_category": "cs.CL",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "transparency"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Explainable Artificial Intelligence (XAI) aims to uncover the inner reasoning\nof machine learning models. In IoT systems, XAI improves the transparency of\nmodels processing sensor data from multiple h..."
-  },
-  {
-    "id": "2503.16418v1",
-    "title": "InfiniteYou: Flexible Photo Recrafting While Preserving Your Identity",
-    "authors": [
-      "Liming Jiang",
-      "Qing Yan",
-      "Yumin Jia",
-      "Zichuan Liu",
-      "Hao Kang",
-      "Xin Lu"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV",
-      "cs.LG"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Achieving flexible and high-fidelity identity-preserved image generation\nremains formidable, particularly with advanced Diffusion Transformers (DiTs)\nlike FLUX. We introduce InfiniteYou (InfU), one of..."
-  },
-  {
-    "id": "2503.16416v1",
-    "title": "Survey on Evaluation of LLM-based Agents",
-    "authors": [
-      "Asaf Yehudai",
-      "Lilach Eden",
-      "Alan Li",
-      "Guy Uziel",
-      "Yilun Zhao",
-      "Roy Bar-Haim",
-      "Arman Cohan",
-      "Michal Shmueli-Scheuer"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.AI",
-      "cs.CL",
-      "cs.LG"
-    ],
-    "primary_category": "cs.AI",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "safety"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "The emergence of LLM-based agents represents a paradigm shift in AI, enabling\nautonomous systems to plan, reason, use tools, and maintain memory while\ninteracting with dynamic environments. This paper..."
-  },
-  {
-    "id": "2503.16413v1",
-    "title": "M3: 3D-Spatial MultiModal Memory",
-    "authors": [
-      "Xueyan Zou",
-      "Yuchen Song",
-      "Ri-Zhao Qiu",
-      "Xuanbin Peng",
-      "Jianglong Ye",
-      "Sifei Liu",
-      "Xiaolong Wang"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV",
-      "cs.RO"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "alignment",
-      "misalignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "We present 3D Spatial MultiModal Memory (M3), a multimodal memory system\ndesigned to retain information about medium-sized static scenes through video\nsources for visual perception. By integrating 3D ..."
-  },
-  {
-    "id": "2503.16399v1",
-    "title": "SA-Occ: Satellite-Assisted 3D Occupancy Prediction in Real World",
-    "authors": [
-      "Chen Chen",
-      "Zhirui Wang",
-      "Taowei Sheng",
-      "Yi Jiang",
-      "Yundu Li",
-      "Peirui Cheng",
-      "Luning Zhang",
-      "Kaiqiang Chen",
-      "Yanfeng Hu",
-      "Xue Yang",
-      "Xian Sun"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Existing vision-based 3D occupancy prediction methods are inherently limited\nin accuracy due to their exclusive reliance on street-view imagery, neglecting\nthe potential benefits of incorporating sate..."
-  },
-  {
-    "id": "2503.16395v1",
-    "title": "Truthful Elicitation of Imprecise Forecasts",
-    "authors": [
-      "Anurag Singh",
-      "Siu Lun Chau",
-      "Krikamol Muandet"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.LG"
-    ],
-    "primary_category": "cs.LG",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "safety"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "The quality of probabilistic forecasts is crucial for decision-making under\nuncertainty. While proper scoring rules incentivize truthful reporting of\nprecise forecasts, they fall short when forecaster..."
-  },
-  {
-    "id": "2503.17407v1",
-    "title": "A Comprehensive Survey on Long Context Language Modeling",
-    "authors": [
-      "Jiaheng Liu",
-      "Dawei Zhu",
-      "Zhiqi Bai",
-      "Yancheng He",
-      "Huanxuan Liao",
-      "Haoran Que",
-      "Zekun Wang",
-      "Chenchen Zhang",
-      "Ge Zhang",
-      "Jiebin Zhang",
-      "Yuanxing Zhang",
-      "Zhuo Chen",
-      "Hangyu Guo",
-      "Shilong Li",
-      "Ziqiang Liu",
-      "Yong Shan",
-      "Yifan Song",
-      "Jiayi Tian",
-      "Wenhao Wu",
-      "Zhejian Zhou",
-      "Ruijie Zhu",
-      "Junlan Feng",
-      "Yang Gao",
-      "Shizhu He",
-      "Zhoujun Li",
-      "Tianyu Liu",
-      "Fanyu Meng",
-      "Wenbo Su",
-      "Yingshui Tan",
-      "Zili Wang",
-      "Jian Yang",
-      "Wei Ye",
-      "Bo Zheng",
-      "Wangchunshu Zhou",
-      "Wenhao Huang",
-      "Sujian Li",
-      "Zhaoxiang Zhang"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CL",
-      "cs.LG"
-    ],
-    "primary_category": "cs.CL",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "interpretability"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Efficient processing of long contexts has been a persistent pursuit in\nNatural Language Processing. With the growing number of long documents,\ndialogues, and other textual data, it is important to dev..."
-  },
-  {
-    "id": "2503.16328v1",
-    "title": "Knowledge-guided machine learning model with soil moisture for corn yield prediction under drought conditions",
-    "authors": [
-      "Xiaoyu Wang",
-      "Yijia Xu",
-      "Jingyi Huang",
-      "Zhengwei Yang",
-      "Zhou Zhang"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "primary_category": "cs.LG",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "interpretability"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Remote sensing (RS) techniques, by enabling non-contact acquisition of\nextensive ground observations, have become a valuable tool for corn yield\nprediction. Traditional process-based (PB) models are l..."
-  },
-  {
-    "id": "2503.16309v1",
-    "title": "Rapid patient-specific neural networks for intraoperative X-ray to volume registration",
-    "authors": [
-      "Vivek Gopalakrishnan",
-      "Neel Dey",
-      "David-Dimitris Chlorogiannis",
-      "Andrew Abumoussa",
-      "Anna M. Larson",
-      "Darren B. Orbach",
-      "Sarah Frisken",
-      "Polina Golland"
-    ],
-    "abstract": null,
-    "categories": [
-      "eess.IV",
-      "cs.CV",
-      "physics.med-ph"
-    ],
-    "primary_category": "eess.IV",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "The integration of artificial intelligence in image-guided interventions\nholds transformative potential, promising to extract 3D geometric and\nquantitative information from conventional 2D imaging mod..."
-  },
-  {
-    "id": "2503.16271v1",
-    "title": "Rethinking Robustness in Machine Learning: A Posterior Agreement Approach",
-    "authors": [
-      "João Borges S. Carvalho",
-      "Alessandro Torcinovich",
-      "Victor Jimenez Rodriguez",
-      "Antonio E. Cinà",
-      "Carlos Cotrini",
-      "Lea Schönherr",
-      "Joachim M. Buhmann"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.LG"
-    ],
-    "primary_category": "cs.LG",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "adversarial"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "The robustness of algorithms against covariate shifts is a fundamental\nproblem with critical implications for the deployment of machine learning\nalgorithms in the real world. Current evaluation method..."
-  },
-  {
-    "id": "2503.16264v1",
-    "title": "Do image and video quality metrics model low-level human vision?",
-    "authors": [
-      "Dounia Hammou",
-      "Yancheng Cai",
-      "Pavan Madhusudanarao",
-      "Christos G. Bampis",
-      "Rafał K. Mantiuk"
-    ],
-    "abstract": null,
-    "categories": [
-      "eess.IV",
-      "cs.CV",
-      "cs.MM"
-    ],
-    "primary_category": "eess.IV",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "alignment"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Image and video quality metrics, such as SSIM, LPIPS, and VMAF, are aimed to\npredict the perceived quality of the evaluated content and are often claimed to\nbe \"perceptual\". Yet, few metrics directly ..."
-  },
-  {
-    "id": "2503.16260v1",
-    "title": "Chain of Functions: A Programmatic Pipeline for Fine-Grained Chart Reasoning Data",
-    "authors": [
-      "Zijian Li",
-      "Jingjing Fu",
-      "Lei Song",
-      "Jiang Bian",
-      "Jun Zhang",
-      "Rui Wang"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CV"
-    ],
-    "primary_category": "cs.CV",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "explainability"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Visual reasoning is crucial for multimodal large language models (MLLMs) to\naddress complex chart queries, yet high-quality rationale data remains scarce.\nExisting methods leveraged (M)LLMs for data g..."
-  },
-  {
-    "id": "2503.16251v1",
-    "title": "RESFL: An Uncertainty-Aware Framework for Responsible Federated Learning by Balancing Privacy, Fairness and Utility in Autonomous Vehicles",
-    "authors": [
-      "Dawood Wasif",
-      "Terrence J. Moore",
-      "Jin-Hee Cho"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.LG",
-      "cs.CV",
-      "cs.DC",
-      "cs.ET"
-    ],
-    "primary_category": "cs.LG",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "adversarial"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Autonomous vehicles (AVs) increasingly rely on Federated Learning (FL) to\nenhance perception models while preserving privacy. However, existing FL\nframeworks struggle to balance privacy, fairness, and..."
-  },
-  {
-    "id": "2503.16248v1",
-    "title": "AI Agents in Cryptoland: Practical Attacks and No Silver Bullet",
-    "authors": [
-      "Atharv Singh Patlan",
-      "Peiyao Sheng",
-      "S. Ashwin Hebbar",
-      "Prateek Mittal",
-      "Pramod Viswanath"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.CR",
-      "cs.AI",
-      "I.2.7"
-    ],
-    "primary_category": "cs.CR",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "adversarial"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "The integration of AI agents with Web3 ecosystems harnesses their\ncomplementary potential for autonomy and openness, yet also introduces\nunderexplored security risks, as these agents dynamically inter..."
-  },
-  {
-    "id": "2503.16233v1",
-    "title": "Empirical Analysis of Privacy-Fairness-Accuracy Trade-offs in Federated Learning: A Step Towards Responsible AI",
-    "authors": [
-      "Dawood Wasif",
-      "Dian Chen",
-      "Sindhuja Madabushi",
-      "Nithin Alluru",
-      "Terrence J. Moore",
-      "Jin-Hee Cho"
-    ],
-    "abstract": null,
-    "categories": [
-      "cs.LG",
-      "cs.CR",
-      "cs.DC",
-      "cs.ET"
-    ],
-    "primary_category": "cs.LG",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "responsible AI"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "Federated Learning (FL) enables collaborative machine learning while\npreserving data privacy but struggles to balance privacy preservation (PP) and\nfairness. Techniques like Differential Privacy (DP),..."
-  },
-  {
-    "id": "2503.16206v1",
-    "title": "Interpretable Neural Causal Models with TRAM-DAGs",
-    "authors": [
-      "Beate Sick",
-      "Oliver Dürr"
-    ],
-    "abstract": null,
-    "categories": [
-      "stat.ML",
-      "cs.LG"
-    ],
-    "primary_category": "stat.ML",
-    "submitted_date": "2025-03-20",
-    "last_updated": "2025-03-20",
-    "safety_keywords_found": [
-      "interpretability"
-    ],
-    "is_safety_paper": true,
-    "month": "2025-03",
-    "abstract_snippet": "The ultimate goal of most scientific studies is to understand the underlying\ncausal mechanism between the involved variables. Structural causal models\n(SCMs) are widely used to represent such causal m..."
-  },
-  {
     "id": "2503.00240v1",
     "title": "1-Lipschitz Network Initialization for Certifiably Robust Classification Applications: A Decay Problem",
     "authors": [
@@ -13003,7 +13515,7 @@
     "abstract_snippet": "Self-consistency improves reasoning by aggregating diverse stochastic\nsamples, yet the dynamics behind its efficacy remain underexplored. We reframe\nself-consistency as a dynamic distributional alignm..."
   },
   {
-    "id": "2502.19820v2",
+    "id": "2502.19820v3",
     "title": "Foot-In-The-Door: A Multi-turn Jailbreak for LLMs",
     "authors": [
       "Zixuan Weng",
@@ -13018,7 +13530,7 @@
     ],
     "primary_category": "cs.CL",
     "submitted_date": "2025-02-27",
-    "last_updated": "2025-02-28",
+    "last_updated": "2025-03-28",
     "safety_keywords_found": [
       "alignment",
       "safety",
@@ -14712,8 +15224,8 @@
     "abstract_snippet": "Large language models (LLMs) have demonstrated remarkable capabilities across\nvarious applications, highlighting the urgent need for comprehensive safety\nevaluations. In particular, the enhanced Chine..."
   },
   {
-    "id": "2502.18924v3",
-    "title": "Sparse Alignment Enhanced Latent Diffusion Transformer for Zero-Shot Speech Synthesis",
+    "id": "2502.18924v4",
+    "title": "MegaTTS 3: Sparse Alignment Enhanced Latent Diffusion Transformer for Zero-Shot Speech Synthesis",
     "authors": [
       "Ziyue Jiang",
       "Yi Ren",
@@ -14738,7 +15250,7 @@
     ],
     "primary_category": "eess.AS",
     "submitted_date": "2025-02-26",
-    "last_updated": "2025-03-27",
+    "last_updated": "2025-03-28",
     "safety_keywords_found": [
       "alignment"
     ],
@@ -35092,7 +35604,7 @@
     "abstract_snippet": "Recent Large Vision-Language Models (LVLMs) have shown promising reasoning\ncapabilities on text-rich images from charts, tables, and documents. However,\nthe abundant text within such images may increa..."
   },
   {
-    "id": "2412.17726v1",
+    "id": "2412.17726v2",
     "title": "VidTwin: Video VAE with Decoupled Structure and Dynamics",
     "authors": [
       "Yuchi Wang",
@@ -35110,7 +35622,7 @@
     ],
     "primary_category": "cs.CV",
     "submitted_date": "2024-12-23",
-    "last_updated": "2024-12-23",
+    "last_updated": "2025-03-28",
     "safety_keywords_found": [
       "explainability"
     ],
@@ -38153,11 +38665,11 @@
     "abstract_snippet": "Infrastructure construction, often dubbed an \"industry of industries,\" is\nclosely linked with government spending and public procurement, offering\nsignificant opportunities for improved efficiency and..."
   },
   {
-    "id": "2412.00175v1",
+    "id": "2412.00175v2",
     "title": "Circumventing shortcuts in audio-visual deepfake detection datasets with unsupervised learning",
     "authors": [
-      "Dragos-Alexandru Boldisor",
       "Stefan Smeu",
+      "Dragos-Alexandru Boldisor",
       "Dan Oneata",
       "Elisabeta Oneata"
     ],
@@ -38171,7 +38683,7 @@
     ],
     "primary_category": "cs.CV",
     "submitted_date": "2024-11-29",
-    "last_updated": "2024-11-29",
+    "last_updated": "2025-03-28",
     "safety_keywords_found": [
       "safety"
     ],
@@ -42017,7 +42529,7 @@
       "Tariq M Khan",
       "Dawn Lin",
       "Shahzaib Iqbal",
-      "Eirk Meijering"
+      "Erik Meijering"
     ],
     "abstract": null,
     "categories": [
@@ -45862,7 +46374,7 @@
     "abstract_snippet": "This paper investigates whether large language models (LLMs) show agreement\nin assessing creativity in responses to the Alternative Uses Test (AUT). While\nLLMs are increasingly used to evaluate creati..."
   },
   {
-    "id": "2411.15557v2",
+    "id": "2411.15557v3",
     "title": "LAGUNA: LAnguage Guided UNsupervised Adaptation with structured spaces",
     "authors": [
       "Anxhelo Diko",
@@ -45878,7 +46390,7 @@
     ],
     "primary_category": "cs.CV",
     "submitted_date": "2024-11-23",
-    "last_updated": "2024-11-27",
+    "last_updated": "2025-03-27",
     "safety_keywords_found": [
       "alignment"
     ],
