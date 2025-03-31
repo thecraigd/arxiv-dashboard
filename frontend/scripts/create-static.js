@@ -1065,7 +1065,7 @@ const htmlTemplate = `<!DOCTYPE html>
         // Check if this keyword contains any safety term
         const matches = lowerSafetyTerms.some(term => keyword.includes(term));
         if (matches) {
-          console.log(`Static: Found safety keyword match: "${keyword}"`);
+          console.log('Static: Found safety keyword match: "' + keyword + '"');
         }
         return matches;
       });
@@ -1089,7 +1089,7 @@ const htmlTemplate = `<!DOCTYPE html>
       
       // Debug: Check keywords in each month
       Object.entries(monthlyKeywords).forEach(([month, keywords]) => {
-        console.log(`Static: Month ${month} has ${keywords.length} keywords`);
+        console.log('Static: Month ' + month + ' has ' + keywords.length + ' keywords');
         
         // Check for safety keywords in this month
         const safetyInMonth = keywords.filter(kw => 
@@ -1097,7 +1097,7 @@ const htmlTemplate = `<!DOCTYPE html>
         );
         
         if (safetyInMonth.length > 0) {
-          console.log(`Static: Month ${month} has safety keywords:`, safetyInMonth.map(k => k.text));
+          console.log('Static: Month ' + month + ' has safety keywords:', safetyInMonth.map(k => k.text));
         }
       });
       
@@ -1112,7 +1112,7 @@ const htmlTemplate = `<!DOCTYPE html>
           } 
           // Then try contains match as a fallback
           else if (lowerSafetyTerms.some(term => lowerKeyword.includes(term))) {
-            console.log(`Static: Found keyword via direct check: "${kw.text}" matches safety term`);
+            console.log('Static: Found keyword via direct check: "' + kw.text + '" matches safety term');
             keywordCounts[kw.text] = (keywordCounts[kw.text] || 0) + kw.value;
           }
         });
