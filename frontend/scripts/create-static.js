@@ -266,19 +266,19 @@ const htmlTemplate = `<!DOCTYPE html>
             <!-- Publication volume trends -->
             <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
               <div class="flex justify-between items-center mb-4">
-                <h2 class="text-xl font-semibold">Publication Volume by Category</h2>
+                <h2 class="text-xl font-semibold">AI Safety Publication Trends</h2>
                 <div class="flex space-x-2">
                   <button
-                    id="trend-categories-btn"
+                    id="trend-safety-btn"
                     class="px-3 py-1 rounded text-sm bg-blue-600 text-white"
                   >
-                    By Category
+                    Safety Trends
                   </button>
                   <button
-                    id="trend-safety-btn"
+                    id="trend-categories-btn"
                     class="px-3 py-1 rounded text-sm bg-gray-200 text-gray-800"
                   >
-                    Safety Trends
+                    By Category
                   </button>
                 </div>
               </div>
@@ -286,7 +286,7 @@ const htmlTemplate = `<!DOCTYPE html>
                 <canvas id="trend-chart"></canvas>
               </div>
               <p class="mt-4 text-sm text-gray-600">
-                Monthly publication trends across different categories
+                Monthly safety paper trends compared to total publication volume
               </p>
             </div>
             
@@ -665,12 +665,12 @@ const htmlTemplate = `<!DOCTYPE html>
         return date.toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
       });
       
-      // Create chart with category datasets by default
+      // Create chart with safety datasets by default
       window.trendChart = new Chart(ctx, {
         type: 'line',
         data: {
           labels: monthLabels,
-          datasets: categoryDatasets,
+          datasets: safetyDatasets,
         },
         options: {
           responsive: true,
@@ -686,7 +686,7 @@ const htmlTemplate = `<!DOCTYPE html>
             },
             title: {
               display: true,
-              text: 'Category Publication Trends',
+              text: 'AI Safety Paper Trends',
               font: {
                 size: 16
               }
@@ -703,6 +703,9 @@ const htmlTemplate = `<!DOCTYPE html>
               }
             },
             y: {
+              type: 'linear',
+              display: true,
+              position: 'left',
               title: {
                 display: true,
                 text: 'Number of Papers',
@@ -715,6 +718,26 @@ const htmlTemplate = `<!DOCTYPE html>
               },
               grid: {
                 color: 'rgba(0, 0, 0, 0.05)'
+              }
+            },
+            y1: {
+              type: 'linear',
+              display: true,
+              position: 'right',
+              grid: {
+                drawOnChartArea: false
+              },
+              title: {
+                display: true,
+                text: 'Safety %',
+                font: {
+                  size: 12
+                }
+              },
+              min: 0,
+              max: Math.max(20, Math.ceil(Math.max(...safetyPercentage) * 1.1)),
+              ticks: {
+                callback: (value) => \`\${value}%\`
               }
             }
           },
