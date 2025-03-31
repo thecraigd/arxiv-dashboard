@@ -1077,9 +1077,32 @@ const htmlTemplate = `<!DOCTYPE html>
         keywords.forEach(kw => allKeywords.add(kw.text.toLowerCase()));
       });
       
-      // Filter to find safety-related keywords
+      // Enhanced debugging for keyword matching
       console.log('Filtering for safety keywords in static version. Total keywords:', allKeywords.size);
       console.log('Safety terms to match:', lowerSafetyTerms);
+      
+      // Print all keywords for inspection
+      console.log('ALL AVAILABLE KEYWORDS (first 20):');
+      const sortedKeywords = Array.from(allKeywords).sort();
+      console.log(sortedKeywords.slice(0, 20));
+      
+      // Detailed inspection of sample keywords
+      console.log('DETAILED KEYWORD INSPECTION:');
+      sortedKeywords.slice(0, 5).forEach(keyword => {
+        console.log('Keyword: "' + keyword + '"');
+        console.log('  - Type:', typeof keyword);
+        console.log('  - Length:', keyword.length);
+        console.log('  - Char codes:', Array.from(keyword).map(c => c.charCodeAt(0)));
+      });
+      
+      // Detailed inspection of sample safety terms
+      console.log('DETAILED SAFETY TERM INSPECTION:');
+      lowerSafetyTerms.slice(0, 5).forEach(term => {
+        console.log('Safety term: "' + term + '"');
+        console.log('  - Type:', typeof term);
+        console.log('  - Length:', term.length);
+        console.log('  - Char codes:', Array.from(term).map(c => c.charCodeAt(0)));
+      });
       
       // Define a set of safety keywords we know should exist in the data
       const knownSafetyKeywords = [
@@ -1089,27 +1112,91 @@ const htmlTemplate = `<!DOCTYPE html>
         'outer alignment', 'inner alignment'
       ].map(k => k.toLowerCase());
       
-      // First try to find by normal matching
-      let safetyKeywords = Array.from(allKeywords).filter(keyword => {
-        // Check if this keyword contains any safety term
-        const matches = lowerSafetyTerms.some(term => keyword.includes(term));
-        if (matches) {
-          console.log('Static: Found safety keyword match via term inclusion: "' + keyword + '"');
+      // Check for direct matches of known keywords
+      console.log('CHECKING FOR EXACT MATCHES:');
+      knownSafetyKeywords.forEach(known => {
+        const found = sortedKeywords.includes(known);
+        console.log('Looking for "' + known + '": ' + (found ? 'FOUND!' : 'not found'));
+        
+        // If not found, look for partial matches
+        if (!found) {
+          const partialMatches = sortedKeywords.filter(k => k.includes(known) || known.includes(k));
+          if (partialMatches.length > 0) {
+            console.log('  - Similar keywords:', partialMatches);
+          }
         }
-        return matches;
+      });
+      
+      // First try to find by normal matching - with better debugging
+      let safetyKeywords = Array.from(allKeywords).filter(keyword => {
+        let foundMatch = false;
+        let matchingTerm = '';
+        
+        // For each keyword, check against all safety terms
+        lowerSafetyTerms.some(term => {
+          const isMatch = keyword.includes(term);
+          if (isMatch) {
+            foundMatch = true;
+            matchingTerm = term;
+            return true; // stop iteration
+          }
+          return false;
+        });
+        
+        if (foundMatch) {
+          console.log('MATCH FOUND: Keyword "' + keyword + '" matches safety term "' + matchingTerm + '"');
+        }
+        return foundMatch;
       });
       
       // If no matches, check if any of our known safety keywords exist in allKeywords
       if (safetyKeywords.length === 0) {
         console.log('Static: No matches via term inclusion. Trying direct known keyword check...');
-        safetyKeywords = Array.from(allKeywords).filter(keyword => 
-          knownSafetyKeywords.includes(keyword) || 
-          knownSafetyKeywords.some(known => keyword.includes(known))
-        );
         
-        safetyKeywords.forEach(keyword => 
-          console.log('Static: Found safety keyword via direct check: "' + keyword + '"')
-        );
+        console.log('DIRECT KEYWORD SEARCH:');
+        sortedKeywords.forEach(keyword => {
+          knownSafetyKeywords.forEach(known => {
+            if (keyword === known) {
+              console.log('EXACT MATCH: "' + keyword + '" exactly matches known keyword "' + known + '"');
+            }
+            else if (keyword.includes(known)) {
+              console.log('PARTIAL MATCH: "' + keyword + '" contains known keyword "' + known + '"');
+            }
+          });
+        });
+        
+        safetyKeywords = Array.from(allKeywords).filter(keyword => {
+          let foundMatch = false;
+          let matchMethod = '';
+          let matchTerm = '';
+          
+          // Exact match
+          if (knownSafetyKeywords.includes(keyword)) {
+            foundMatch = true;
+            matchMethod = 'exact match';
+            matchTerm = keyword;
+          } 
+          // Partial match - keyword contains known term
+          else {
+            knownSafetyKeywords.some(known => {
+              if (keyword.includes(known)) {
+                foundMatch = true;
+                matchMethod = 'keyword contains known';
+                matchTerm = known;
+                return true;
+              }
+              return false;
+            });
+          }
+          
+          if (foundMatch) {
+            console.log('MATCH: "' + keyword + '" - ' + matchMethod + ' with "' + matchTerm + '"');
+          }
+          
+          return foundMatch;
+        });
+        
+        console.log('Found ' + safetyKeywords.length + ' safety keywords via direct check');
       }
       
       // If we still have no matches, try direct check in the monthly keywords
@@ -1117,42 +1204,106 @@ const htmlTemplate = `<!DOCTYPE html>
         console.log('Static: Still no matches. Checking monthly_keywords directly...');
         const directMatches = new Set();
         
+        // Very detailed inspection of the monthly_keywords structure
+        console.log('MONTHLY KEYWORDS STRUCTURE:');
+        const months = Object.keys(monthlyKeywords);
+        console.log('Total months:', months.length);
+        console.log('Month names:', months);
+        
+        // Check a sample month in detail
+        if (months.length > 0) {
+          const sampleMonth = months[0];
+          const monthData = monthlyKeywords[sampleMonth];
+          console.log('Sample month: ' + sampleMonth);
+          console.log('  - Data type:', typeof monthData);
+          console.log('  - Is array:', Array.isArray(monthData));
+          console.log('  - Length:', monthData.length);
+          
+          // Examine a sample keyword entry
+          if (monthData && monthData.length > 0) {
+            const sampleKeyword = monthData[0];
+            console.log('  - Sample keyword entry:', sampleKeyword);
+            console.log('  - Properties:', Object.keys(sampleKeyword));
+            
+            if (sampleKeyword.text) {
+              console.log('  - Sample text:', sampleKeyword.text);
+              console.log('  - Sample text type:', typeof sampleKeyword.text);
+            }
+          }
+          
+          // Print all keywords in the first month
+          console.log('ALL KEYWORDS IN FIRST MONTH:');
+          if (Array.isArray(monthData)) {
+            monthData.slice(0, 20).forEach((entry, index) => {
+              if (entry && entry.text) {
+                console.log('  ' + index + ': "' + entry.text + '" (value: ' + entry.value + ')');
+              }
+            });
+          }
+        }
+        
+        // Try format normalization approach - more flexible matching
+        console.log('TRYING FORMAT NORMALIZATION:');
+        
+        // Function to normalize text for comparison
+        const normalize = (text) => {
+          if (!text) return '';
+          return text.toLowerCase()
+            .replace(/[^a-z0-9 ]/g, '') // Remove non-alphanumeric chars
+            .replace(/\s+/g, ' ')       // Normalize whitespace
+            .trim();
+        };
+        
+        // Normalize all safety terms
+        const normalizedSafetyTerms = lowerSafetyTerms.map(normalize);
+        console.log('Normalized safety terms (first 5):', normalizedSafetyTerms.slice(0, 5));
+        
         // Super explicit check for exact keywords we know should be there
         const exactKeysToFind = ['alignment', 'safety', 'interpretability', 'adversarial attack']; 
         
         Object.values(monthlyKeywords).forEach(keywords => {
+          if (!Array.isArray(keywords)) {
+            console.log('WARNING: Keywords is not an array:', typeof keywords);
+            return;
+          }
+          
           keywords.forEach(kw => {
+            if (!kw || !kw.text) {
+              console.log('WARNING: Invalid keyword entry:', kw);
+              return;
+            }
+            
             const lowerText = kw.text.toLowerCase();
+            const normalizedText = normalize(kw.text);
             
             // Method 1: Using our known safety keywords list
             if (knownSafetyKeywords.some(term => lowerText.includes(term))) {
-              console.log('Static: Direct monthly keyword match via known list: "' + kw.text + '"');
+              console.log('MATCH 1: Direct monthly keyword match via known list: "' + kw.text + '"');
               directMatches.add(lowerText);
             }
             
             // Method 2: Using exact keyword list
             if (exactKeysToFind.some(exact => lowerText === exact || lowerText.includes(exact))) {
-              console.log('Static: Direct monthly keyword match via exact list: "' + kw.text + '"');
+              console.log('MATCH 2: Direct monthly keyword match via exact list: "' + kw.text + '"');
               directMatches.add(lowerText);
             }
             
             // Method 3: Using safety terms
             if (lowerSafetyTerms.some(term => lowerText.includes(term))) {
-              console.log('Static: Direct monthly keyword match via safety terms: "' + kw.text + '"');
+              console.log('MATCH 3: Direct monthly keyword match via safety terms: "' + kw.text + '"');
+              directMatches.add(lowerText);
+            }
+            
+            // Method 4: Using normalized matching
+            if (normalizedSafetyTerms.some(term => normalizedText.includes(term))) {
+              console.log('MATCH 4: Normalized match: "' + kw.text + '" → "' + normalizedText + '"');
               directMatches.add(lowerText);
             }
           });
         });
         
-        // Last resort: force include known safety keywords if we found nothing
-        if (directMatches.size === 0) {
-          console.log('Static: EMERGENCY - No matches found after all checks. Forcing some safety keywords.');
-          directMatches.add('alignment');
-          directMatches.add('safety');
-          directMatches.add('interpretability');
-        }
-        
         safetyKeywords = Array.from(directMatches);
+        console.log('Found ' + safetyKeywords.length + ' safety keywords via combined matching');
       }
       
       console.log('Static: Final safety keywords:', safetyKeywords.length, safetyKeywords);
