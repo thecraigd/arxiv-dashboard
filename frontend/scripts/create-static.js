@@ -1061,16 +1061,56 @@ const htmlTemplate = `<!DOCTYPE html>
       console.log('Filtering for safety keywords in static version. Total keywords:', allKeywords.size);
       console.log('Safety terms to match:', lowerSafetyTerms);
       
-      const safetyKeywords = Array.from(allKeywords).filter(keyword => {
+      // Define a set of safety keywords we know should exist in the data
+      const knownSafetyKeywords = [
+        'alignment', 'safety', 'interpretability', 
+        'adversarial attack', 'robust ai', 'ethical ai',
+        'value alignment', 'ai safety', 'ai governance', 
+        'outer alignment', 'inner alignment'
+      ].map(k => k.toLowerCase());
+      
+      // First try to find by normal matching
+      let safetyKeywords = Array.from(allKeywords).filter(keyword => {
         // Check if this keyword contains any safety term
         const matches = lowerSafetyTerms.some(term => keyword.includes(term));
         if (matches) {
-          console.log('Static: Found safety keyword match: "' + keyword + '"');
+          console.log('Static: Found safety keyword match via term inclusion: "' + keyword + '"');
         }
         return matches;
       });
       
-      console.log('Static: Found safety keywords:', safetyKeywords.length, safetyKeywords);
+      // If no matches, check if any of our known safety keywords exist in allKeywords
+      if (safetyKeywords.length === 0) {
+        console.log('Static: No matches via term inclusion. Trying direct known keyword check...');
+        safetyKeywords = Array.from(allKeywords).filter(keyword => 
+          knownSafetyKeywords.includes(keyword) || 
+          knownSafetyKeywords.some(known => keyword.includes(known))
+        );
+        
+        safetyKeywords.forEach(keyword => 
+          console.log('Static: Found safety keyword via direct check: "' + keyword + '"')
+        );
+      }
+      
+      // If we still have no matches, try direct check in the monthly keywords
+      if (safetyKeywords.length === 0) {
+        console.log('Static: Still no matches. Checking monthly_keywords directly...');
+        const directMatches = new Set();
+        
+        Object.values(monthlyKeywords).forEach(keywords => {
+          keywords.forEach(kw => {
+            const lowerText = kw.text.toLowerCase();
+            if (knownSafetyKeywords.some(term => lowerText.includes(term))) {
+              console.log('Static: Direct monthly keyword match: "' + kw.text + '"');
+              directMatches.add(lowerText);
+            }
+          });
+        });
+        
+        safetyKeywords = Array.from(directMatches);
+      }
+      
+      console.log('Static: Final safety keywords:', safetyKeywords.length, safetyKeywords);
       
       // If no safety keywords found, display a message
       if (safetyKeywords.length === 0) {
@@ -1101,18 +1141,30 @@ const htmlTemplate = `<!DOCTYPE html>
         }
       });
       
-      // Improved counting logic with more flexible matching
+      // Super robust counting logic
       Object.values(monthlyKeywords).forEach(keywords => {
         keywords.forEach(kw => {
           const lowerKeyword = kw.text.toLowerCase();
+          let isSafetyKeyword = false;
           
-          // Try exact match first (original method)
+          // Method 1: Check if it's in our filtered safetyKeywords
           if (safetyKeywords.includes(lowerKeyword)) {
-            keywordCounts[kw.text] = (keywordCounts[kw.text] || 0) + kw.value;
+            isSafetyKeyword = true;
+            console.log('Static: Counting via method 1: "' + kw.text + '"');
           } 
-          // Then try contains match as a fallback
+          // Method 2: Check if it contains any safety term
           else if (lowerSafetyTerms.some(term => lowerKeyword.includes(term))) {
-            console.log('Static: Found keyword via direct check: "' + kw.text + '" matches safety term');
+            isSafetyKeyword = true;
+            console.log('Static: Counting via method 2: "' + kw.text + '" contains safety term');
+          }
+          // Method 3: Check if it matches any of our known safety keywords
+          else if (knownSafetyKeywords.some(term => lowerKeyword.includes(term))) {
+            isSafetyKeyword = true;
+            console.log('Static: Counting via method 3: "' + kw.text + '" matches known safety keyword');
+          }
+          
+          // If it's a safety keyword by any definition, count it
+          if (isSafetyKeyword) {
             keywordCounts[kw.text] = (keywordCounts[kw.text] || 0) + kw.value;
           }
         });
