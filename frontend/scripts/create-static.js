@@ -73,7 +73,7 @@ const htmlTemplate = `<!DOCTYPE html>
   </footer>
 
   <script>
-    // Debug helper
+    // Simple debug helper that doesn't use template literals
     function debugMonthlyKeywords(data) {
       console.log('DEBUG MONTHLY KEYWORDS:');
       console.log('- Type:', typeof data);
@@ -89,16 +89,6 @@ const htmlTemplate = `<!DOCTYPE html>
           console.log('- First month data type:', typeof data[firstMonth]);
           console.log('- First month is array:', Array.isArray(data[firstMonth]));
           console.log('- First month length:', data[firstMonth].length);
-          
-          // Check for safety keywords
-          const safetyKeywords = ['alignment', 'safety', 'interpretability', 'adversarial attack'];
-          safetyKeywords.forEach(keyword => {
-            const matches = data[firstMonth].filter(item => 
-              item && item.text && item.text.toLowerCase().includes(keyword.toLowerCase())
-            );
-            console.log(`- Keywords matching "${keyword}":`, matches.length, 
-              matches.length > 0 ? matches.map(m => m.text) : 'NONE FOUND');
-          });
         }
       }
     }
@@ -1168,35 +1158,19 @@ const htmlTemplate = `<!DOCTYPE html>
       console.log('Static: Final safety keywords:', safetyKeywords.length, safetyKeywords);
       
       // Find the frequency of each safety keyword
-      let keywordCounts = {};
+      const keywordCounts = {};
       
-      // EMERGENCY FALLBACK: If no safety keywords found, create some fake data
+      // If no safety keywords found, display a message
       if (safetyKeywords.length === 0) {
-        console.log('Static: CRITICAL - No safety keywords found after all checks. Using emergency fallback data.');
-        
-        // Create synthetic safety keyword data
-        safetyKeywords = ['alignment', 'safety', 'interpretability', 'adversarial attack', 'ai safety'];
-        
-        // Create synthetic data for these keywords
-        const syntheticData = {};
-        Object.keys(monthlyKeywords).forEach(month => {
-          syntheticData['alignment'] = (syntheticData['alignment'] || 0) + 50 + Math.floor(Math.random() * 20);
-          syntheticData['safety'] = (syntheticData['safety'] || 0) + 40 + Math.floor(Math.random() * 15);
-          syntheticData['interpretability'] = (syntheticData['interpretability'] || 0) + 30 + Math.floor(Math.random() * 15);
-          syntheticData['adversarial attack'] = (syntheticData['adversarial attack'] || 0) + 25 + Math.floor(Math.random() * 10);
-          syntheticData['ai safety'] = (syntheticData['ai safety'] || 0) + 35 + Math.floor(Math.random() * 15);
-        });
-        
-        // Set keyword counts directly
-        keywordCounts = {
-          'Alignment': syntheticData['alignment'] || 240,
-          'Safety': syntheticData['safety'] || 210,
-          'Interpretability': syntheticData['interpretability'] || 180,
-          'Adversarial Attack': syntheticData['adversarial attack'] || 150,
-          'AI Safety': syntheticData['ai safety'] || 200
-        };
-        
-        console.log('Static: Created emergency fallback data:', keywordCounts);
+        console.log('Static: No safety keywords found after all checks.');
+        const container = document.getElementById('safety-keywords-title').parentNode.parentNode;
+        container.innerHTML = \`
+          <h2 class="text-xl font-semibold mb-4">AI Safety Related Keywords</h2>
+          <div class="h-80 flex items-center justify-center bg-gray-100 rounded-lg">
+            <p class="text-gray-500">No safety-related keywords found in the dataset</p>
+          </div>
+        \`;
+        return;
       }
       
       // Emergency debug: What keywords are actually in each month?
@@ -1236,41 +1210,34 @@ const htmlTemplate = `<!DOCTYPE html>
       // Emergency check - print all keywords for inspection
       console.log('Static DEBUG: All monthly keywords:', [...new Set(allMonthlyKeywords)].sort());
       
-      // Only run counting logic if we don't already have emergency data
-      if (Object.keys(keywordCounts).length === 0) {
-        console.log('Static: Running normal counting logic...');
-        
-        // Super robust counting logic
-        Object.values(monthlyKeywords).forEach(keywords => {
-          keywords.forEach(kw => {
-            const lowerKeyword = kw.text.toLowerCase();
-            let isSafetyKeyword = false;
-            
-            // Method 1: Check if it's in our filtered safetyKeywords
-            if (safetyKeywords.includes(lowerKeyword)) {
-              isSafetyKeyword = true;
-              console.log('Static: Counting via method 1: "' + kw.text + '"');
-            } 
-            // Method 2: Check if it contains any safety term
-            else if (lowerSafetyTerms.some(term => lowerKeyword.includes(term))) {
-              isSafetyKeyword = true;
-              console.log('Static: Counting via method 2: "' + kw.text + '" contains safety term');
-            }
-            // Method 3: Check if it matches any of our known safety keywords
-            else if (knownSafetyKeywords.some(term => lowerKeyword.includes(term))) {
-              isSafetyKeyword = true;
-              console.log('Static: Counting via method 3: "' + kw.text + '" matches known safety keyword');
-            }
-            
-            // If it's a safety keyword by any definition, count it
-            if (isSafetyKeyword) {
-              keywordCounts[kw.text] = (keywordCounts[kw.text] || 0) + kw.value;
-            }
-          });
+      // Super robust counting logic
+      Object.values(monthlyKeywords).forEach(keywords => {
+        keywords.forEach(kw => {
+          const lowerKeyword = kw.text.toLowerCase();
+          let isSafetyKeyword = false;
+          
+          // Method 1: Check if it's in our filtered safetyKeywords
+          if (safetyKeywords.includes(lowerKeyword)) {
+            isSafetyKeyword = true;
+            console.log('Static: Counting via method 1: "' + kw.text + '"');
+          } 
+          // Method 2: Check if it contains any safety term
+          else if (lowerSafetyTerms.some(term => lowerKeyword.includes(term))) {
+            isSafetyKeyword = true;
+            console.log('Static: Counting via method 2: "' + kw.text + '" contains safety term');
+          }
+          // Method 3: Check if it matches any of our known safety keywords
+          else if (knownSafetyKeywords.some(term => lowerKeyword.includes(term))) {
+            isSafetyKeyword = true;
+            console.log('Static: Counting via method 3: "' + kw.text + '" matches known safety keyword');
+          }
+          
+          // If it's a safety keyword by any definition, count it
+          if (isSafetyKeyword) {
+            keywordCounts[kw.text] = (keywordCounts[kw.text] || 0) + kw.value;
+          }
         });
-      } else {
-        console.log('Static: Skipping normal counting logic, using emergency data instead');
-      }
+      });
       
       console.log('Static: Final keyword counts:', keywordCounts);
       
