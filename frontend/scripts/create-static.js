@@ -1058,10 +1058,19 @@ const htmlTemplate = `<!DOCTYPE html>
       });
       
       // Filter to find safety-related keywords
+      console.log('Filtering for safety keywords in static version. Total keywords:', allKeywords.size);
+      console.log('Safety terms to match:', lowerSafetyTerms);
+      
       const safetyKeywords = Array.from(allKeywords).filter(keyword => {
         // Check if this keyword contains any safety term
-        return lowerSafetyTerms.some(term => keyword.includes(term));
+        const matches = lowerSafetyTerms.some(term => keyword.includes(term));
+        if (matches) {
+          console.log(`Static: Found safety keyword match: "${keyword}"`);
+        }
+        return matches;
       });
+      
+      console.log('Static: Found safety keywords:', safetyKeywords.length, safetyKeywords);
       
       // If no safety keywords found, display a message
       if (safetyKeywords.length === 0) {
@@ -1077,14 +1086,39 @@ const htmlTemplate = `<!DOCTYPE html>
       
       // Find the frequency of each safety keyword
       const keywordCounts = {};
+      
+      // Debug: Check keywords in each month
+      Object.entries(monthlyKeywords).forEach(([month, keywords]) => {
+        console.log(`Static: Month ${month} has ${keywords.length} keywords`);
+        
+        // Check for safety keywords in this month
+        const safetyInMonth = keywords.filter(kw => 
+          lowerSafetyTerms.some(term => kw.text.toLowerCase().includes(term))
+        );
+        
+        if (safetyInMonth.length > 0) {
+          console.log(`Static: Month ${month} has safety keywords:`, safetyInMonth.map(k => k.text));
+        }
+      });
+      
+      // Improved counting logic with more flexible matching
       Object.values(monthlyKeywords).forEach(keywords => {
         keywords.forEach(kw => {
           const lowerKeyword = kw.text.toLowerCase();
+          
+          // Try exact match first (original method)
           if (safetyKeywords.includes(lowerKeyword)) {
+            keywordCounts[kw.text] = (keywordCounts[kw.text] || 0) + kw.value;
+          } 
+          // Then try contains match as a fallback
+          else if (lowerSafetyTerms.some(term => lowerKeyword.includes(term))) {
+            console.log(`Static: Found keyword via direct check: "${kw.text}" matches safety term`);
             keywordCounts[kw.text] = (keywordCounts[kw.text] || 0) + kw.value;
           }
         });
       });
+      
+      console.log('Static: Final keyword counts:', keywordCounts);
       
       // Sort keywords by total count and take the top ones
       const topSafetyKeywords = Object.entries(keywordCounts)
